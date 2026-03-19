@@ -21,7 +21,9 @@ public class StayHardApp {
 
         // Cabeçalho
         ConsoleVisual.printHeader("Stay Hard System");
-        ConsoleVisual.info("Loading application...");
+        ConsoleVisual.info("Da");
+
+
 
 
 
