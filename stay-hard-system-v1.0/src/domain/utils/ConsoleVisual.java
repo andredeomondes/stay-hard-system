@@ -21,7 +21,6 @@ public class ConsoleVisual {
     public static void printHeader(String title) {
         clearCanvas();
         System.out.println(RED + BOLD + LINHA + RESET);
-        // Centralização básica (ajusta o padding conforme o tamanho do título)
         int padding = (44 - title.length()) / 2;
         System.out.printf(RED + BOLD + "%" + (padding + title.length()) + "s%n" + RESET, title.toUpperCase());
         System.out.println(RED + BOLD + LINHA + RESET);
