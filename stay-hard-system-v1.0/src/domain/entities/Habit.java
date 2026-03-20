@@ -7,38 +7,49 @@ public class Habit {
     private String name;
     private Priority priority;
     private Status status;
+    public Habit(String name, Priority priority) {
 
-    public Habit() {
-    }
+        if (name == null || name.isBlank()) {
+            throw new IllegalArgumentException("Nome do hábito não pode ser vazio");
+        }
 
-    public Habit(String name, Priority priority, Status status) {
+        if (priority == null) {
+            throw new IllegalArgumentException("Prioridade não pode ser nula");
+        }
+
         this.name = name;
         this.priority = priority;
-        this.status = status;
+        this.status = Status.TODO ;
+
+
+
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public Priority getPriority() {
         return priority;
-    }
-
-    public void setPriority(Priority priority) {
-        this.priority = priority;
     }
 
     public Status getStatus() {
         return status;
     }
 
-    public void setStatus(Status status) {
-        this.status = status;
+    public void start() {
+        if (status == Status.TODO) {
+            status = Status.IN_PROGRESS;
+        }
     }
+
+    public void complete() {
+        status = Status.DONE;
+    }
+
+    public void reset() {
+        status = Status.TODO;
+    }
+
 
 }
