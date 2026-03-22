@@ -20,6 +20,18 @@ public class User {
         this.maxStreak = 0;
     }
 
+    public User(String name, int daysCompleted, int daysFailed, int currentStreak, int maxStreak) {
+        if (name == null || name.isBlank()) {
+            throw new IllegalArgumentException("Nome não pode ser vazio");
+        }
+
+        this.name = name;
+        this.daysCompleted = daysCompleted;
+        this.daysFailed = daysFailed;
+        this.currentStreak = currentStreak;
+        this.maxStreak = maxStreak;
+    }
+
     public String getName() {
         return name;
     }

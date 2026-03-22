@@ -1,23 +1,23 @@
-package domain.utils;
+package ui;
 
+import controller.HabitController;
+import controller.UserController;
 import domain.entities.Habit;
-import domain.entities.User;
 import domain.enums.Priority;
 import domain.utils.ConsoleVisual;
-import service.HabitService;
 
 import java.util.List;
 import java.util.Scanner;
 
 public class UserMenus {
 
-    private final HabitService habitService;
-    private final User user;
+    private final HabitController habitController;
+    private final UserController userController;
     private final Scanner scanner;
 
-    public UserMenus() {
-        this.habitService = new HabitService();
-        this.user = new User("Player");
+    public UserMenus(HabitController habitController, UserController userController) {
+        this.habitController = habitController;
+        this.userController = userController;
         this.scanner = new Scanner(System.in);
     }
 
@@ -48,6 +48,9 @@ public class UserMenus {
 
     private void showMainMenu() {
         ConsoleVisual.printHeader("Stay Hard System");
+        System.out.println("Day: " + userController.getCurrentDay());
+        System.out.println("Streak: " + userController.getUser().getCurrentStreak());
+        ConsoleVisual.divider();
         System.out.println("1 - Criar hábito");
         System.out.println("2 - Listar hábitos");
         System.out.println("3 - Iniciar hábito");
@@ -89,30 +92,27 @@ public class UserMenus {
             return;
         }
 
-        habitService.addHabit(name, priority);
+        habitController.createHabit(name, priority);
         ConsoleVisual.success("Hábito criado com sucesso.");
     }
 
     private void listHabits() {
         ConsoleVisual.printHeader("Lista de Hábitos");
 
-        if (!habitService.hasHabits()) {
+        if (!habitController.hasHabits()) {
             ConsoleVisual.alert("Nenhum hábito cadastrado.");
             return;
         }
 
-        List<Habit> habits = habitService.getAllHabits();
+        List<Habit> habits = habitController.listHabits();
 
         for (int i = 0; i < habits.size(); i++) {
             Habit h = habits.get(i);
-
-            System.out.printf(
-                    "%d - %s [%s] [%s]%n",
+            System.out.printf("%d - %s [%s] [%s]%n",
                     i + 1,
                     h.getName(),
                     h.getPriority(),
-                    h.getStatus()
-            );
+                    h.getStatus());
         }
 
         ConsoleVisual.divider();
@@ -120,7 +120,7 @@ public class UserMenus {
     }
 
     private void startHabit() {
-        if (!habitService.hasHabits()) {
+        if (!habitController.hasHabits()) {
             ConsoleVisual.alert("Nenhum hábito cadastrado.");
             return;
         }
@@ -128,7 +128,7 @@ public class UserMenus {
         listHabits();
         int index = readInt("Escolha o número do hábito para iniciar") - 1;
 
-        if (habitService.startHabit(index)) {
+        if (habitController.startHabit(index)) {
             ConsoleVisual.success("Hábito iniciado com sucesso.");
         } else {
             ConsoleVisual.error("Índice inválido.");
@@ -136,7 +136,7 @@ public class UserMenus {
     }
 
     private void completeHabit() {
-        if (!habitService.hasHabits()) {
+        if (!habitController.hasHabits()) {
             ConsoleVisual.alert("Nenhum hábito cadastrado.");
             return;
         }
@@ -144,7 +144,7 @@ public class UserMenus {
         listHabits();
         int index = readInt("Escolha o número do hábito para concluir") - 1;
 
-        if (habitService.completeHabit(index)) {
+        if (habitController.completeHabit(index)) {
             ConsoleVisual.success("Hábito concluído com sucesso.");
         } else {
             ConsoleVisual.error("Índice inválido.");
@@ -154,61 +154,52 @@ public class UserMenus {
     private void finishDay() {
         ConsoleVisual.printHeader("Finalizar Dia");
 
-        if (!habitService.hasHabits()) {
+        if (!habitController.hasHabits()) {
             ConsoleVisual.alert("Crie pelo menos um hábito antes de finalizar o dia.");
             return;
         }
 
-        boolean success = habitService.allHighCompleted();
+        boolean success = habitController.allHighCompleted();
 
         if (success) {
-            user.addCompletedDay();
+            userController.registerCompletedDay();
             ConsoleVisual.success("DAY COMPLETE");
         } else {
-            user.addFailedDay();
+            userController.registerFailedDay();
             ConsoleVisual.error("DAY FAILED");
         }
 
-        habitService.resetHabits();
+        habitController.resetHabits();
         ConsoleVisual.info("Todos os hábitos foram resetados para TODO.");
     }
 
     private void showStatus() {
         ConsoleVisual.printHeader("Status do Jogador");
 
-        System.out.println("Nome: " + user.getName());
-        System.out.println("Dias completos: " + user.getDaysCompleted());
-        System.out.println("Dias falhos: " + user.getDaysFailed());
-        System.out.println("Streak atual: " + user.getCurrentStreak());
-        System.out.println("Maior streak: " + user.getMaxStreak());
-        System.out.println("Level: " + getLevelName(user.getDaysCompleted()));
+        System.out.println("Nome: " + userController.getUser().getName());
+        System.out.println("Dias completos: " + userController.getUser().getDaysCompleted());
+        System.out.println("Dias falhos: " + userController.getUser().getDaysFailed());
+        System.out.println("Streak atual: " + userController.getUser().getCurrentStreak());
+        System.out.println("Maior streak: " + userController.getUser().getMaxStreak());
+        System.out.println("Level: " + userController.getLevelName());
 
         ConsoleVisual.divider();
 
-        if (habitService.hasHabits()) {
-            System.out.println("Hábitos concluídos hoje: " + habitService.countCompletedHabits());
-            System.out.println("Hábitos HIGH: " + habitService.countHabitsByPriority(Priority.HIGH));
-            System.out.println("Hábitos MEDIUM: " + habitService.countHabitsByPriority(Priority.MEDIUM));
-            System.out.println("Hábitos LOW: " + habitService.countHabitsByPriority(Priority.LOW));
+        if (habitController.hasHabits()) {
+            System.out.println("Hábitos concluídos hoje: " + habitController.countCompletedHabits());
+            System.out.println("Hábitos HIGH: " + habitController.countHabitsByPriority(Priority.HIGH));
+            System.out.println("Hábitos MEDIUM: " + habitController.countHabitsByPriority(Priority.MEDIUM));
+            System.out.println("Hábitos LOW: " + habitController.countHabitsByPriority(Priority.LOW));
         } else {
             ConsoleVisual.info("Nenhum hábito cadastrado ainda.");
         }
-    }
-
-    private String getLevelName(int daysCompleted) {
-        if (daysCompleted >= 75) return "Stay Hard";
-        if (daysCompleted >= 30) return "Unbreakable";
-        if (daysCompleted >= 15) return "Relentless";
-        if (daysCompleted >= 7) return "Forged";
-        return "Awakening";
     }
 
     private int readInt(String message) {
         while (true) {
             try {
                 System.out.print(ConsoleVisual.CYAN + ConsoleVisual.BOLD + "> " + message + ": " + ConsoleVisual.RESET);
-                int value = Integer.parseInt(scanner.nextLine());
-                return value;
+                return Integer.parseInt(scanner.nextLine());
             } catch (NumberFormatException e) {
                 ConsoleVisual.error("Digite um número válido.");
             }

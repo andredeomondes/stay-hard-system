@@ -51,5 +51,11 @@ public class Habit {
         status = Status.TODO;
     }
 
+    public void restoreStatus(Status status) {
+        if (status == null) {
+            throw new IllegalArgumentException("Status não pode ser nulo.");
+        }
+        this.status = status;
+    }
 
 }
