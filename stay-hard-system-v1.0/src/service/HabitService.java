@@ -3,6 +3,7 @@ package service;
 import domain.entities.Habit;
 import domain.enums.Priority;
 import domain.enums.Status;
+import repository.HabitRepository;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,11 +11,18 @@ import java.util.List;
 
 public class HabitService {
 
-    private final List<Habit> habits = new ArrayList<>();
+    private final HabitRepository habitRepository;
+    private final List<Habit> habits;
+
+    public HabitService(HabitRepository habitRepository) {
+        this.habitRepository = habitRepository;
+        this.habits = new ArrayList<>(habitRepository.load());
+    }
 
     public void addHabit(String name, Priority priority) {
         Habit habit = new Habit(name, priority);
         habits.add(habit);
+        habitRepository.save(habits);
     }
 
     public List<Habit> getAllHabits() {
@@ -25,20 +33,13 @@ public class HabitService {
         return !habits.isEmpty();
     }
 
-    public Habit findHabitByIndex(int index) {
-        if (isInvalidIndex(index)) {
-            return null;
-        }
-        return habits.get(index);
-    }
-
     public boolean startHabit(int index) {
         if (isInvalidIndex(index)) {
             return false;
         }
 
-        Habit habit = habits.get(index);
-        habit.start();
+        habits.get(index).start();
+        habitRepository.save(habits);
         return true;
     }
 
@@ -47,8 +48,8 @@ public class HabitService {
             return false;
         }
 
-        Habit habit = habits.get(index);
-        habit.complete();
+        habits.get(index).complete();
+        habitRepository.save(habits);
         return true;
     }
 
@@ -56,38 +57,37 @@ public class HabitService {
         for (Habit habit : habits) {
             habit.reset();
         }
+        habitRepository.save(habits);
     }
 
     public boolean allHighCompleted() {
-        boolean hasHighPriorityHabit = false;
+        boolean hasHigh = false;
 
         for (Habit habit : habits) {
             if (habit.getPriority() == Priority.HIGH) {
-                hasHighPriorityHabit = true;
-
+                hasHigh = true;
                 if (habit.getStatus() != Status.DONE) {
                     return false;
                 }
             }
         }
 
-        return hasHighPriorityHabit;
+        return hasHigh;
     }
 
     public long countHabitsByPriority(Priority priority) {
         return habits.stream()
-                .filter(habit -> habit.getPriority() == priority)
+                .filter(h -> h.getPriority() == priority)
                 .count();
     }
 
     public long countCompletedHabits() {
         return habits.stream()
-                .filter(habit -> habit.getStatus() == Status.DONE)
+                .filter(h -> h.getStatus() == Status.DONE)
                 .count();
     }
 
-    public boolean isInvalidIndex(int index) {
+    private boolean isInvalidIndex(int index) {
         return index < 0 || index >= habits.size();
     }
-
 }
