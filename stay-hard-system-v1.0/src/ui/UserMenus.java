@@ -48,9 +48,13 @@ public class UserMenus {
 
     private void showMainMenu() {
         ConsoleVisual.printHeader("Stay Hard System");
+
         System.out.println("Day: " + userController.getCurrentDay());
         System.out.println("Streak: " + userController.getUser().getCurrentStreak());
+        System.out.println("Level: " + userController.getLevelName()); // 🔥 AQUI
+
         ConsoleVisual.divider();
+
         System.out.println("1 - Criar hábito");
         System.out.println("2 - Listar hábitos");
         System.out.println("3 - Iniciar hábito");
@@ -58,9 +62,9 @@ public class UserMenus {
         System.out.println("5 - Ver status");
         System.out.println("6 - Finalizar dia");
         System.out.println("0 - Sair");
+
         ConsoleVisual.divider();
     }
-
     private void createHabit() {
         ConsoleVisual.printHeader("Criar Hábito");
 
