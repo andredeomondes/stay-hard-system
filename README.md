@@ -17,61 +17,64 @@ Sistema gamificado de tracking de hábitos que evolui de CLI para SaaS completo 
 ```
 stay-hard-system/
 │
-├── stay-hard-system-v1.0/       ← Projeto v1.0 (CLI Java puro, CSV)
-│   └── src/                     ← Código fonte original
+├── versions/                        ← Cada versão do Stay Hard
+│   ├── v1.0-cli/                    ← CLI original (Java puro, CSV, sem testes)
+│   │   ├── src/                     ← Código fonte
+│   │   └── data/                    ← Arquivos CSV (user.csv, habits.csv)
+│   │
+│   └── v2.0-maven/                  ← Maven + Spring Boot (com testes)
+│       ├── pom.xml                  ← Dependências Maven
+│       ├── src/main/java/com/stayhard/  ← Código fonte
+│       │   ├── controller/
+│       │   ├── domain/entities/
+│       │   ├── domain/enums/
+│       │   ├── domain/utils/
+│       │   ├── repository/
+│       │   ├── repository/csv/
+│       │   ├── service/
+│       │   └── ui/
+│       ├── src/main/resources/      ← application.properties
+│       └── src/test/java/           ← Testes JUnit ✅
 │
-├── src/                         ← Projeto v2.0+ (Maven + Spring Boot)
-│   ├── main/java/com/stayhard/  ← Código fonte (entities, services, controllers)
-│   ├── main/resources/          ← application.properties
-│   └── test/java/               ← Testes JUnit
+├── docs/                            ← Anotações de estudo (11 arquivos)
+│   ├── 00-sqlite-jdbc-api.md
+│   ├── 01-fase0-fundacao.md
+│   ├── 02-fase1-java-backend.md
+│   ├── 03-fase2-rest-api.md
+│   ├── 04-fase3-react-typescript.md
+│   ├── 05-fase4-docker-systemdesign.md
+│   ├── 06-fase5-ia-rag.md
+│   ├── 07-redis.md
+│   ├── 08-saas-erp-ia.md
+│   ├── 09-rabbitmq.md
+│   └── 10-devops.md
 │
-├── docs/                        ← Anotações de estudo (11 arquivos)
-│   ├── 00-sqlite-jdbc-api.md    ← SQLite + JDBC + API sem Spring
-│   ├── 01-fase0-fundacao.md     ← Maven, Git, JUnit
-│   ├── 02-fase1-java-backend.md ← Spring Boot, PostgreSQL, JPA
-│   ├── 03-fase2-rest-api.md     ← REST, JWT, Swagger
-│   ├── 04-fase3-react-typescript.md ← JS, TypeScript, React
-│   ├── 05-fase4-docker-systemdesign.md ← Docker, System Design, CI/CD
-│   ├── 06-fase5-ia-rag.md       ← IA, RAG, Spring AI, Kafka, RabbitMQ
-│   ├── 07-redis.md              ← Redis completo
-│   ├── 08-saas-erp-ia.md        ← SaaS, ERPs com IA
-│   ├── 09-rabbitmq.md           ← RabbitMQ completo
-│   └── 10-devops.md             ← Logging, Nginx, AWS, SSL
+├── progresso/                       ← Acompanhamento de progresso
+│   ├── daily-tasks.md               ← 209 dias de tarefas (COMECE AQUI)
+│   ├── daily-log.md                 ← Marcar dias completados
+│   └── checklist.md                 ← 224 itens gamificados
 │
-├── progresso/                   ← Acompanhamento de progresso
-│   ├── daily-tasks.md           ← 209 dias de tarefas (COMECE AQUI)
-│   ├── daily-log.md             ← Marcar dias completados
-│   └── checklist.md             ← 224 itens gamificados com XP
+├── mini-projetos/                   ← 22+ projetos práticos
+│   ├── calculadora-cli/             ← Fase 0
+│   ├── validador-cpf/               ← Fase 0
+│   ├── api-sqlite-jdbc/             ← Fase 1
+│   ├── todo-list-web/               ← Fase 2
+│   ├── weather-app/                 ← Fase 2
+│   ├── crud-produtos/               ← Fase 3
+│   ├── auth-api-jwt/                ← Fase 4
+│   ├── redis-cache-demo/            ← Fase 5
+│   ├── docker-spring-boot/          ← Fase 5
+│   ├── react-weather/               ← Fase 8
+│   ├── react-kanban/                ← Fase 8
+│   └── ... (mais)
 │
-├── mini-projetos/               ← 22+ projetos práticos
-│   ├── calculadora-cli/         ← Fase 0: Java puro
-│   ├── validador-cpf/           ← Fase 0: Java + JUnit
-│   ├── api-sqlite-jdbc/         ← Fase 1: Java + SQLite + JDBC
-│   ├── todo-list-web/           ← Fase 2: HTML + CSS + JS
-│   ├── calculadora-web/         ← Fase 2: HTML + CSS + JS
-│   ├── weather-app/             ← Fase 2: HTML + CSS + JS + API
-│   ├── portfolio-page/          ← Fase 2: HTML + CSS
-│   ├── crud-produtos/           ← Fase 3: Spring Boot + H2
-│   ├── api-contatos/            ← Fase 3: Spring Boot + PostgreSQL
-│   ├── redis-cache-demo/        ← Fase 3: Spring Boot + Redis
-│   ├── rate-limiter/            ← Fase 5: Spring Boot + Redis
-│   ├── auth-api-jwt/            ← Fase 4: Spring Boot + JWT
-│   ├── docker-spring-boot/      ← Fase 5: Docker
-│   ├── github-actions-ci/       ← Fase 5: GitHub Actions
-│   ├── react-weather/           ← Fase 8: React + TS
-│   ├── react-todo/              ← Fase 8: React + TS
-│   ├── react-kanban/            ← Fase 8: React + TS
-│   ├── react-chat/              ← Fase 8: React + TS
-│   └── react-ecommerce/         ← Fase 8: React + TS
+├── templates/                       ← Templates reutilizáveis
+│   ├── spring-boot-init/
+│   └── react-ts-init/
 │
-├── templates/                   ← Templates reutilizáveis
-│   ├── spring-boot-init/        ← Template Spring Boot (pom.xml + config)
-│   └── react-ts-init/           ← Template React + TypeScript (package.json + config)
-│
-├── pom.xml                      ← Maven (dependências do projeto principal)
-├── .gitignore                   ← Arquivos ignorados pelo Git
-├── ROADMAP.md                   ← Roadmap completo detalhado
-└── README.md                    ← Este arquivo
+├── README.md                        ← Este arquivo
+├── ROADMAP.md                       ← Roadmap completo detalhado
+└── .gitignore                       ← Arquivos ignorados
 ```
 
 ---
@@ -126,13 +129,14 @@ progresso/checklist.md      ← Marque cada item aprendido
 
 ### v1.0 — CLI (Java puro, sem dependências)
 ```bash
-cd stay-hard-system-v1.0/src
+cd versions/v1.0-cli/src
 javac StayHardApp.java
 java StayHardApp
 ```
 
 ### v2.0+ — Spring Boot (Maven)
 ```bash
+cd versions/v2.0-maven
 mvn clean install
 mvn spring-boot:run
 # Acesse: http://localhost:8080
