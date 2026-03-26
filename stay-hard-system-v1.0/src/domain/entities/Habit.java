@@ -51,6 +51,20 @@ public class Habit {
         status = Status.TODO;
     }
 
+    public void setName(String name) {
+        if (name == null || name.isBlank()) {
+            throw new IllegalArgumentException("Nome do hábito não pode ser vazio");
+        }
+        this.name = name;
+    }
+
+    public void setPriority(Priority priority) {
+        if (priority == null) {
+            throw new IllegalArgumentException("Prioridade não pode ser nula");
+        }
+        this.priority = priority;
+    }
+
     public void restoreStatus(Status status) {
         if (status == null) {
             throw new IllegalArgumentException("Status não pode ser nulo.");

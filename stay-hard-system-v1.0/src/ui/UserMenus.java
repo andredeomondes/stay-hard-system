@@ -33,8 +33,10 @@ public class UserMenus {
                 case 2 -> listHabits();
                 case 3 -> startHabit();
                 case 4 -> completeHabit();
-                case 5 -> showStatus();
-                case 6 -> finishDay();
+                case 5 -> editHabit();
+                case 6 -> removeHabit();
+                case 7 -> showStatus();
+                case 8 -> finishDay();
                 case 0 -> ConsoleVisual.info("Saindo do sistema...");
                 default -> ConsoleVisual.error("Opção inválida.");
             }
@@ -59,8 +61,10 @@ public class UserMenus {
         System.out.println("2 - Listar hábitos");
         System.out.println("3 - Iniciar hábito");
         System.out.println("4 - Concluir hábito");
-        System.out.println("5 - Ver status");
-        System.out.println("6 - Finalizar dia");
+        System.out.println("5 - Editar hábito");
+        System.out.println("6 - Remover hábito");
+        System.out.println("7 - Ver status");
+        System.out.println("8 - Finalizar dia");
         System.out.println("0 - Sair");
 
         ConsoleVisual.divider();
@@ -150,6 +154,68 @@ public class UserMenus {
 
         if (habitController.completeHabit(index)) {
             ConsoleVisual.success("Hábito concluído com sucesso.");
+        } else {
+            ConsoleVisual.error("Índice inválido.");
+        }
+    }
+
+    private void editHabit() {
+        if (!habitController.hasHabits()) {
+            ConsoleVisual.alert("Nenhum hábito cadastrado.");
+            return;
+        }
+
+        listHabits();
+        int index = readInt("Escolha o número do hábito para editar") - 1;
+
+        if (index < 0 || index >= habitController.listHabits().size()) {
+            ConsoleVisual.error("Índice inválido.");
+            return;
+        }
+
+        ConsoleVisual.printHeader("Editar Hábito");
+
+        System.out.print(ConsoleVisual.CYAN + ConsoleVisual.BOLD + "> Novo nome (ENTER para manter): " + ConsoleVisual.RESET);
+        String newName = scanner.nextLine().trim();
+
+        Habit current = habitController.listHabits().get(index);
+        if (newName.isBlank()) {
+            newName = current.getName();
+        }
+
+        System.out.println("Nova prioridade:");
+        System.out.println("1 - LOW");
+        System.out.println("2 - MEDIUM");
+        System.out.println("3 - HIGH");
+        System.out.println("0 - Manter atual (" + current.getPriority() + ")");
+        ConsoleVisual.divider();
+
+        int option = readInt("Escolha a prioridade");
+        Priority newPriority = switch (option) {
+            case 1 -> Priority.LOW;
+            case 2 -> Priority.MEDIUM;
+            case 3 -> Priority.HIGH;
+            default -> current.getPriority();
+        };
+
+        if (habitController.updateHabit(index, newName, newPriority)) {
+            ConsoleVisual.success("Hábito atualizado com sucesso.");
+        } else {
+            ConsoleVisual.error("Erro ao atualizar hábito.");
+        }
+    }
+
+    private void removeHabit() {
+        if (!habitController.hasHabits()) {
+            ConsoleVisual.alert("Nenhum hábito cadastrado.");
+            return;
+        }
+
+        listHabits();
+        int index = readInt("Escolha o número do hábito para remover") - 1;
+
+        if (habitController.deleteHabit(index)) {
+            ConsoleVisual.success("Hábito removido com sucesso.");
         } else {
             ConsoleVisual.error("Índice inválido.");
         }

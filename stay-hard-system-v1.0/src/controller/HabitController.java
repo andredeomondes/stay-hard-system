@@ -34,6 +34,14 @@ public class HabitController {
         return habitService.completeHabit(index);
     }
 
+    public boolean updateHabit(int index, String name, Priority priority) {
+        return habitService.updateHabit(index, name, priority);
+    }
+
+    public boolean deleteHabit(int index) {
+        return habitService.deleteHabit(index);
+    }
+
     public void resetHabits() {
         habitService.resetHabits();
     }

@@ -53,6 +53,28 @@ public class HabitService {
         return true;
     }
 
+    public boolean updateHabit(int index, String name, Priority priority) {
+        if (isInvalidIndex(index)) {
+            return false;
+        }
+
+        Habit habit = habits.get(index);
+        habit.setName(name);
+        habit.setPriority(priority);
+        habitRepository.save(habits);
+        return true;
+    }
+
+    public boolean deleteHabit(int index) {
+        if (isInvalidIndex(index)) {
+            return false;
+        }
+
+        habits.remove(index);
+        habitRepository.save(habits);
+        return true;
+    }
+
     public void resetHabits() {
         for (Habit habit : habits) {
             habit.reset();
