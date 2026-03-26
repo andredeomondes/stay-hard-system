@@ -228,6 +228,17 @@
 - [ ] Pipeline: test → build → deploy
 - [ ] Coverage report gerado
 
+### DevOps
+- [ ] Nginx reverse proxy (proxy_pass, static files, CORS)
+- [ ] Logging com SLF4J + Logback (log levels, structured logging JSON)
+- [ ] Correlation IDs para rastrear requests entre services
+- [ ] Spring Boot Actuator (health, metrics, info)
+- [ ] AWS básico (IAM, console, regions)
+- [ ] AWS EC2 (instância Linux, SSH, deploy Spring Boot)
+- [ ] AWS RDS (PostgreSQL managed)
+- [ ] AWS S3 (storage de arquivos)
+- [ ] SSL/HTTPS com Let's Encrypt + Certbot
+
 ### Stay Hard v5.0
 - [ ] `docker-compose up` sobe tudo (postgres + api + frontend + redis)
 - [ ] GitHub Actions passa no push
@@ -239,7 +250,7 @@
 - [ ] GitHub Actions CI
 - [ ] Rate Limiter
 
-### 📊 Progresso Fase 5: ___/30
+### 📊 Progresso Fase 5: ___/39
 
 ---
 
@@ -387,12 +398,12 @@
 | 2 - HTML + CSS + JS | ___/29 | ⬜ |
 | 3 - Spring Boot + DB | ___/29 | ⬜ |
 | 4 - REST API + Auth | ___/24 | ⬜ |
-| 5 - Docker + Redis + SysDesign | ___/30 | ⬜ |
+| 5 - Docker + Redis + DevOps + SysDesign | ___/39 | ⬜ |
 | 6 - MongoDB + Microservices + Kafka + RabbitMQ | ___/21 | ⬜ |
 | 7 - IA + RAG | ___/14 | ⬜ |
 | 8 - TypeScript + React | ___/23 | ⬜ |
 | 9 - SaaS + ERPs + Portfolio | ___/15 | ⬜ |
-| **TOTAL** | **___/215** | |
+| **TOTAL** | **___/224** | |
 
 ### Níveis
 ```

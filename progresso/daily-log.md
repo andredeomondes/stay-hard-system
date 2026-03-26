@@ -116,116 +116,125 @@ Formato: ✅ Dia [nº] — [data real] — [resumo]
 - [ ] Dia 98 — __/__/____ — Redis Cache Demo
 - [ ] Dia 99 — __/__/____ — GitHub Actions CI
 - [ ] Dia 100 — __/__/____ — Rate Limiter
-- [ ] Dia 101 — __/__/____ — Front-end + Docker
-- [ ] Dia 102 — __/__/____ — tag v5.0
+- [ ] Dia 101 — __/__/____ — Frontend + Docker
+- [ ] Dia 102 — __/__/____ — Nginx reverse proxy
+- [ ] Dia 103 — __/__/____ — Logging (SLF4J + Logback)
+- [ ] Dia 104 — __/__/____ — Observabilidade
+- [ ] Dia 105 — __/__/____ — tag v5.0
 
-## FASE 6 — MongoDB + Microservices + Kafka + RabbitMQ (Dias 103-130)
-- [ ] Dia 103 — __/__/____ — MongoDB setup
-- [ ] Dia 104 — __/__/____ — Spring Data MongoDB
-- [ ] Dia 105 — __/__/____ — Stay Hard MongoDB
-- [ ] Dia 106 — __/__/____ — Microservices concepts
-- [ ] Dia 107 — __/__/____ — Eureka Server
-- [ ] Dia 108 — __/__/____ — API Gateway
-- [ ] Dia 109 — __/__/____ — Feign inter-service
-- [ ] Dia 110 — __/__/____ — Circuit Breaker
-- [ ] Dia 111 — __/__/____ — Kafka concepts
-- [ ] Dia 112 — __/__/____ — Kafka Producer
-- [ ] Dia 113 — __/__/____ — Kafka Consumer
-- [ ] Dia 114 — __/__/____ — Stay Hard Kafka
-- [ ] Dia 115 — __/__/____ — RabbitMQ concepts
-- [ ] Dia 116 — __/__/____ — RabbitMQ Producer
-- [ ] Dia 117 — __/__/____ — RabbitMQ Consumer
-- [ ] Dia 118 — __/__/____ — RabbitMQ advanced
-- [ ] Dia 119 — __/__/____ — Stay Hard RabbitMQ
-- [ ] Dia 120 — __/__/____ — Microservices arch
-- [ ] Dia 121 — __/__/____ — Docker microservices
-- [ ] Dia 122 — __/__/____ — Docker microservices
-- [ ] Dia 123 — __/__/____ — Docker microservices
+## FASE 6 — MongoDB + Microservices + Kafka + RabbitMQ (Dias 106-133)
+- [ ] Dia 106 — __/__/____ — MongoDB setup
+- [ ] Dia 107 — __/__/____ — Spring Data MongoDB
+- [ ] Dia 108 — __/__/____ — Stay Hard MongoDB
+- [ ] Dia 109 — __/__/____ — Microservices concepts
+- [ ] Dia 110 — __/__/____ — Eureka Server
+- [ ] Dia 111 — __/__/____ — API Gateway
+- [ ] Dia 112 — __/__/____ — Feign inter-service
+- [ ] Dia 113 — __/__/____ — Circuit Breaker
+- [ ] Dia 114 — __/__/____ — Kafka concepts
+- [ ] Dia 115 — __/__/____ — Kafka Producer
+- [ ] Dia 116 — __/__/____ — Kafka Consumer
+- [ ] Dia 117 — __/__/____ — Stay Hard Kafka
+- [ ] Dia 118 — __/__/____ — RabbitMQ concepts
+- [ ] Dia 119 — __/__/____ — RabbitMQ Producer
+- [ ] Dia 120 — __/__/____ — RabbitMQ Consumer
+- [ ] Dia 121 — __/__/____ — RabbitMQ advanced
+- [ ] Dia 122 — __/__/____ — Stay Hard RabbitMQ
+- [ ] Dia 123 — __/__/____ — Microservices arch
 - [ ] Dia 124 — __/__/____ — Docker microservices
 - [ ] Dia 125 — __/__/____ — Docker microservices
-- [ ] Dia 126 — __/__/____ — Revisão
-- [ ] Dia 127 — __/__/____ — Revisão
-- [ ] Dia 128 — __/__/____ — Revisão
+- [ ] Dia 126 — __/__/____ — Docker microservices
+- [ ] Dia 127 — __/__/____ — Docker microservices
+- [ ] Dia 128 — __/__/____ — Docker microservices
 - [ ] Dia 129 — __/__/____ — Revisão
-- [ ] Dia 130 — __/__/____ — tag v6.0
+- [ ] Dia 130 — __/__/____ — Revisão
+- [ ] Dia 131 — __/__/____ — Revisão
+- [ ] Dia 132 — __/__/____ — Revisão
+- [ ] Dia 133 — __/__/____ — tag v6.0
 
-## FASE 7 — IA + RAG + Spring AI (Dias 131-150)
-- [ ] Dia 131 — __/__/____ — IA concepts
-- [ ] Dia 132 — __/__/____ — Prompt Engineering
-- [ ] Dia 133 — __/__/____ — OpenAI/Ollama setup
-- [ ] Dia 134 — __/__/____ — Spring AI
-- [ ] Dia 135 — __/__/____ — RAG concepts
-- [ ] Dia 136 — __/__/____ — pgvector setup
-- [ ] Dia 137 — __/__/____ — RAG pipeline
-- [ ] Dia 138 — __/__/____ — Stay Hard Coach IA
-- [ ] Dia 139 — __/__/____ — Stay Hard RAG Analytics
-- [ ] Dia 140 — __/__/____ — Smart Suggestions
-- [ ] Dia 141 — __/__/____ — Chat com PDF
-- [ ] Dia 142 — __/__/____ — Code Reviewer IA
-- [ ] Dia 143 — __/__/____ — Document Q&A
-- [ ] Dia 144 — __/__/____ — Recipe Suggester
-- [ ] Dia 145 — __/__/____ — Sentiment Analyzer
-- [ ] Dia 146 — __/__/____ — Revisão
-- [ ] Dia 147 — __/__/____ — Revisão
-- [ ] Dia 148 — __/__/____ — Revisão
+## FASE 7 — IA + RAG + Spring AI (Dias 134-153)
+- [ ] Dia 134 — __/__/____ — IA concepts
+- [ ] Dia 135 — __/__/____ — Prompt Engineering
+- [ ] Dia 136 — __/__/____ — OpenAI/Ollama setup
+- [ ] Dia 137 — __/__/____ — Spring AI
+- [ ] Dia 138 — __/__/____ — RAG concepts
+- [ ] Dia 139 — __/__/____ — pgvector setup
+- [ ] Dia 140 — __/__/____ — RAG pipeline
+- [ ] Dia 141 — __/__/____ — Stay Hard Coach IA
+- [ ] Dia 142 — __/__/____ — Stay Hard RAG Analytics
+- [ ] Dia 143 — __/__/____ — Smart Suggestions
+- [ ] Dia 144 — __/__/____ — Chat com PDF
+- [ ] Dia 145 — __/__/____ — Code Reviewer IA
+- [ ] Dia 146 — __/__/____ — Document Q&A
+- [ ] Dia 147 — __/__/____ — Recipe Suggester
+- [ ] Dia 148 — __/__/____ — Sentiment Analyzer
 - [ ] Dia 149 — __/__/____ — Revisão
-- [ ] Dia 150 — __/__/____ — tag v7.0
+- [ ] Dia 150 — __/__/____ — Revisão
+- [ ] Dia 151 — __/__/____ — Revisão
+- [ ] Dia 152 — __/__/____ — Revisão
+- [ ] Dia 153 — __/__/____ — tag v7.0
 
-## FASE 8 — TypeScript + React + Tailwind (Dias 151-175)
-- [ ] Dia 151 — __/__/____ — TypeScript basics
-- [ ] Dia 152 — __/__/____ — TypeScript advanced
-- [ ] Dia 153 — __/__/____ — Vite + React setup
-- [ ] Dia 154 — __/__/____ — Components + props
-- [ ] Dia 155 — __/__/____ — useState + useEffect
-- [ ] Dia 156 — __/__/____ — React Router
-- [ ] Dia 157 — __/__/____ — Axios + JWT
-- [ ] Dia 158 — __/__/____ — Tailwind CSS
-- [ ] Dia 159 — __/__/____ — Context API
-- [ ] Dia 160 — __/__/____ — Custom Hooks
-- [ ] Dia 161 — __/__/____ — Stay Hard Login
-- [ ] Dia 162 — __/__/____ — Stay Hard Dashboard
-- [ ] Dia 163 — __/__/____ — Stay Hard Habits
-- [ ] Dia 164 — __/__/____ — Stay Hard Profile
-- [ ] Dia 165 — __/__/____ — Dockerize React
-- [ ] Dia 166 — __/__/____ — Full stack
-- [ ] Dia 167 — __/__/____ — React Weather
-- [ ] Dia 168 — __/__/____ — React Todo
-- [ ] Dia 169 — __/__/____ — React Kanban
-- [ ] Dia 170 — __/__/____ — React Chat
-- [ ] Dia 171 — __/__/____ — React E-commerce
-- [ ] Dia 172 — __/__/____ — Revisão
-- [ ] Dia 173 — __/__/____ — Revisão
-- [ ] Dia 174 — __/__/____ — Revisão
-- [ ] Dia 175 — __/__/____ — tag v4.0
+## FASE 8 — TypeScript + React + Tailwind (Dias 154-178)
+- [ ] Dia 154 — __/__/____ — TypeScript basics
+- [ ] Dia 155 — __/__/____ — TypeScript advanced
+- [ ] Dia 156 — __/__/____ — Vite + React setup
+- [ ] Dia 157 — __/__/____ — Components + props
+- [ ] Dia 158 — __/__/____ — useState + useEffect
+- [ ] Dia 159 — __/__/____ — React Router
+- [ ] Dia 160 — __/__/____ — Axios + JWT
+- [ ] Dia 161 — __/__/____ — Tailwind CSS
+- [ ] Dia 162 — __/__/____ — Context API
+- [ ] Dia 163 — __/__/____ — Custom Hooks
+- [ ] Dia 164 — __/__/____ — Stay Hard Login
+- [ ] Dia 165 — __/__/____ — Stay Hard Dashboard
+- [ ] Dia 166 — __/__/____ — Stay Hard Habits
+- [ ] Dia 167 — __/__/____ — Stay Hard Profile
+- [ ] Dia 168 — __/__/____ — Dockerize React
+- [ ] Dia 169 — __/__/____ — Full stack
+- [ ] Dia 170 — __/__/____ — React Weather
+- [ ] Dia 171 — __/__/____ — React Todo
+- [ ] Dia 172 — __/__/____ — React Kanban
+- [ ] Dia 173 — __/__/____ — React Chat
+- [ ] Dia 174 — __/__/____ — React E-commerce
+- [ ] Dia 175 — __/__/____ — Revisão
+- [ ] Dia 176 — __/__/____ — Revisão
+- [ ] Dia 177 — __/__/____ — Revisão
+- [ ] Dia 178 — __/__/____ — tag v4.0
 
-## FASE 9 — SaaS + ERPs com IA + Portfolio (Dias 176-200)
-- [ ] Dia 176 — __/__/____ — Multi-tenancy
-- [ ] Dia 177 — __/__/____ — Tenant resolution
-- [ ] Dia 178 — __/__/____ — RBAC
-- [ ] Dia 179 — __/__/____ — Stripe billing
-- [ ] Dia 180 — __/__/____ — Stay Hard SaaS
-- [ ] Dia 181 — __/__/____ — MedTrack schema
-- [ ] Dia 182 — __/__/____ — MedTrack IA + RAG
-- [ ] Dia 183 — __/__/____ — MedTrack frontend
-- [ ] Dia 184 — __/__/____ — LegalMind schema
-- [ ] Dia 185 — __/__/____ — LegalMind IA + RAG
-- [ ] Dia 186 — __/__/____ — LegalMind frontend
-- [ ] Dia 187 — __/__/____ — BuildFlow schema
-- [ ] Dia 188 — __/__/____ — BuildFlow IA + RAG
-- [ ] Dia 189 — __/__/____ — BuildFlow frontend
-- [ ] Dia 190 — __/__/____ — TelecomPro schema
-- [ ] Dia 191 — __/__/____ — TelecomPro IA + RAG
-- [ ] Dia 192 — __/__/____ — TelecomPro frontend
-- [ ] Dia 193 — __/__/____ — Docker SaaS
-- [ ] Dia 194 — __/__/____ — Stay Hard SaaS full
-- [ ] Dia 195 — __/__/____ — Deploy
-- [ ] Dia 196 — __/__/____ — CI/CD SaaS
-- [ ] Dia 197 — __/__/____ — Portfolio READMEs
-- [ ] Dia 198 — __/__/____ — LinkedIn + GitHub
-- [ ] Dia 199 — __/__/____ — Revisão geral
-- [ ] Dia 200 — __/__/____ — 🏆 STAY HARD COMPLETE
+## FASE 9 — SaaS + ERPs com IA + DevOps + Portfolio (Dias 179-209)
+- [ ] Dia 179 — __/__/____ — Multi-tenancy
+- [ ] Dia 180 — __/__/____ — Tenant resolution
+- [ ] Dia 181 — __/__/____ — RBAC
+- [ ] Dia 182 — __/__/____ — Stripe billing
+- [ ] Dia 183 — __/__/____ — Stay Hard SaaS
+- [ ] Dia 184 — __/__/____ — MedTrack schema
+- [ ] Dia 185 — __/__/____ — MedTrack IA + RAG
+- [ ] Dia 186 — __/__/____ — MedTrack frontend
+- [ ] Dia 187 — __/__/____ — LegalMind schema
+- [ ] Dia 188 — __/__/____ — LegalMind IA + RAG
+- [ ] Dia 189 — __/__/____ — LegalMind frontend
+- [ ] Dia 190 — __/__/____ — BuildFlow schema
+- [ ] Dia 191 — __/__/____ — BuildFlow IA + RAG
+- [ ] Dia 192 — __/__/____ — BuildFlow frontend
+- [ ] Dia 193 — __/__/____ — TelecomPro schema
+- [ ] Dia 194 — __/__/____ — TelecomPro IA + RAG
+- [ ] Dia 195 — __/__/____ — TelecomPro frontend
+- [ ] Dia 196 — __/__/____ — Docker SaaS
+- [ ] Dia 197 — __/__/____ — Stay Hard SaaS full
+- [ ] Dia 198 — __/__/____ — Deploy
+- [ ] Dia 199 — __/__/____ — CI/CD SaaS
+- [ ] Dia 200 — __/__/____ — Portfolio READMEs
+- [ ] Dia 201 — __/__/____ — LinkedIn + GitHub
+- [ ] Dia 202 — __/__/____ — AWS básico
+- [ ] Dia 203 — __/__/____ — AWS EC2
+- [ ] Dia 204 — __/__/____ — AWS RDS
+- [ ] Dia 205 — __/__/____ — AWS S3 + ECS
+- [ ] Dia 206 — __/__/____ — SSL/HTTPS
+- [ ] Dia 207 — __/__/____ — Deploy completo
+- [ ] Dia 208 — __/__/____ — Revisão geral
+- [ ] Dia 209 — __/__/____ — 🏆 STAY HARD COMPLETE
 
 ## ESTATÍSTICAS
-- Dias completos: ___/200
+- Dias completos: ___/209
 - Fase atual: ___
 - Próximo dia: Dia ___

@@ -27,7 +27,7 @@ stay-hard-system/
 
 ---
 
-## 📚 Estudo (200 dias — 10 fases)
+## 📚 Estudo (209 dias — 10 fases)
 
 | Fase | Dias | Conteúdo | Docs |
 |------|------|----------|------|

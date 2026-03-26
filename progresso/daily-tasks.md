@@ -693,117 +693,145 @@
 - [ ] CORS configurado corretamente
 - 📝 Commit: "feat: frontend + Docker backend"
 
-### Dia 102 — Fase 5 — Revisão
+### Dia 102 — Fase 5 — Nginx Reverse Proxy
+- [ ] O que é reverse proxy (recebe request → encaminha para backend)
+- [ ] Nginx config (upstream, proxy_pass, location)
+- [ ] Serve static files (React build)
+- [ ] CORS headers no Nginx
+- 📝 Commit: "feat: Nginx reverse proxy"
+
+### Dia 103 — Fase 5 — Logging (SLF4J + Logback)
+- [ ] Log levels: ERROR, WARN, INFO, DEBUG, TRACE
+- [ ] SLF4J no Spring Boot (Logger, LoggerFactory)
+- [ ] Logging pattern no console e arquivo
+- [ ] application.properties logging config
+- [ ] Structured logging (JSON com LogstashEncoder)
+- 📝 Commit: "feat: structured logging"
+
+### Dia 104 — Fase 5 — Observabilidade
+- [ ] Spring Boot Actuator (health, metrics, info)
+- [ ] Correlation ID filter (X-Correlation-ID)
+- [ ] MDC (Mapped Diagnostic Context)
+- [ ] Monitorar /actuator/health e /actuator/metrics
+- 📝 Commit: "feat: observability + correlation IDs"
+
+### Dia 105 — Fase 5 — Revisão
 - [ ] Revisão geral Fase 5
-- [ ] Docker, Redis, CI/CD, System Design
+- [ ] Docker, Redis, CI/CD, System Design, Logging, Nginx
 - [ ] Git tag v5.0
-- [ ] Ler docs/06-fase6-microservices-k8s.md
+- [ ] Ler docs/06-fase5-ia-rag.md
 - 📝 Commit: "chore: v5.0 release"
 
 ---
 
-## FASE 6 — MongoDB + Microservices + Kafka + RabbitMQ (Dias 103-130)
+## FASE 6 — MongoDB + Microservices + Kafka + RabbitMQ (Dias 106-133)
 
-Dia 103: MongoDB concepts + Docker setup
-Dia 104: Spring Data MongoDB (@Document, MongoRepository)
-Dia 105: Stay Hard — MongoDB analytics/audit logs
-Dia 106: Microservices concepts (when, why, how)
-Dia 107: Eureka Server (Service Discovery)
-Dia 108: API Gateway (Spring Cloud Gateway)
-Dia 109: Feign inter-service communication
-Dia 110: Circuit Breaker (Resilience4j)
-Dia 111: Kafka concepts + Docker setup (topics, partitions)
-Dia 112: Spring Boot + Kafka Producer
-Dia 113: Spring Boot + Kafka Consumer
-Dia 114: Stay Hard — Kafka events
-Dia 115: RabbitMQ concepts + Docker setup
-Dia 116: RabbitMQ Producer (RabbitTemplate)
-Dia 117: RabbitMQ Consumer (@RabbitListener)
-Dia 118: RabbitMQ advanced (DLQ, ack, exchanges)
-Dia 119: Stay Hard — RabbitMQ notifications
-Dia 120: Stay Hard microservices (user, habit, analytics, notification services)
-Dia 121-125: Docker Compose for full microservices stack
-Dia 126-130: Revisão + tag v6.0
-
----
-
-## FASE 7 — IA + RAG + Spring AI (Dias 131-150)
-
-Dia 131: IA concepts (LLM, tokens, context window)
-Dia 132: Prompt Engineering
-Dia 133: OpenAI/Ollama setup
-Dia 134: Spring AI (ChatClient)
-Dia 135: RAG concepts (embeddings, vector DB, similarity)
-Dia 136: pgvector setup
-Dia 137: RAG pipeline completa
-Dia 138: Stay Hard — Coach IA
-Dia 139: Stay Hard — RAG Analytics
-Dia 140: Stay Hard — Smart Suggestions + Daily Summary
-Dia 141: Mini-projeto: Chat com PDF (RAG)
-Dia 142: Mini-projeto: Code Reviewer IA
-Dia 143: Mini-projeto: Document Q&A
-Dia 144: Mini-projeto: Recipe Suggester
-Dia 145: Mini-projeto: Sentiment Analyzer
-Dia 146-150: Revisão + tag v7.0
+Dia 106: MongoDB concepts + Docker setup
+Dia 107: Spring Data MongoDB (@Document, MongoRepository)
+Dia 108: Stay Hard — MongoDB analytics/audit logs
+Dia 109: Microservices concepts (when, why, how)
+Dia 110: Eureka Server (Service Discovery)
+Dia 111: API Gateway (Spring Cloud Gateway)
+Dia 112: Feign inter-service communication
+Dia 113: Circuit Breaker (Resilience4j)
+Dia 114: Kafka concepts + Docker setup (topics, partitions)
+Dia 115: Spring Boot + Kafka Producer
+Dia 116: Spring Boot + Kafka Consumer
+Dia 117: Stay Hard — Kafka events
+Dia 118: RabbitMQ concepts + Docker setup
+Dia 119: RabbitMQ Producer (RabbitTemplate)
+Dia 120: RabbitMQ Consumer (@RabbitListener)
+Dia 121: RabbitMQ advanced (DLQ, ack, exchanges)
+Dia 122: Stay Hard — RabbitMQ notifications
+Dia 123: Stay Hard microservices (user, habit, analytics, notification services)
+Dia 124-128: Docker Compose for full microservices stack
+Dia 129-133: Revisão + tag v6.0
 
 ---
 
-## FASE 8 — TypeScript + React + Tailwind (Dias 151-175)
+## FASE 7 — IA + RAG + Spring AI (Dias 134-153)
 
-Dia 151: TypeScript basics (types, interfaces)
-Dia 152: TypeScript advanced (generics, enums, unions)
-Dia 153: Vite + React project setup
-Dia 154: Components + props + TypeScript
-Dia 155: useState + useEffect
-Dia 156: React Router DOM v6
-Dia 157: Axios + JWT interceptors
-Dia 158: Tailwind CSS setup
-Dia 159: Context API (AuthContext)
-Dia 160: Custom Hooks (useAuth, useHabits)
-Dia 161: Stay Hard v4.0 — Login/Register pages
-Dia 162: Stay Hard v4.0 — Dashboard
-Dia 163: Stay Hard v4.0 — Habits CRUD page
-Dia 164: Stay Hard v4.0 — Profile + Stats
-Dia 165: Dockerize React frontend (Nginx)
-Dia 166: Full stack: React + Spring API + PostgreSQL + Redis
-Dia 167: Mini-projeto: React Weather
-Dia 168: Mini-projeto: React Todo
-Dia 169: Mini-projeto: React Kanban
-Dia 170: Mini-projeto: React Chat UI
-Dia 171: Mini-projeto: React E-commerce
-Dia 172-175: Revisão + tag v4.0
+Dia 134: IA concepts (LLM, tokens, context window)
+Dia 135: Prompt Engineering
+Dia 136: OpenAI/Ollama setup
+Dia 137: Spring AI (ChatClient)
+Dia 138: RAG concepts (embeddings, vector DB, similarity)
+Dia 139: pgvector setup
+Dia 140: RAG pipeline completa
+Dia 141: Stay Hard — Coach IA
+Dia 142: Stay Hard — RAG Analytics
+Dia 143: Stay Hard — Smart Suggestions + Daily Summary
+Dia 144: Mini-projeto: Chat com PDF (RAG)
+Dia 145: Mini-projeto: Code Reviewer IA
+Dia 146: Mini-projeto: Document Q&A
+Dia 147: Mini-projeto: Recipe Suggester
+Dia 148: Mini-projeto: Sentiment Analyzer
+Dia 149-153: Revisão + tag v7.0
 
 ---
 
-## FASE 9 — SaaS + ERPs com IA + Portfolio (Dias 176-200)
+## FASE 8 — TypeScript + React + Tailwind (Dias 154-178)
 
-Dia 176: Multi-tenancy
-Dia 177: Tenant resolution
-Dia 178: RBAC
-Dia 179: Stripe billing
-Dia 180: Stay Hard SaaS multi-tenant
-Dia 181: MedTrack AI — schema + CRUD
-Dia 182: MedTrack AI — triagem IA + RAG
-Dia 183: MedTrack AI — React frontend
-Dia 184: LegalMind AI — schema + CRUD
-Dia 185: LegalMind AI — contratos IA + RAG
-Dia 186: LegalMind AI — React frontend
-Dia 187: BuildFlow AI — schema + CRUD
-Dia 188: BuildFlow AI — custos IA + RAG
-Dia 189: BuildFlow AI — React frontend
-Dia 190: TelecomPro — schema + CRUD
-Dia 191: TelecomPro — churn IA + RAG
-Dia 192: TelecomPro — React frontend
-Dia 193: Docker Compose for SaaS (full stack)
-Dia 194: Stay Hard SaaS — full stack with IA
-Dia 195: Deploy (AWS/Railway)
-Dia 196: CI/CD for SaaS
-Dia 197: Portfolio READMEs
-Dia 198: LinkedIn + GitHub profile
-Dia 199: Revisão geral
-Dia 200: 🏆 STAY HARD — 200 dias completos
+Dia 154: TypeScript basics (types, interfaces)
+Dia 155: TypeScript advanced (generics, enums, unions)
+Dia 156: Vite + React project setup
+Dia 157: Components + props + TypeScript
+Dia 158: useState + useEffect
+Dia 159: React Router DOM v6
+Dia 160: Axios + JWT interceptors
+Dia 161: Tailwind CSS setup
+Dia 162: Context API (AuthContext)
+Dia 163: Custom Hooks (useAuth, useHabits)
+Dia 164: Stay Hard v4.0 — Login/Register pages
+Dia 165: Stay Hard v4.0 — Dashboard
+Dia 166: Stay Hard v4.0 — Habits CRUD page
+Dia 167: Stay Hard v4.0 — Profile + Stats
+Dia 168: Dockerize React frontend (Nginx)
+Dia 169: Full stack: React + Spring API + PostgreSQL + Redis
+Dia 170: Mini-projeto: React Weather
+Dia 171: Mini-projeto: React Todo
+Dia 172: Mini-projeto: React Kanban
+Dia 173: Mini-projeto: React Chat UI
+Dia 174: Mini-projeto: React E-commerce
+Dia 175-178: Revisão + tag v4.0
+
+---
+
+## FASE 9 — SaaS + ERPs com IA + Portfolio (Dias 179-209)
+
+Dia 179: Multi-tenancy
+Dia 180: Tenant resolution
+Dia 181: RBAC
+Dia 182: Stripe billing
+Dia 183: Stay Hard SaaS multi-tenant
+Dia 184: MedTrack AI — schema + CRUD
+Dia 185: MedTrack AI — triagem IA + RAG
+Dia 186: MedTrack AI — React frontend
+Dia 187: LegalMind AI — schema + CRUD
+Dia 188: LegalMind AI — contratos IA + RAG
+Dia 189: LegalMind AI — React frontend
+Dia 190: BuildFlow AI — schema + CRUD
+Dia 191: BuildFlow AI — custos IA + RAG
+Dia 192: BuildFlow AI — React frontend
+Dia 193: TelecomPro — schema + CRUD
+Dia 194: TelecomPro — churn IA + RAG
+Dia 195: TelecomPro — React frontend
+Dia 196: Docker Compose for SaaS (full stack)
+Dia 197: Stay Hard SaaS — full stack with IA
+Dia 198: Deploy (AWS/Railway)
+Dia 199: CI/CD for SaaS
+Dia 200: Portfolio READMEs
+Dia 201: LinkedIn + GitHub profile
+Dia 202: AWS básico (conceitos, IAM, console, regions)
+Dia 203: AWS EC2 (instância Linux, SSH, deploy Spring Boot no EC2)
+Dia 204: AWS RDS (PostgreSQL managed, conectar do Spring Boot)
+Dia 205: AWS S3 (storage de arquivos) + ECS/Beanstalk (deploy containers)
+Dia 206: SSL/HTTPS (Let's Encrypt, Certbot, Nginx SSL config)
+Dia 207: Deploy completo (Docker + Nginx + SSL + AWS end-to-end)
+Dia 208: Revisão geral
+Dia 209: 🏆 STAY HARD — 209 dias completos
 
 ---
 
 > *"Who's gonna carry the boats?!"* — David Goggins
-> **200 dias. 10 fases. De iniciante a Full-Stack. Stay Hard.**
+> **209 dias. 10 fases. De iniciante a Full-Stack. Stay Hard.**
