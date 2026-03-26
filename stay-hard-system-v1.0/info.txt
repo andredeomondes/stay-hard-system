@@ -1,1 +1,2 @@
-- Implementar SQlite
+- Implementar SQlite + JDBC
+- API sem Spring

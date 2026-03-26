@@ -27,25 +27,25 @@ stay-hard-system/
 
 ---
 
-## 📚 Estudo (150 dias)
+## 📚 Estudo (200 dias — 10 fases)
 
 | Fase | Dias | Conteúdo | Docs |
 |------|------|----------|------|
 | 0 | 1-10 | Maven, Git, JUnit, mini-projetos CLI | [docs/01-fase0-fundacao.md](docs/01-fase0-fundacao.md) |
-| 1 | 11-30 | PostgreSQL, Spring Boot, JPA | [docs/02-fase1-java-backend.md](docs/02-fase1-java-backend.md) |
-| 2 | 31-48 | REST API, JWT, Swagger | [docs/03-fase2-rest-api.md](docs/03-fase2-rest-api.md) |
-| 3 | 49-72 | JS, TypeScript, React | [docs/04-fase3-react-typescript.md](docs/04-fase3-react-typescript.md) |
-| 4 | 73-92 | Docker, Redis, System Design, CI/CD | [docs/05-fase4-docker-systemdesign.md](docs/05-fase4-docker-systemdesign.md) |
-| 5 | 93-120 | MongoDB, Microservices, Kafka, RabbitMQ, IA, RAG | [docs/06-fase5-ia-rag.md](docs/06-fase5-ia-rag.md) |
-| 6 | 121-150 | SaaS, ERPs com IA, Portfolio | [docs/08-saas-erp-ia.md](docs/08-saas-erp-ia.md) |
+| 1 | 11-20 | SQLite, JDBC, API sem Spring | [docs/00-sqlite-jdbc-api.md](docs/00-sqlite-jdbc-api.md) |
+| 2 | 21-40 | HTML, CSS, JavaScript | [docs/02-fase1-java-backend.md](docs/02-fase1-java-backend.md) |
+| 3 | 41-60 | Spring Boot, PostgreSQL, JPA, Redis | [docs/02-fase1-java-backend.md](docs/02-fase1-java-backend.md) |
+| 4 | 61-80 | REST API, JWT, Swagger | [docs/03-fase2-rest-api.md](docs/03-fase2-rest-api.md) |
+| 5 | 81-102 | Docker, Redis, System Design, CI/CD | [docs/05-fase4-docker-systemdesign.md](docs/05-fase4-docker-systemdesign.md) |
+| 6 | 103-130 | MongoDB, Microservices, Kafka, RabbitMQ | [docs/06-fase5-ia-rag.md](docs/06-fase5-ia-rag.md) |
+| 7 | 131-150 | IA, RAG, Spring AI | [docs/06-fase5-ia-rag.md](docs/06-fase5-ia-rag.md) |
+| 8 | 151-175 | TypeScript, React, Tailwind | [docs/04-fase3-react-typescript.md](docs/04-fase3-react-typescript.md) |
+| 9 | 176-200 | SaaS, ERPs com IA, Portfolio | [docs/08-saas-erp-ia.md](docs/08-saas-erp-ia.md) |
 
 ### Materiais extras
-- [Redis](docs/07-redis.md)
-- [RabbitMQ](docs/09-rabbitmq.md)
-- [Roadmap completo](ROADMAP.md)
-- [Checklist gamificado](progresso/checklist.md)
-- [Daily tasks (150 dias)](progresso/daily-tasks.md)
-- [Daily log](progresso/daily-log.md)
+- [Redis](docs/07-redis.md) | [RabbitMQ](docs/09-rabbitmq.md)
+- [Roadmap completo](ROADMAP.md) | [Checklist](progresso/checklist.md)
+- [Daily tasks (200 dias)](progresso/daily-tasks.md) | [Daily log](progresso/daily-log.md)
 
 ---
 
@@ -91,14 +91,16 @@ docker-compose up -d
 |---------|-------|
 | [Calculadora CLI](mini-projetos/calculadora-cli/) | Java |
 | [Validador CPF](mini-projetos/validador-cpf/) | Java + JUnit |
+| [API SQLite JDBC](mini-projetos/api-sqlite-jdbc/) | Java + SQLite + JDBC |
+| [Todo List Web](mini-projetos/todo-list-web/) | HTML + CSS + JS |
+| [Weather App](mini-projetos/weather-app/) | HTML + CSS + JS + API |
 | [CRUD Produtos](mini-projetos/crud-produtos/) | Spring Boot |
 | [Auth API JWT](mini-projetos/auth-api-jwt/) | Spring Boot + JWT |
-| [React Weather](mini-projetos/react-weather/) | React + TS |
-| [React Kanban](mini-projetos/react-kanban/) | React + TS |
-| [Docker Spring Boot](mini-projetos/docker-spring-boot/) | Docker |
-| [Redis Cache](mini-projetos/redis-cache-demo/) | Spring Boot + Redis |
+| [Redis Cache Demo](mini-projetos/redis-cache-demo/) | Spring Boot + Redis |
 | [Rate Limiter](mini-projetos/rate-limiter/) | Spring Boot + Redis |
-| [E mais...](mini-projetos/) | 22 projetos no total |
+| [Docker Spring Boot](mini-projetos/docker-spring-boot/) | Docker |
+| [React Kanban](mini-projetos/react-kanban/) | React + TS |
+| [E mais...](mini-projetos/) | 22+ projetos no total |
 
 ---
 
