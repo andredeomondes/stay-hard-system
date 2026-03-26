@@ -726,110 +726,818 @@
 
 ## FASE 6 — MongoDB + Microservices + Kafka + RabbitMQ (Dias 106-133)
 
-Dia 106: MongoDB concepts + Docker setup
-Dia 107: Spring Data MongoDB (@Document, MongoRepository)
-Dia 108: Stay Hard — MongoDB analytics/audit logs
-Dia 109: Microservices concepts (when, why, how)
-Dia 110: Eureka Server (Service Discovery)
-Dia 111: API Gateway (Spring Cloud Gateway)
-Dia 112: Feign inter-service communication
-Dia 113: Circuit Breaker (Resilience4j)
-Dia 114: Kafka concepts + Docker setup (topics, partitions)
-Dia 115: Spring Boot + Kafka Producer
-Dia 116: Spring Boot + Kafka Consumer
-Dia 117: Stay Hard — Kafka events
-Dia 118: RabbitMQ concepts + Docker setup
-Dia 119: RabbitMQ Producer (RabbitTemplate)
-Dia 120: RabbitMQ Consumer (@RabbitListener)
-Dia 121: RabbitMQ advanced (DLQ, ack, exchanges)
-Dia 122: Stay Hard — RabbitMQ notifications
-Dia 123: Stay Hard microservices (user, habit, analytics, notification services)
-Dia 124-128: Docker Compose for full microservices stack
-Dia 129-133: Revisão + tag v6.0
+### Dia 106 — Fase 6 — MongoDB Setup
+- [ ] O que é MongoDB (documents, collections, NoSQL)
+- [ ] MongoDB via Docker (docker-compose com mongo + mongo-express)
+- [ ] CRUD básico no mongo shell (insertOne, find, updateOne, deleteOne)
+- [ ] Mongo Express UI: http://localhost:8081
+- 📝 Commit: "feat: MongoDB Docker setup"
+
+### Dia 107 — Fase 6 — Spring Data MongoDB
+- [ ] spring-boot-starter-data-mongodb
+- [ ] @Document annotation (AuditLog, AnalyticsEvent)
+- [ ] MongoRepository<AuditLog, String>
+- [ ] application.properties com MongoDB URI
+- [ ] Testar save e findAll
+- 📝 Commit: "feat: Spring Data MongoDB"
+
+### Dia 108 — Fase 6 — Stay Hard MongoDB
+- [ ] AuditLog entity (userId, action, timestamp, details)
+- [ ] AuditLogRepository com MongoRepository
+- [ ] Salvar log quando hábito é completado
+- [ ] Salvar log quando dia é finalizado
+- [ ] Buscar logs por userId e por período
+- 📝 Commit: "feat: Stay Hard MongoDB analytics"
+
+### Dia 109 — Fase 6 — Microservices Concepts
+- [ ] O que são microservices (independentes, deploy separado)
+- [ ] Quando usar vs monólito (complexidade, escala, equipe)
+- [ ] Desafios: comunicação, dados, deploy, debugging
+- [ ] Padrões: API Gateway, Service Discovery, Circuit Breaker
+- 📝 Commit: "study: Microservices concepts"
+
+### Dia 110 — Fase 6 — Eureka Server
+- [ ] Spring Cloud Eureka Server (Service Discovery)
+- [ ] Criar projeto eureka-server
+- [ ] @EnableEurekaServer
+- [ ] Services se registram automaticamente
+- [ ] Eureka Dashboard: http://localhost:8761
+- 📝 Commit: "feat: Eureka Service Discovery"
+
+### Dia 111 — Fase 6 — API Gateway
+- [ ] Spring Cloud Gateway
+- [ ] Routing: /api/users/** → user-service
+- [ ] Routing: /api/habits/** → habit-service
+- [ ] Filters (add header, rate limit, logging)
+- [ ] Gateway roda na porta 8080
+- 📝 Commit: "feat: API Gateway"
+
+### Dia 112 — Fase 6 — Feign Client
+- [ ] OpenFeign para comunicação entre services
+- [ ] @FeignClient(name = "user-service")
+- [ ] Chamar user-service do habit-service via Feign
+- [ ] Load balancing automático (Ribbon)
+- [ ] Tratar erros de comunicação
+- 📝 Commit: "feat: Feign inter-service communication"
+
+### Dia 113 — Fase 6 — Circuit Breaker
+- [ ] Resilience4j dependency
+- [ ] @CircuitBreaker annotation
+- [ ] Fallback method (resposta alternativa quando service cai)
+- [ ] @Retry para tentar novamente
+- [ ] Configuração (failure rate, wait duration)
+- 📝 Commit: "feat: Circuit Breaker with Resilience4j"
+
+### Dia 114 — Fase 6 — Kafka Concepts + Setup
+- [ ] O que é Kafka (event streaming, distributed log)
+- [ ] Concepts: Topic, Partition, Consumer Group, Offset
+- [ ] Kafka vs RabbitMQ (quando usar cada)
+- [ ] Kafka via Docker (docker-compose com Zookeeper + Kafka + Kafka UI)
+- [ ] Kafka UI: http://localhost:8090
+- 📝 Commit: "study: Kafka concepts + Docker setup"
+
+### Dia 115 — Fase 6 — Kafka Producer
+- [ ] spring-kafka dependency
+- [ ] KafkaTemplate<String, String>
+- [ ] Criar topic (stay-hard-events)
+- [ ] Enviar mensagem: habit.completed
+- [ ] Enviar mensagem como JSON
+- 📝 Commit: "feat: Kafka Producer"
+
+### Dia 116 — Fase 6 — Kafka Consumer
+- [ ] @KafkaListener(topics = "stay-hard-events")
+- [ ] Consumer group configuration
+- [ ] Deserializar JSON messages
+- [ ] Processar mensagem recebida
+- [ ] Testar Producer → Consumer flow
+- 📝 Commit: "feat: Kafka Consumer"
+
+### Dia 117 — Fase 6 — Stay Hard Kafka Events
+- [ ] Event: habit.completed → topic stay-hard-events
+- [ ] Event: day.finished → topic stay-hard-events
+- [ ] Analytics service consome events e salva no MongoDB
+- [ ] Notification service consome events
+- [ ] Testar fluxo completo
+- 📝 Commit: "feat: Stay Hard Kafka events"
+
+### Dia 118 — Fase 6 — RabbitMQ Concepts + Setup
+- [ ] O que é RabbitMQ (message broker, AMQP protocol)
+- [ ] Concepts: Producer, Consumer, Queue, Exchange, Binding, Routing Key
+- [ ] Exchange types: Direct, Fanout, Topic
+- [ ] RabbitMQ via Docker (port 5672 + management UI 15672)
+- [ ] Management UI: http://localhost:15672 (guest/guest)
+- 📝 Commit: "study: RabbitMQ concepts + Docker setup"
+
+### Dia 119 — Fase 6 — RabbitMQ Producer
+- [ ] spring-boot-starter-amqp dependency
+- [ ] RabbitMQConfig (Queue, Exchange, Binding beans)
+- [ ] TopicExchange "stay-hard.exchange"
+- [ ] Queue "habit.completed.queue"
+- [ ] RabbitTemplate para enviar mensagens
+- 📝 Commit: "feat: RabbitMQ Producer"
+
+### Dia 120 — Fase 6 — RabbitMQ Consumer
+- [ ] @RabbitListener(queues = "habit.completed.queue")
+- [ ] Receber Map<String, Object> message
+- [ ] Processar: enviar notificação
+- [ ] Testar Producer → Consumer flow
+- [ ] Verificar mensagem no Management UI
+- 📝 Commit: "feat: RabbitMQ Consumer"
+
+### Dia 121 — Fase 6 — RabbitMQ Advanced
+- [ ] Dead Letter Queues (DLQ) para mensagens que falham
+- [ ] Manual acknowledgment (channel.basicAck, basicNack)
+- [ ] Message retry (rejeita e recoloca na fila)
+- [ ] Topic Exchange com routing keys (habit.#, notification.*)
+- 📝 Commit: "feat: RabbitMQ advanced (DLQ, ack)"
+
+### Dia 122 — Fase 6 — Stay Hard RabbitMQ
+- [ ] Event: habit completed → RabbitMQ exchange
+- [ ] Notification service consome via @RabbitListener
+- [ ] Async email/push notification (simulado)
+- [ ] DLQ para mensagens que falham após 3 tentativas
+- [ ] Kafka + RabbitMQ coexistindo (Kafka analytics, RabbitMQ notifications)
+- 📝 Commit: "feat: Stay Hard RabbitMQ notifications"
+
+### Dia 123 — Fase 6 — Stay Hard Microservices Architecture
+- [ ] Definir serviços: user-service, habit-service, analytics-service, notification-service
+- [ ] Eureka Server para discovery
+- [ ] API Gateway para routing
+- [ ] Comunicação via Feign
+- [ ] Diagrama de arquitetura
+- 📝 Commit: "feat: Stay Hard microservices architecture"
+
+### Dia 124 — Fase 6 — Docker Compose Microservices (Parte 1)
+- [ ] docker-compose.yml com postgres + mongo + redis + rabbitmq + kafka
+- [ ] Dockerfile para cada microservice
+- [ ] Health checks para cada service
+- [ ] Networks separadas (backend, messaging)
+- 📝 Commit: "feat: Docker Compose microservices (infra)"
+
+### Dia 125 — Fase 6 — Docker Compose Microservices (Parte 2)
+- [ ] Adicionar eureka-server ao docker-compose
+- [ ] Adicionar api-gateway ao docker-compose
+- [ ] Adicionar user-service e habit-service
+- [ ] Configurar depends_on com health checks
+- [ ] Testar: docker-compose up
+- 📝 Commit: "feat: Docker Compose microservices (services)"
+
+### Dia 126 — Fase 6 — Docker Compose Microservices (Parte 3)
+- [ ] Adicionar analytics-service (MongoDB consumer)
+- [ ] Adicionar notification-service (RabbitMQ consumer)
+- [ ] Adicionar Kafka + Zookeeper
+- [ ] Testar fluxo completo: user → habit → Kafka → analytics
+- [ ] Testar fluxo: habit → RabbitMQ → notification
+- 📝 Commit: "feat: Docker Compose microservices (complete)"
+
+### Dia 127 — Fase 6 — Microservices Testing
+- [ ] Testes de integração entre services
+- [ ] Testar com @SpringBootTest + MockMvc
+- [ ] Testcontainers para MongoDB + PostgreSQL
+- [ ] Testar circuit breaker (mock service down)
+- 📝 Commit: "test: Microservices integration tests"
+
+### Dia 128 — Fase 6 — Microservices Logging
+- [ ] Correlation ID passando entre services
+- [ ] Structured logging em cada service
+- [ ] Centralizar logs (ELK stack conceito)
+- [ ] Actuator health checks em cada service
+- 📝 Commit: "feat: Microservices logging + correlation"
+
+### Dia 129 — Fase 6 — Revisão Microservices
+- [ ] Revisão: microservices, Kafka, RabbitMQ
+- [ ] Consegue desenhar arquitetura completa?
+- [ ] Todos services se comunicando?
+- [ ] docker-compose up funciona?
+- 📝 Commit: "chore: Microservices review"
+
+### Dia 130 — Fase 6 — Revisão Mensageria
+- [ ] Revisão: Kafka (event streaming) vs RabbitMQ (message queue)
+- [ ] Quando usar cada um?
+- [ ] Stay Hard: Kafka para analytics, RabbitMQ para notificações
+- [ ] Testar cenários de falha (service down, retry, DLQ)
+- 📝 Commit: "chore: Messaging review"
+
+### Dia 131 — Fase 6 — Revisão MongoDB
+- [ ] Revisão: MongoDB, documents, collections
+- [ ] Spring Data MongoDB queries
+- [ ] Aggregation pipeline básico
+- [ ] MongoDB vs PostgreSQL (quando usar cada)
+- 📝 Commit: "chore: MongoDB review"
+
+### Dia 132 — Fase 6 — Revisão Geral Fase 6
+- [ ] Revisão geral: MongoDB, Microservices, Kafka, RabbitMQ
+- [ ] Checklist da Fase 6 completo?
+- [ ] Documentar aprendizados
+- 📝 Commit: "chore: Phase 6 review"
+
+### Dia 133 — Fase 6 — Tag v6.0
+- [ ] Todos testes passando?
+- [ ] docker-compose.yml completo?
+- [ ] Git tag v6.0
+- [ ] Ler docs/06-fase5-ia-rag.md
+- 📝 Commit: "chore: v6.0 release"
 
 ---
 
 ## FASE 7 — IA + RAG + Spring AI (Dias 134-153)
 
-Dia 134: IA concepts (LLM, tokens, context window)
-Dia 135: Prompt Engineering
-Dia 136: OpenAI/Ollama setup
-Dia 137: Spring AI (ChatClient)
-Dia 138: RAG concepts (embeddings, vector DB, similarity)
-Dia 139: pgvector setup
-Dia 140: RAG pipeline completa
-Dia 141: Stay Hard — Coach IA
-Dia 142: Stay Hard — RAG Analytics
-Dia 143: Stay Hard — Smart Suggestions + Daily Summary
-Dia 144: Mini-projeto: Chat com PDF (RAG)
-Dia 145: Mini-projeto: Code Reviewer IA
-Dia 146: Mini-projeto: Document Q&A
-Dia 147: Mini-projeto: Recipe Suggester
-Dia 148: Mini-projeto: Sentiment Analyzer
-Dia 149-153: Revisão + tag v7.0
+### Dia 134 — Fase 7 — IA Concepts
+- [ ] O que é LLM (Large Language Model)
+- [ ] Tokens, context window, temperature
+- [ ] Modelos: GPT-4, Claude, Gemini, Llama
+- [ ] Quando usar IA em aplicações
+- 📝 Commit: "study: IA/LLM concepts"
+
+### Dia 135 — Fase 7 — Prompt Engineering
+- [ ] System prompt vs User prompt
+- [ ] Few-shot learning (dar exemplos na prompt)
+- [ ] Chain of thought (passo a passo)
+- [ ] Structured output (pedir JSON na resposta)
+- [ ] Prática: criar prompts para diferentes cenários
+- 📝 Commit: "study: Prompt Engineering"
+
+### Dia 136 — Fase 7 — OpenAI/Ollama Setup
+- [ ] Criar conta OpenAI + API key (ou instalar Ollama local)
+- [ ] Testar API com curl/Postman
+- [ ] POST /v1/chat/completions
+- [ ] Gerar primeira resposta com prompt
+- [ ] Entender billing e rate limits
+- 📝 Commit: "feat: OpenAI/Ollama setup"
+
+### Dia 137 — Fase 7 — Spring AI
+- [ ] spring-ai-openai-spring-boot-starter dependency
+- [ ] ChatClient (enviar prompt e receber resposta)
+- [ ] application.properties com API key
+- [ ] Testar: service que chama OpenAI e retorna resposta
+- [ ] System prompt configurado
+- 📝 Commit: "feat: Spring AI setup"
+
+### Dia 138 — Fase 7 — RAG Concepts
+- [ ] O que é RAG (Retrieval Augmented Generation)
+- [ ] Embeddings (converter texto em vetor numérico)
+- [ ] Vector databases (pgvector, ChromaDB, Pinecone)
+- [ ] Similarity search (cosine distance)
+- [ ] Chunking strategies (dividir documentos em pedaços)
+- [ ] RAG pipeline: ingest → chunk → embed → store → query → search → answer
+- 📝 Commit: "study: RAG concepts"
+
+### Dia 139 — Fase 7 — pgvector Setup
+- [ ] pgvector extension no PostgreSQL
+- [ ] CREATE EXTENSION vector
+- [ ] Criar tabela com coluna vector(1536)
+- [ ] Inserir embeddings manualmente
+- [ ] Busca por similaridade: ORDER BY embedding <=> query_vector
+- [ ] Testar: buscar documentos similares
+- 📝 Commit: "feat: pgvector setup"
+
+### Dia 140 — Fase 7 — RAG Pipeline Completa
+- [ ] Ingestão: ler documentos (textos, PDFs)
+- [ ] Chunking: dividir em pedaços de 500 tokens
+- [ ] Embedding: gerar vetores com OpenAI ada-002
+- [ ] Storage: salvar no pgvector
+- [ ] Query: embed pergunta → buscar similares → montar contexto
+- [ ] Answer: enviar [contexto + pergunta] → LLM → resposta
+- 📝 Commit: "feat: RAG pipeline completa"
+
+### Dia 141 — Fase 7 — Stay Hard Coach IA
+- [ ] POST /api/ai/chat endpoint
+- [ ] System prompt: "Você é um coach de hábitos motivacional"
+- [ ] Contexto: stats do usuário (streak, nível, hábitos)
+- [ ] IA responde baseado nos dados do usuário
+- [ ] ChatRequest e ChatResponse DTOs
+- 📝 Commit: "feat: Stay Hard Coach IA"
+
+### Dia 142 — Fase 7 — Stay Hard RAG Analytics
+- [ ] "Como estão meus hábitos esta semana?"
+- [ ] Buscar dados do usuário no MongoDB
+- [ ] Embedding dos dados → pgvector
+- [ ] RAG: buscar chunks relevantes → LLM gera análise
+- [ ] GET /api/ai/analytics/{userId}
+- 📝 Commit: "feat: Stay Hard RAG Analytics"
+
+### Dia 143 — Fase 7 — Stay Hard Smart Suggestions
+- [ ] IA analisa padrões de hábitos do usuário
+- [ ] Sugere novos hábitos baseado no histórico
+- [ ] "Você completou 90% dos HIGH. Que tal adicionar Meditação?"
+- [ ] POST /api/ai/suggest-habit/{userId}
+- [ ] Daily summary motivacional (GET /api/ai/daily-summary/{userId})
+- 📝 Commit: "feat: Smart Suggestions + Daily Summary"
+
+### Dia 144 — Fase 7 — Mini: Chat com PDF
+- [ ] Criar mini-projetos/chat-pdf-rag/
+- [ ] Upload de PDF
+- [ ] Chunking do PDF em pedaços
+- [ ] Gerar embeddings e salvar no pgvector
+- [ ] Usuário pergunta sobre o PDF → RAG → resposta
+- [ ] Spring Boot + OpenAI + pgvector
+- 📝 Commit: "feat: Chat com PDF (RAG)"
+
+### Dia 145 — Fase 7 — Mini: Code Reviewer IA
+- [ ] Criar mini-projetos/code-reviewer-ia/
+- [ ] Usuário envia código via API
+- [ ] System prompt: "Você é um code reviewer sênior"
+- [ ] IA analisa e retorna: bugs, melhorias, security issues
+- [ ] Spring Boot + OpenAI
+- 📝 Commit: "feat: Code Reviewer IA"
+
+### Dia 146 — Fase 7 — Mini: Document Q&A
+- [ ] Criar mini-projetos/document-qa/
+- [ ] Upload de documentos (texto)
+- [ ] Indexar com embeddings no pgvector
+- [ ] Busca por similaridade
+- [ ] IA responde baseado no contexto encontrado
+- 📝 Commit: "feat: Document Q&A"
+
+### Dia 147 — Fase 7 — Mini: Recipe Suggester
+- [ ] Criar mini-projetos/recipe-suggester/
+- [ ] Usuário informa ingredientes disponíveis
+- [ ] IA sugere receitas com esses ingredientes
+- [ ] Spring Boot + OpenAI
+- [ ] Structured output (JSON com receitas)
+- 📝 Commit: "feat: Recipe Suggester IA"
+
+### Dia 148 — Fase 7 — Mini: Sentiment Analyzer
+- [ ] Criar mini-projetos/sentiment-analyzer/
+- [ ] Usuário envia texto
+- [ ] IA analisa sentimento (positivo, negativo, neutro)
+- [ ] Retorna score e explicação
+- [ ] Spring Boot + OpenAI
+- 📝 Commit: "feat: Sentiment Analyzer"
+
+### Dia 149 — Fase 7 — Revisão IA
+- [ ] Revisão: LLM, prompts, embeddings, RAG
+- [ ] Consegue criar pipeline RAG do zero?
+- [ ] Spring AI configurado e funcionando?
+- [ ] Stay Hard Coach IA respondendo?
+- 📝 Commit: "chore: IA review"
+
+### Dia 150 — Fase 7 — Revisão RAG
+- [ ] Revisão: pgvector, similarity search, chunking
+- [ ] Mini-projetos de IA funcionando?
+- [ ] Entende quando usar RAG vs prompt simples?
+- 📝 Commit: "chore: RAG review"
+
+### Dia 151 — Fase 7 — Revisão Spring AI
+- [ ] Revisão: Spring AI, ChatClient, configurações
+- [ ] Stay Hard com IA funcional?
+- [ ] Testes com mocks para IA?
+- 📝 Commit: "chore: Spring AI review"
+
+### Dia 152 — Fase 7 — Revisão Geral Fase 7
+- [ ] Revisão geral: IA, RAG, Spring AI
+- [ ] Checklist da Fase 7 completo?
+- [ ] Documentar aprendizados
+- 📝 Commit: "chore: Phase 7 review"
+
+### Dia 153 — Fase 7 — Tag v7.0
+- [ ] Todos mini-projetos de IA funcionando?
+- [ ] Stay Hard com Coach IA + RAG Analytics?
+- [ ] Git tag v7.0
+- [ ] Ler docs/04-fase3-react-typescript.md
+- 📝 Commit: "chore: v7.0 release"
 
 ---
 
 ## FASE 8 — TypeScript + React + Tailwind (Dias 154-178)
 
-Dia 154: TypeScript basics (types, interfaces)
-Dia 155: TypeScript advanced (generics, enums, unions)
-Dia 156: Vite + React project setup
-Dia 157: Components + props + TypeScript
-Dia 158: useState + useEffect
-Dia 159: React Router DOM v6
-Dia 160: Axios + JWT interceptors
-Dia 161: Tailwind CSS setup
-Dia 162: Context API (AuthContext)
-Dia 163: Custom Hooks (useAuth, useHabits)
-Dia 164: Stay Hard v4.0 — Login/Register pages
-Dia 165: Stay Hard v4.0 — Dashboard
-Dia 166: Stay Hard v4.0 — Habits CRUD page
-Dia 167: Stay Hard v4.0 — Profile + Stats
-Dia 168: Dockerize React frontend (Nginx)
-Dia 169: Full stack: React + Spring API + PostgreSQL + Redis
-Dia 170: Mini-projeto: React Weather
-Dia 171: Mini-projeto: React Todo
-Dia 172: Mini-projeto: React Kanban
-Dia 173: Mini-projeto: React Chat UI
-Dia 174: Mini-projeto: React E-commerce
-Dia 175-178: Revisão + tag v4.0
+### Dia 154 — Fase 8 — TypeScript Basics
+- [ ] Tipos: string, number, boolean, array, tuple
+- [ ] Interfaces (definir forma de objetos)
+- [ ] Type aliases (type Name = string)
+- [ ] Optional properties (?)
+- [ ] tsconfig.json configuração
+- 📝 Commit: "study: TypeScript basics"
+
+### Dia 155 — Fase 8 — TypeScript Advanced
+- [ ] Generics (<T>)
+- [ ] Enums
+- [ ] Union types (string | number)
+- [ ] Type narrowing (typeof, instanceof)
+- [ ] Utility types (Partial, Pick, Omit)
+- 📝 Commit: "study: TypeScript advanced"
+
+### Dia 156 — Fase 8 — Vite + React Setup
+- [ ] npm create vite@latest (React + TypeScript template)
+- [ ] npm install + npm run dev
+- [ ] Estrutura do projeto (src, public, index.html)
+- [ ] tsconfig.json + vite.config.ts
+- [ ] Primeiro componente App.tsx
+- 📝 Commit: "feat: React + TS project init"
+
+### Dia 157 — Fase 8 — Components + Props
+- [ ] Componentes funcionais com TypeScript
+- [ ] Props com interfaces (interface HabitCardProps)
+- [ ] Renderização condicional (&&, ternário)
+- [ ] Listas com .map() e key
+- [ ] Children prop
+- 📝 Commit: "study: React components + props"
+
+### Dia 158 — Fase 8 — Hooks
+- [ ] useState (estado local com tipos)
+- [ ] useEffect (efeitos colaterais, cleanup)
+- [ ] Ciclo de vida: mount, update, unmount
+- [ ] useMemo, useCallback (performance)
+- 📝 Commit: "study: React hooks"
+
+### Dia 159 — Fase 8 — React Router
+- [ ] react-router-dom v6
+- [ ] BrowserRouter, Routes, Route
+- [ ] Link, useNavigate, useParams
+- [ ] Nested routes
+- [ ] Protected routes (redirect se não autenticado)
+- 📝 Commit: "feat: React Router setup"
+
+### Dia 160 — Fase 8 — Axios + JWT
+- [ ] Instalar axios
+- [ ] Criar api.ts (baseURL configurado)
+- [ ] Request interceptor: adicionar Bearer token do localStorage
+- [ ] Response interceptor: 401 → redirect /login
+- [ ] Tipar responses com TypeScript interfaces
+- 📝 Commit: "feat: Axios + JWT interceptors"
+
+### Dia 161 — Fase 8 — Tailwind CSS
+- [ ] Instalar Tailwind CSS (npm install tailwindcss)
+- [ ] Configurar tailwind.config.js
+- [ ] PostCSS config
+- [ ] Utilitários: flex, grid, spacing, colors, typography
+- [ ] Responsive: sm:, md:, lg:
+- 📝 Commit: "feat: Tailwind CSS setup"
+
+### Dia 162 — Fase 8 — Context API
+- [ ] createContext para autenticação
+- [ ] AuthContext com user, token, login, logout
+- [ ] AuthProvider no App.tsx
+- [ ] useContext para consumir
+- [ ] Tipar context com TypeScript
+- 📝 Commit: "feat: AuthContext"
+
+### Dia 163 — Fase 8 — Custom Hooks
+- [ ] useAuth() — consumir AuthContext
+- [ ] useHabits() — CRUD de hábitos via API
+- [ ] useFetch() — hook genérico para requisições
+- [ ] useLocalStorage() — persistir estado no localStorage
+- [ ] Tipar hooks com TypeScript generics
+- 📝 Commit: "feat: custom hooks"
+
+### Dia 164 — Fase 8 — Stay Hard Login/Register
+- [ ] Login.tsx (formulário com email + senha)
+- [ ] Register.tsx (formulário com nome + email + senha)
+- [ ] Chamar API (POST /api/auth/login, /api/auth/register)
+- [ ] Salvar JWT no localStorage após login
+- [ ] Redirecionar para Dashboard após login
+- [ ] ProtectedRoute.tsx (bloqueia acesso sem token)
+- 📝 Commit: "feat: Stay Hard Login/Register pages"
+
+### Dia 165 — Fase 8 — Stay Hard Dashboard
+- [ ] Dashboard.tsx (página principal após login)
+- [ ] LevelBadge.tsx (visual do nível atual)
+- [ ] StreakCounter.tsx (streak atual + maior streak)
+- [ ] StatsChart.tsx (gráfico de progresso com Recharts)
+- [ ] Dados vindos da API (GET /api/users/me/stats)
+- [ ] Design responsivo com Tailwind
+- 📝 Commit: "feat: Stay Hard Dashboard"
+
+### Dia 166 — Fase 8 — Stay Hard Habits CRUD
+- [ ] Habits.tsx (página de hábitos)
+- [ ] HabitCard.tsx (visual de cada hábito: nome, prioridade, status)
+- [ ] Criar hábito (formulário modal)
+- [ ] Iniciar/Completar hábito (botões)
+- [ ] Editar hábito (formulário modal)
+- [ ] Deletar hábito (confirmação)
+- [ ] Finish Day button (chama POST /api/daily/finish)
+- 📝 Commit: "feat: Stay Hard Habits CRUD page"
+
+### Dia 167 — Fase 8 — Stay Hard Profile
+- [ ] Profile.tsx (dados do usuário)
+- [ ] Estatísticas: dias completos, falhos, streak, nível
+- [ ] Histórico de dias (success/fail)
+- [ ] Gráfico de progresso (Recharts line chart)
+- [ ] Logout button
+- 📝 Commit: "feat: Stay Hard Profile page"
+
+### Dia 168 — Fase 8 — Dockerize React
+- [ ] Dockerfile multi-stage (Node build → Nginx serve)
+- [ ] nginx.conf (try_files para SPA, proxy_pass para /api)
+- [ ] Build: docker build -t stay-hard-frontend .
+- [ ] Run: docker run -p 3000:80 stay-hard-frontend
+- [ ] Adicionar ao docker-compose.yml
+- 📝 Commit: "feat: Dockerize React frontend"
+
+### Dia 169 — Fase 8 — Full Stack Integration
+- [ ] React frontend + Spring Boot API + PostgreSQL + Redis
+- [ ] docker-compose.yml com tudo (postgres, redis, api, frontend)
+- [ ] Nginx reverse proxy configurado
+- [ ] CORS configurado no backend
+- [ ] Testar fluxo completo: login → criar hábito → completar → finalizar dia
+- 📝 Commit: "feat: Full stack integration"
+
+### Dia 170 — Fase 8 — Mini: React Weather
+- [ ] Criar mini-projetos/react-weather/
+- [ ] React + TypeScript + Tailwind
+- [ ] Buscar cidade e mostrar clima
+- [ ] Consumir API pública (OpenWeatherMap)
+- [ ] useState, useEffect, fetch
+- 📝 Commit: "feat: React Weather App"
+
+### Dia 171 — Fase 8 — Mini: React Todo
+- [ ] Criar mini-projetos/react-todo/
+- [ ] React + TypeScript + Tailwind
+- [ ] CRUD de tarefas no frontend
+- [ ] LocalStorage persistence
+- [ ] Filtro (todas, ativas, concluídas)
+- 📝 Commit: "feat: React Todo List"
+
+### Dia 172 — Fase 8 — Mini: React Kanban
+- [ ] Criar mini-projetos/react-kanban/
+- [ ] React + TypeScript + Tailwind
+- [ ] Board com colunas (To Do, In Progress, Done)
+- [ ] Drag and drop básico (HTML5 API ou library)
+- 📝 Commit: "feat: React Kanban Board"
+
+### Dia 173 — Fase 8 — Mini: React Chat UI
+- [ ] Criar mini-projetos/react-chat/
+- [ ] React + TypeScript + Tailwind
+- [ ] Interface de chat (messages list + input)
+- [ ] WebSocket intro (simular com setInterval)
+- 📝 Commit: "feat: React Chat UI"
+
+### Dia 174 — Fase 8 — Mini: React E-commerce
+- [ ] Criar mini-projetos/react-ecommerce/
+- [ ] React + TypeScript + Tailwind
+- [ ] Catálogo de produtos + carrinho
+- [ ] Context API para state do carrinho
+- 📝 Commit: "feat: React E-commerce Cart"
+
+### Dia 175 — Fase 8 — Revisão React
+- [ ] Revisão: TypeScript, React, hooks, router, context
+- [ ] TypeScript sem erros (`npx tsc --noEmit`)
+- [ ] Stay Hard frontend funcional?
+- [ ] Todos mini-projetos React funcionando?
+- 📝 Commit: "chore: React review"
+
+### Dia 176 — Fase 8 — Revisão Full Stack
+- [ ] Revisão: front-end + back-end + DB integrados
+- [ ] Fluxo completo funciona? (login → API → DB → response → UI)
+- [ ] Docker Compose sobe tudo?
+- [ ] Nginx proxy funciona?
+- 📝 Commit: "chore: Full stack review"
+
+### Dia 177 — Fase 8 — Revisão Geral Fase 8
+- [ ] Revisão geral: TypeScript, React, Tailwind, Docker
+- [ ] Checklist da Fase 8 completo?
+- [ ] Documentar aprendizados
+- 📝 Commit: "chore: Phase 8 review"
+
+### Dia 178 — Fase 8 — Tag v4.0
+- [ ] Todos testes passando?
+- [ ] Stay Hard v4.0 (React frontend) completo?
+- [ ] Git tag v4.0
+- [ ] Ler docs/08-saas-erp-ia.md
+- 📝 Commit: "chore: v4.0 release"
 
 ---
 
-## FASE 9 — SaaS + ERPs com IA + Portfolio (Dias 179-209)
+## FASE 9 — SaaS + ERPs com IA + DevOps + Portfolio (Dias 179-209)
 
-Dia 179: Multi-tenancy
-Dia 180: Tenant resolution
-Dia 181: RBAC
-Dia 182: Stripe billing
-Dia 183: Stay Hard SaaS multi-tenant
-Dia 184: MedTrack AI — schema + CRUD
-Dia 185: MedTrack AI — triagem IA + RAG
-Dia 186: MedTrack AI — React frontend
-Dia 187: LegalMind AI — schema + CRUD
-Dia 188: LegalMind AI — contratos IA + RAG
-Dia 189: LegalMind AI — React frontend
-Dia 190: BuildFlow AI — schema + CRUD
-Dia 191: BuildFlow AI — custos IA + RAG
-Dia 192: BuildFlow AI — React frontend
-Dia 193: TelecomPro — schema + CRUD
-Dia 194: TelecomPro — churn IA + RAG
-Dia 195: TelecomPro — React frontend
-Dia 196: Docker Compose for SaaS (full stack)
-Dia 197: Stay Hard SaaS — full stack with IA
-Dia 198: Deploy (AWS/Railway)
-Dia 199: CI/CD for SaaS
-Dia 200: Portfolio READMEs
-Dia 201: LinkedIn + GitHub profile
-Dia 202: AWS básico (conceitos, IAM, console, regions)
-Dia 203: AWS EC2 (instância Linux, SSH, deploy Spring Boot no EC2)
-Dia 204: AWS RDS (PostgreSQL managed, conectar do Spring Boot)
-Dia 205: AWS S3 (storage de arquivos) + ECS/Beanstalk (deploy containers)
-Dia 206: SSL/HTTPS (Let's Encrypt, Certbot, Nginx SSL config)
-Dia 207: Deploy completo (Docker + Nginx + SSL + AWS end-to-end)
-Dia 208: Revisão geral
-Dia 209: 🏆 STAY HARD — 209 dias completos
+### Dia 179 — Fase 9 — Multi-tenancy
+- [ ] O que é multi-tenancy (múltiplos clientes no mesmo sistema)
+- [ ] 3 estratégias: shared DB + tenant_id, schema per tenant, DB per tenant
+- [ ] Decidir qual estratégia para cada projeto
+- [ ] TenantContext (ThreadLocal para armazenar tenant_id)
+- 📝 Commit: "study: Multi-tenancy concepts"
+
+### Dia 180 — Fase 9 — Tenant Resolution
+- [ ] TenantFilter (extrair tenant_id do JWT claim)
+- [ ] Repository com filtro automático de tenant
+- [ ] @Column(name = "tenant_id") em todas entities
+- [ ] Testar isolamento entre tenants
+- 📝 Commit: "feat: Tenant resolution implementation"
+
+### Dia 181 — Fase 9 — RBAC
+- [ ] Role enum (ADMIN, MANAGER, USER)
+- [ ] @PreAuthorize("hasRole('ADMIN')")
+- [ ] SecurityConfig com roles
+- [ ] Endpoints protegidos por role
+- [ ] Testar: ADMIN acessa tudo, USER só próprio
+- 📝 Commit: "feat: RBAC implementation"
+
+### Dia 182 — Fase 9 — Stripe Billing
+- [ ] Criar conta Stripe
+- [ ] Stripe Java SDK dependency
+- [ ] Criar subscription plans (Free, Pro)
+- [ ] Endpoint para criar checkout session
+- [ ] Webhook para eventos (subscription created, cancelled)
+- 📝 Commit: "feat: Stripe billing integration"
+
+### Dia 183 — Fase 9 — Stay Hard SaaS
+- [ ] Multi-tenant no Stay Hard (cada usuário = tenant)
+- [ ] Planos Free (5 hábitos) vs Pro (ilimitado + IA)
+- [ ] Verificação de plano antes de criar hábito
+- [ ] Endpoint de upgrade (/api/billing/upgrade)
+- 📝 Commit: "feat: Stay Hard SaaS multi-tenant"
+
+### Dia 184 — Fase 9 — MedTrack AI Schema
+- [ ] Entities: Patient, Doctor, Appointment, Prescription, MedicalRecord
+- [ ] Repositories com JpaRepository
+- [ ] Services com CRUD
+- [ ] knowledge_base table (pgvector) para RAG médico
+- [ ] REST endpoints
+- 📝 Commit: "feat: MedTrack AI schema + CRUD"
+
+### Dia 185 — Fase 9 — MedTrack AI IA + RAG
+- [ ] Triagem: paciente descreve sintomas → IA sugere especialidade
+- [ ] POST /api/ai/triage
+- [ ] RAG: base de conhecimento médico (protocolos, guidelines)
+- [ ] Médico pergunta → IA responde com base nos protocolos
+- [ ] POST /api/ai/medical-query
+- 📝 Commit: "feat: MedTrack AI triagem + RAG"
+
+### Dia 186 — Fase 9 — MedTrack AI Frontend
+- [ ] React + TypeScript + Tailwind
+- [ ] Pages: Dashboard, Patients, Appointments, AI Chat
+- [ ] Conectar com API
+- [ ] Design responsivo
+- 📝 Commit: "feat: MedTrack AI frontend"
+
+### Dia 187 — Fase 9 — LegalMind AI Schema
+- [ ] Entities: Client, Case, Deadline, Document
+- [ ] jurisprudencia table (pgvector) para RAG jurídico
+- [ ] legislacao table (pgvector)
+- [ ] CRUD endpoints
+- [ ] File upload para documentos
+- 📝 Commit: "feat: LegalMind AI schema + CRUD"
+
+### Dia 188 — Fase 9 — LegalMind AI IA + RAG
+- [ ] Análise de contratos: upload PDF → IA analisa cláusulas, riscos
+- [ ] POST /api/ai/analyze-contract
+- [ ] Busca jurisprudência: "Tem jurisprudência sobre dano moral?"
+- [ ] RAG: jurisprudência + legislação + documentos do escritório
+- [ ] POST /api/ai/jurisprudencia
+- 📝 Commit: "feat: LegalMind AI contratos + RAG"
+
+### Dia 189 — Fase 9 — LegalMind AI Frontend
+- [ ] React + TypeScript + Tailwind
+- [ ] Pages: Dashboard, Cases, Documents, AI Query
+- [ ] Upload de contratos para análise IA
+- [ ] Busca de jurisprudência via interface
+- 📝 Commit: "feat: LegalMind AI frontend"
+
+### Dia 190 — Fase 9 — BuildFlow AI Schema
+- [ ] Entities: Project, Team, Material, Milestone
+- [ ] normas_tecnicas table (pgvector)
+- [ ] historico_projetos table (pgvector)
+- [ ] CRUD endpoints
+- [ ] Gantt chart data endpoint
+- 📝 Commit: "feat: BuildFlow AI schema + CRUD"
+
+### Dia 191 — Fase 9 — BuildFlow AI IA + RAG
+- [ ] Estimativa de custos: IA analisa projetos passados → estima custo
+- [ ] POST /api/ai/estimate-cost
+- [ ] RAG: normas técnicas (NBR, ABNT)
+- [ ] Engenheiro pergunta → IA responde com normas
+- [ ] POST /api/ai/normas
+- 📝 Commit: "feat: BuildFlow AI custos + RAG"
+
+### Dia 192 — Fase 9 — BuildFlow AI Frontend
+- [ ] React + TypeScript + Tailwind
+- [ ] Pages: Dashboard, Projects, Gantt, Materials, AI
+- [ ] Conectar com API
+- [ ] Gráficos de progresso
+- 📝 Commit: "feat: BuildFlow AI frontend"
+
+### Dia 193 — Fase 9 — TelecomPro Schema
+- [ ] Entities: Customer, Plan, Subscription, Ticket, Invoice
+- [ ] faqs table (pgvector) para RAG suporte
+- [ ] CRUD endpoints
+- [ ] Faturamento automático
+- 📝 Commit: "feat: TelecomPro schema + CRUD"
+
+### Dia 194 — Fase 9 — TelecomPro IA + RAG
+- [ ] Previsão de churn: IA prevê probabilidade de cliente cancelar
+- [ ] POST /api/ai/churn-prediction
+- [ ] Chatbot suporte: RAG com FAQs + conhecimento técnico
+- [ ] POST /api/ai/support-chat
+- 📝 Commit: "feat: TelecomPro churn + chatbot RAG"
+
+### Dia 195 — Fase 9 — TelecomPro Frontend
+- [ ] React + TypeScript + Tailwind
+- [ ] Pages: Dashboard, Customers, Plans, Tickets, AI Chat
+- [ ] Conectar com API
+- [ ] Design responsivo
+- 📝 Commit: "feat: TelecomPro frontend"
+
+### Dia 196 — Fase 9 — Docker Compose SaaS
+- [ ] docker-compose.yml completo para SaaS (postgres, mongo, redis, rabbitmq, kafka, api, frontend)
+- [ ] Health checks para todos services
+- [ ] .env com todas variáveis
+- [ ] Nginx reverse proxy
+- [ ] Testar: docker-compose up → tudo funciona
+- 📝 Commit: "feat: Docker Compose SaaS full stack"
+
+### Dia 197 — Fase 9 — Stay Hard SaaS Completo
+- [ ] Stay Hard com multi-tenant + IA + React + Docker
+- [ ] Coach IA + RAG Analytics + Smart Suggestions
+- [ ] Frontend React + TypeScript completo
+- [ ] Docker Compose rodando tudo
+- 📝 Commit: "feat: Stay Hard SaaS complete"
+
+### Dia 198 — Fase 9 — Deploy
+- [ ] Criar conta AWS (free tier)
+- [ ] Criar instância EC2 (Ubuntu, t3.micro)
+- [ ] SSH na instância + instalar Java 21
+- [ ] Copiar JAR para EC2 via scp
+- [ ] Rodar Spring Boot na EC2
+- [ ] Configurar Security Group (portas 80, 443, 8080)
+- 📝 Commit: "feat: Deploy to AWS EC2"
+
+### Dia 199 — Fase 9 — CI/CD SaaS
+- [ ] GitHub Actions workflow para SaaS
+- [ ] Pipeline: test → build → Docker build → push ECR → deploy ECS
+- [ ] Environment variables (secrets no GitHub)
+- [ ] Coverage report
+- [ ] Auto-deploy no push para main
+- 📝 Commit: "feat: CI/CD for SaaS projects"
+
+### Dia 200 — Fase 9 — AWS RDS
+- [ ] Criar instância RDS (PostgreSQL, db.t3.micro)
+- [ ] Configurar Security Group (porta 5432 da EC2)
+- [ ] Migrar Spring Boot de localhost para RDS
+- [ ] Testar conexão
+- [ ] Backup automático configurado
+- 📝 Commit: "feat: AWS RDS PostgreSQL"
+
+### Dia 201 — Fase 9 — AWS S3 + ECS
+- [ ] Criar bucket S3 para uploads
+- [ ] AWS SDK no Spring Boot (upload/download de arquivos)
+- [ ] ECS: criar cluster + task definition + service
+- [ ] ECR: push Docker image para container registry
+- [ ] Deploy via ECS (alternativa ao EC2 direto)
+- 📝 Commit: "feat: AWS S3 + ECS deployment"
+
+### Dia 202 — Fase 9 — SSL/HTTPS
+- [ ] O que é SSL/TLS (criptografia HTTPS)
+- [ ] Let's Encrypt + Certbot (certificado gratuito)
+- [ ] sudo certbot --nginx -d meudominio.com
+- [ ] Auto-renovação (certbot renew)
+- [ ] Nginx config com SSL (listen 443 ssl)
+- [ ] Redirect HTTP → HTTPS
+- 📝 Commit: "feat: SSL/HTTPS with Let's Encrypt"
+
+### Dia 203 — Fase 9 — Deploy Completo
+- [ ] Fluxo completo: EC2 + RDS + S3 + Nginx + SSL
+- [ ] Docker Compose na EC2
+- [ ] Nginx reverse proxy com SSL
+- [ ] Spring Boot + PostgreSQL (RDS) + Redis + MongoDB
+- [ ] React frontend servido pelo Nginx
+- [ ] Testar: https://meudominio.com funciona
+- 📝 Commit: "feat: Deploy completo end-to-end"
+
+### Dia 204 — Fase 9 — Nginx Reverse Proxy
+- [ ] Nginx config avançada (upstream, proxy_pass, gzip)
+- [ ] Rate limiting no Nginx
+- [ ] Caching de arquivos estáticos
+- [ ] Custom error pages (404, 500)
+- [ ] Access logs e error logs
+- 📝 Commit: "feat: Nginx advanced config"
+
+### Dia 205 — Fase 9 — Logging em Produção
+- [ ] SLF4J + Logback configurado
+- [ ] Log levels em produção (INFO para app, WARN para framework)
+- [ ] Structured logging (JSON para CloudWatch/ELK)
+- [ ] Correlation IDs entre services
+- [ ] Log rotation (max 10MB, 30 dias)
+- 📝 Commit: "feat: Production logging"
+
+### Dia 206 — Fase 9 — Observabilidade
+- [ ] Spring Boot Actuator em produção (/actuator/health, /actuator/metrics)
+- [ ] Health check do banco, Redis, RabbitMQ
+- [ ] Métricas customizadas (hábitos criados, dias completados)
+- [ ] Alertas básicos (service down, high error rate)
+- 📝 Commit: "feat: Production observability"
+
+### Dia 207 — Fase 9 — Portfolio READMEs
+- [ ] README profissional no stay-hard-system (badges, screenshots, como rodar)
+- [ ] README profissional nos mini-projetos
+- [ ] Diagrama de arquitetura no README
+- [ ] Changelog.md
+- [ ] LICENSE file
+- 📝 Commit: "docs: Portfolio READMEs"
+
+### Dia 208 — Fase 9 — LinkedIn + GitHub Profile
+- [ ] Atualizar LinkedIn com projetos e tecnologias
+- [ ] GitHub profile README (andredeomondes/andredeomondes)
+- [ ] Pin repos principais (stay-hard-system, mini-projetos)
+- [ ] Repositórios organizados e com READMEs
+- 📝 Commit: "chore: Portfolio finalized"
+
+### Dia 209 — Fase 9 — 🏆 STAY HARD
+- [ ] Celebre sua conquista!
+- [ ] 209 dias completos
+- [ ] Documentar jornada no README
+- [ ] Revisar checklist: todos itens marcados?
+- [ ] Planejar próximos passos (estágio, freelas, projetos reais)
+- 📝 Commit: "🏆 STAY HARD — 209 days complete. Journey never ends."
 
 ---
 
