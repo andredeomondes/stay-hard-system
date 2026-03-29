@@ -8,95 +8,177 @@
 
 > *"Who's gonna carry the boats?!"* — David Goggins
 
-**Repositório centralizador** do projeto de estudo Full-Stack Java + React + IA/RAG. Sistema gamificado de tracking de hábitos que evolui de CLI para SaaS completo com IA.
+**Repositório centralizador** do projeto de estudo Full-Stack Java + React + IA/RAG.
 
 ---
 
-## 📂 Versões do Stay Hard System
-
-Cada versão é um repositório separado com seu próprio código e histórico:
-
-| Repositório | Descrição | Status |
-|-------------|-----------|--------|
-| [stay-hard-v1-cli](https://github.com/andredeomondes/stay-hard-v1-cli) | Java puro, CLI, CSV | ✅ Completo |
-| [stay-hard-v2-maven](https://github.com/andredeomondes/stay-hard-v2-maven) | Maven + JUnit 5 | 🔨 Em progresso |
-| [stay-hard-v3-spring](https://github.com/andredeomondes/stay-hard-v3-spring) | Spring Boot + PostgreSQL | 📅 Futuro |
-| [stay-hard-v4-rest](https://github.com/andredeomondes/stay-hard-v4-rest) | REST API + JWT | 📅 Futuro |
-| [stay-hard-v5-docker](https://github.com/andredeomondes/stay-hard-v5-docker) | Docker + Redis | 📅 Futuro |
-| [stay-hard-v6-micro](https://github.com/andredeomondes/stay-hard-v6-micro) | Microservices | 📅 Futuro |
-| [stay-hard-v7-ia](https://github.com/andredeomondes/stay-hard-v7-ia) | IA + RAG | 📅 Futuro |
-| [stay-hard-v8-saas](https://github.com/andredeomondes/stay-hard-v8-saas) | SaaS Multi-tenant | 📅 Futuro |
-
----
-
-## 📚 Meu Progresso de Estudo
-
-### Estrutura deste Repositório
+## 📚 ESTRUTURA DO REPOSITÓRIO
 
 ```
-stay-hard-system/          ← ESTE REPOSITÓRIO (centralizador)
-├── docs/                  ← Anotações de estudo (11 arquivos)
-├── progresso/             ← daily-tasks, checklist, daily-log
-├── mini-projetos/         ← 27+ projetos práticos
-│   ├── fase0-java/        ← Java, Maven, JUnit
-│   ├── fase1-sql/        ← SQLite, JDBC
-│   ├── fase2-spring/      ← Spring Boot
-│   └── ...
-└── templates/             ← Templates reutilizáveis
+stay-hard-system/              ← ESTE REPOSITÓRIO
+├── README.md                 ← Visão geral
+├── ROADMAP.md               ← Roadmap completo (209 dias)
+│
+├── docs/
+│   ├── daily/               ← DIÁRIOS (1-209 dias detalhados)
+│   │   ├── 01-d01.md       ← Dia 1: Cliente-Servidor
+│   │   ├── 02-d02.md       ← Dia 2: TCP/IP
+│   │   ├── 03-d03.md       ← Dia 3: HTTP
+│   │   ├── 04-d04.md       ← Dia 4: curl
+│   │   ├── 05-d05.md       ← Dia 5: TCP Chat (mini-projeto)
+│   │   └── ... (até 209)
+│   │
+│   └── teoria/             ← RESUMOS TEÓRICOS
+│       ├── fundamentos/
+│       ├── patterns/        ← 6 Design Patterns
+│       ├── arquitetura/     ← Clean Architecture, DDD
+│       ├── redes/           ← Cliente-Servidor, TCP/IP, HTTP
+│       ├── java/            ← Maven, Collections, Streams
+│       ├── persistencia/
+│       ├── spring/
+│       ├── frontend/
+│       ├── devops/
+│       ├── sistemas/
+│       └── ia/
+│
+└── progresso/
+    ├── progresso.md         ← Progresso geral (CHECKLIST)
+    └── template-daily.md  ← Template para copiar diariamente
 ```
-
-### Como usar
-
-1. **Comece aqui** → `progresso/daily-tasks.md`
-2. **Marque seu progresso** → `progresso/daily-log.md`
-3. **Estude os docs** → `docs/` (anotações por fase)
-4. **Pratique com mini-projetos** → `mini-projetos/`
 
 ---
 
-## 🚀 Roadmap — 209 Dias / 10 Fases
+## 📖 COMO USAR ESTE REPOSITÓRIO
+
+### 1. Leia o ROADMAP
+```bash
+# Abra ROADMAP.md para ver todas as fases
+```
+
+### 2. Escolha o dia
+```bash
+# Vá para docs/daily/
+docs/daily/01-d01.md  ← Dia 1 (cliente-servidor)
+docs/daily/02-d02.md  ← Dia 2 (TCP/IP)
+docs/daily/03-d03.md  ← Dia 3 (HTTP)
+# ...
+docs/daily/15-d15.md  ← Dia 15 (mini-projeto)
+```
+
+### 3. Siga o daily
+Cada daily contém:
+- ✅ O que estudar (vídeos, artigos)
+- ✅ Conceitos teóricos resumidos
+- ✅ Exercícios de código
+- ✅ Mini-projeto do dia
+- ✅ Aplicar no Stay Hard
+- ✅ Comandos essenciais
+- ✅ Checklist de verificação
+
+### 4. Atualize seu progresso
+```bash
+# Edite progresso/progresso.md
+# Marque ✅ os dias completados
+```
+
+---
+
+## 🚀 ROADMAP (209 DIAS)
+
+### VISÃO GERAL
+
+```
+FASE FUND-0    █░░░░░░░░░░░░░░░░░░░  Redes (Dias 1-5)
+FASE FUND-1    ██░░░░░░░░░░░░░░░░░░░  curl (Dias 6-10)
+FASE JAVA-0    ███░░░░░░░░░░░░░░░░░░░  Maven (Dias 11-20)
+FASE JAVA-1    ████░░░░░░░░░░░░░░░░░░  JUnit (Dias 21-25)
+FASE SQL-0     █████░░░░░░░░░░░░░░░░░  SQL (Dias 26-30)
+FASE JDBC-0    ██████░░░░░░░░░░░░░░░░░  JDBC (Dias 31-35)
+FASE JAVA-2    ███████░░░░░░░░░░░░░░░░  POO (Dias 36-40)
+FASE CLEAN-0   ████████░░░░░░░░░░░░░░░  Clean Code (Dias 41-45)
+FASE PATTERNS   █████████░░░░░░░░░░░░░░░  6 Patterns (Dias 46-51)
+FASE DDD-0     ██████████░░░░░░░░░░░░░░  DDD (Dias 52-56)
+FASE LAYERS     ███████████░░░░░░░░░░░░  Camadas (Dias 57-60)
+FASE HTTP-0     ████████████░░░░░░░░░░░  Servlets (Dias 61-70)
+FASE SPRING-0   █████████████░░░░░░░░░░  Spring (Dias 71-80)
+FASE JPA-0      ██████████████░░░░░░░░░  JPA (Dias 81-85)
+FASE MIDDLE-0   ███████████████░░░░░░░░░  Middleware (Dias 86-90)
+FASE REST-0     ████████████████░░░░░░░░  REST API (Dias 91-100)
+FASE SEC-0      █████████████████░░░░░░░  Security (Dias 101-110)
+FASE FRONT-0    ██████████████████░░░░░░  HTML/CSS/JS (Dias 111-130)
+FASE REACT-0    ████████████████████░░░░  React (Dias 131-140)
+FASE DOCKER-0   █████████████████████░░░  Docker (Dias 141-150)
+FASE MICRO-0    ██████████████████████░░  Micro (Dias 151-160)
+FASE IA-0       ████████████████████████░  IA + RAG (Dias 161-175)
+FASE SAAS-0     █████████████████████████  SaaS (Dias 176-209)
+```
+
+### CRONOGRAMA COMPLETO
 
 | Fase | Dias | Conteúdo | Status |
 |------|------|----------|--------|
-| 0 | 1-10 | Fundação: Maven, Git, JUnit | 🔨 Em progresso |
-| 1 | 11-20 | Java Backend + SQLite | 📅 Futuro |
-| 2 | 21-40 | Spring Boot + PostgreSQL | 📅 Futuro |
-| 3 | 41-60 | REST API + JWT | 📅 Futuro |
-| 4 | 61-80 | React + TypeScript | 📅 Futuro |
-| 5 | 81-105 | Docker + CI/CD | 📅 Futuro |
-| 6 | 106-133 | MongoDB + Microservices | 📅 Futuro |
-| 7 | 134-153 | IA + RAG + Spring AI | 📅 Futuro |
-| 8 | 154-178 | React Avançado | 📅 Futuro |
-| 9 | 179-209 | SaaS + ERPs + Deploy | 📅 Futuro |
+| FUND-0 | 1-5 | Redes, Cliente-Servidor, TCP/IP | 🔨 Em progresso |
+| FUND-1 | 6-10 | curl, HTTP | 📅 |
+| JAVA-0 | 11-20 | Maven, Collections | 📅 |
+| JAVA-1 | 21-25 | JUnit, TDD | 📅 |
+| SQL-0 | 26-30 | SQL | 📅 |
+| JDBC-0 | 31-35 | JDBC | 📅 |
+| JAVA-2 | 36-40 | POO, Exceptions | 📅 |
+| CLEAN-0 | 41-45 | Clean Code | 📅 |
+| PATTERNS | 46-51 | 6 Design Patterns | 📅 |
+| DDD-0 | 52-56 | DDD Básico | 📅 |
+| LAYERS | 57-60 | Arquitetura em Camadas | 📅 |
+| HTTP-0 | 61-70 | Servlets | 📅 |
+| SPRING-0 | 71-80 | Spring Boot Core | 📅 |
+| JPA-0 | 81-85 | JPA/Hibernate | 📅 |
+| MIDDLE-0 | 86-90 | Middleware | 📅 |
+| REST-0 | 91-100 | REST API | 📅 |
+| SEC-0 | 101-110 | Security + JWT | 📅 |
+| FRONT-0 | 111-130 | HTML/CSS/JS | 📅 |
+| REACT-0 | 131-140 | React | 📅 |
+| DOCKER-0 | 141-150 | Docker | 📅 |
+| MICRO-0 | 151-160 | Microservices | 📅 |
+| IA-0 | 161-175 | IA + RAG | 📅 |
+| SAAS-0 | 176-209 | SaaS | 📅 |
 
 ---
 
-## 🎮 Game Mechanics
+## 📂 REPOSITÓRIOS
 
-| Level | Dias | Título |
-|-------|------|--------|
-| 1 | 0-6 | 🌱 Awakening |
-| 2 | 7-14 | 🔥 Forged |
-| 3 | 15-29 | ⚡ Relentless |
-| 4 | 30-74 | 🛡️ Unbreakable |
-| 5 | 75+ | 👑 Stay Hard |
+| Repositório | Descrição | Status |
+|-------------|-----------|--------|
+| `stay-hard-system` | Centralizador + docs + progresso | ✅ |
+| `stay-hard-v1-cli` | Código v1 (Java puro) | ✅ |
+| `stay-hard-v2-maven` | Código v2 (Maven) | 📅 Futuro |
+| `stay-hard-v3-servlet` | Código v3 (Servlets) | 📅 Futuro |
+| `study-projects` | Mini-projetos | 📅 Futuro |
 
 ---
 
-## 📁 Mini-Projetos (27+)
+## 🎯 CONHECIMENTOS POR CATEGORIA
 
-Prática diária para consolidar conceitos:
+### ✅ Fundamentos
+- [x] Lógica de Programação
+- [x] Estruturas de Dados
+- [x] POO
+- [x] Exceptions
 
-| Fase | Projetos |
-|------|----------|
-| **Fase 0** | Calculadora CLI, Validador CPF, Git Logger, Gerador Senhas |
-| **Fase 1** | API SQLite JDBC |
-| **Fase 2** | CRUD Produtos, Blog Simples, API Contatos |
-| **Fase 3** | Auth API JWT, Task Manager, Library API |
-| **Fase 4** | Docker Spring Boot, Redis Cache, Rate Limiter |
-| **Fase 5** | MongoDB Demo, Microservices Setup |
-| **Fase 6** | Chat com PDF, Code Reviewer IA |
-| **Fase 8** | React Weather, React Todo, React Kanban, Chat, E-commerce |
+### ✅ Redes
+- [x] Cliente-Servidor
+- [x] TCP/IP
+- [x] HTTP
+- [x] curl
+
+### ✅ Java & Tools
+- [x] Maven
+- [x] Collections
+- [x] Streams
+- [ ] JUnit (Dias 21-25)
+
+### ✅ Qualidade
+- [ ] Clean Code (Dias 41-45)
+- [ ] Design Patterns (Dias 46-51)
+- [ ] DDD (Dias 52-56)
 
 ---
 
@@ -104,9 +186,10 @@ Prática diária para consolidar conceitos:
 
 | Recurso | Link |
 |---------|------|
-| Documentação Java | [Java 21 Docs](https://docs.oracle.com/en/java/javase/21/) |
-| Spring Boot | [spring.io](https://spring.io/projects/spring-boot) |
-| Roadmap Dev BR | [roadmap.sh](https://roadmap.sh/full-stack/java) |
+| Java Docs | [Oracle Java 21](https://docs.oracle.com/en/java/javase/21/) |
+| Maven | [maven.apache.org](https://maven.apache.org/) |
+| Spring | [spring.io](https://spring.io/projects/spring-boot) |
+| Roadmap | [roadmap.sh](https://roadmap.sh/full-stack/java) |
 
 ---
 
