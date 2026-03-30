@@ -1,204 +1,247 @@
-# 🏋️ Stay Hard System
+# 🔥 STAY HARD SYSTEM
 
-![Java](https://img.shields.io/badge/Java-21-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-![React](https://img.shields.io/badge/React-TypeScript-61DAFB?style=for-the-badge&logo=react&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+> **Roadmap completo de 209 dias para se tornar Desenvolvedor Backend Java Full-Stack**
 
-> *"Who's gonna carry the boats?!"* — David Goggins
-
-**Repositório centralizador** do projeto de estudo Full-Stack Java + React + IA/RAG.
+[![Java](https://img.shields.io/badge/Java-21-blue?style=for-the-badge&logo=openjdk)](https://adoptium.com)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2-green?style=for-the-badge&logo=spring)](https://spring.io)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org)
+[![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)](https://react.dev)
+[![Docker](https://img.shields.io/badge/Docker-24-blue?style=for-the-badge&logo=docker)](https://www.docker.com)
+[![AWS](https://img.shields.io/badge/AWS-ECS-orange?style=for-the-badge&logo=amazon-aws)](https://aws.amazon.com)
 
 ---
 
-## 📚 ESTRUTURA DO REPOSITÓRIO
+## 📋 SOBRE O PROJETO
+
+Este é o repositório **central** do Stay Hard System - um roadmap estruturado de **209 dias** para se tornar um Desenvolvedor Backend Java com competências em DevOps e Front-end.
+
+O sistema Stay Hard evolui progressivamente:
+```
+v1-cli     → v2-servlet → v3-spring → v4-fullstack → v5-cloud
+(Java CLI)  (Servlet)     (Spring)    (React TS)     (AWS)
+```
+
+---
+
+## 🎯 OBJETIVO
+
+Ser um **Desenvolvedor Backend Java** com:
+- **Backend**: Java Spring Boot completo
+- **DevOps**: Docker, CI/CD, Cloud
+- **Frontend**: TypeScript + React básico
+- **Projeto**: Sistema Stay Hard completo (CLI → REST → Full-Stack)
+
+---
+
+## 📊 ROADMAP SUMMARY
+
+| Fase | Foco | Dias | Status |
+|------|------|------|--------|
+| **1** | Pré-Spring (Java, SQL, POO, Clean Code) | 1-70 | 📅 |
+| **2** | Spring Boot (REST, JPA, Security) | 71-100 | 📅 |
+| **3** | Frontend TypeScript (HTML/CSS/JS, React) | 101-120 | 📅 |
+| **4** | DevOps (Docker, CI/CD, AWS) | 121-140 | 📅 |
+| **5** | Microservices (Gateway, Kafka, Redis) | 141-150 | 📅 |
+| **6** | Full Stack Integration | 151-160 | 📅 |
+| **7** | IA & Advanced Topics | 161-180 | 📅 |
+| **8** | SaaS & Portfolio | 181-209 | 📅 |
+
+**Progresso: 0/209 dias (0%)**
+
+---
+
+## 📁 ESTRUTURA
 
 ```
-stay-hard-system/              ← ESTE REPOSITÓRIO
-├── README.md                 ← Visão geral
-├── ROADMAP.md               ← Roadmap completo (209 dias)
-│
+stay-hard-system/
+├── README.md              ← Você está aqui
+├── ROADMAP.md            ← Roadmap detalhado
+├── AGENTS.md             ← Contexto para IA
 ├── docs/
-│   ├── daily/               ← DIÁRIOS (1-209 dias detalhados)
-│   │   ├── 01-d01.md       ← Dia 1: Cliente-Servidor
-│   │   ├── 02-d02.md       ← Dia 2: TCP/IP
-│   │   ├── 03-d03.md       ← Dia 3: HTTP
-│   │   ├── 04-d04.md       ← Dia 4: curl
-│   │   ├── 05-d05.md       ← Dia 5: TCP Chat (mini-projeto)
-│   │   └── ... (até 209)
-│   │
-│   └── teoria/             ← RESUMOS TEÓRICOS
-│       ├── fundamentos/
-│       ├── patterns/        ← 6 Design Patterns
-│       ├── arquitetura/     ← Clean Architecture, DDD
-│       ├── redes/           ← Cliente-Servidor, TCP/IP, HTTP
-│       ├── java/            ← Maven, Collections, Streams
-│       ├── persistencia/
+│   ├── daily/            ← Diários dia-a-dia (01-d01.md → 209-d209.md)
+│   └── teoria/           ← Documentação teórica
+│       ├── redes/
+│       ├── java/
 │       ├── spring/
-│       ├── frontend/
+│       ├── patterns/
+│       ├── arquitetura/
 │       ├── devops/
-│       ├── sistemas/
-│       └── ia/
-│
-└── progresso/
-    ├── progresso.md         ← Progresso geral (CHECKLIST)
-    └── template-daily.md  ← Template para copiar diariamente
+│       └── frontend/
+└── progresso/            ← Templates e checklists
+    └── progresso.md       ← Checklist de progresso
+
+stay-hard-v1-cli/         ← Código da v1 (CLI Java)
 ```
 
 ---
 
-## 📖 COMO USAR ESTE REPOSITÓRIO
+## 🚀 COMEÇAR
 
-### 1. Leia o ROADMAP
+### 1. Leia o ROADMAP.md
 ```bash
-# Abra ROADMAP.md para ver todas as fases
+cat ROADMAP.md
 ```
 
-### 2. Escolha o dia
+### 2. Comece pelo Dia 1
 ```bash
-# Vá para docs/daily/
-docs/daily/01-d01.md  ← Dia 1 (cliente-servidor)
-docs/daily/02-d02.md  ← Dia 2 (TCP/IP)
-docs/daily/03-d03.md  ← Dia 3 (HTTP)
-# ...
-docs/daily/15-d15.md  ← Dia 15 (mini-projeto)
+cat docs/daily/01-d01.md
 ```
 
-### 3. Siga o daily
-Cada daily contém:
-- ✅ O que estudar (vídeos, artigos)
-- ✅ Conceitos teóricos resumidos
-- ✅ Exercícios de código
-- ✅ Mini-projeto do dia
-- ✅ Aplicar no Stay Hard
-- ✅ Comandos essenciais
-- ✅ Checklist de verificação
-
-### 4. Atualize seu progresso
+### 3. Marque seu progresso
 ```bash
 # Edite progresso/progresso.md
-# Marque ✅ os dias completados
+- [x] Dia 1: Cliente-Servidor
+- [x] Dia 2: TCP/IP
 ```
 
 ---
 
-## 🚀 ROADMAP (209 DIAS)
+## 📚 STACK TECNOLÓGICA
 
-### VISÃO GERAL
+### Backend
+- **Linguagem**: Java 21
+- **Framework**: Spring Boot 3
+- **Database**: PostgreSQL
+- **ORM**: Spring Data JPA
+- **Security**: Spring Security + JWT
+- **Cache**: Redis
+- **Messaging**: Kafka
+
+### Frontend
+- **HTML/CSS**: Semântico, Flexbox, Grid
+- **JavaScript**: ES6+, Async/Await, Fetch API
+- **TypeScript**: Tipagem, Interfaces, Generics
+- **React**: Hooks, Context, React Query, Router
+
+### DevOps
+- **Containers**: Docker, Docker Compose
+- **CI/CD**: GitHub Actions
+- **Cloud**: AWS (EC2, ECS, RDS, S3)
+- **Monitoring**: Prometheus, Grafana
+- **IaC**: Terraform
+
+---
+
+## 🎓 CONHECIMENTOS ADQUIRIDOS
+
+### Pré-Spring (Dias 1-70)
+- [ ] Redes (TCP/IP, HTTP, DNS)
+- [ ] Java SE (Collections, Streams, Lambdas)
+- [ ] SQL (Queries, JOINs, Subqueries)
+- [ ] JDBC (Conexão, CRUD, Transactions)
+- [ ] POO (Encapsulamento, Herança, Polimorfismo)
+- [ ] Clean Code + SOLID
+- [ ] Design Patterns (Strategy, Repository, Factory, etc)
+- [ ] HTTP Server + Servlets
+- [ ] MVC Architecture
+
+### Spring Boot (Dias 71-100)
+- [ ] Spring Boot Setup
+- [ ] IoC + Dependency Injection
+- [ ] REST API Design
+- [ ] Spring Data JPA
+- [ ] Spring Security
+- [ ] JWT Authentication
+
+### Frontend (Dias 101-120)
+- [ ] HTML5 Semântico
+- [ ] CSS3 (Flexbox, Grid, Variables)
+- [ ] JavaScript (ES6+, DOM, Fetch)
+- [ ] TypeScript (Tipos, Interfaces)
+- [ ] React (Hooks, Components, Router)
+
+### DevOps (Dias 121-140)
+- [ ] Docker (Images, Containers, Volumes)
+- [ ] Docker Compose
+- [ ] GitHub Actions CI/CD
+- [ ] AWS Basics (EC2, RDS, S3)
+- [ ] Monitoring (Actuator, Prometheus)
+
+### Microservices (Dias 141-150)
+- [ ] Microservices Architecture
+- [ ] API Gateway
+- [ ] Service Discovery
+- [ ] Circuit Breaker
+- [ ] Kafka + Redis
+
+### Advanced (Dias 151-209)
+- [ ] Full Stack Integration
+- [ ] IA Integration (LLM, RAG)
+- [ ] SaaS Architecture
+- [ ] Career Development
+
+---
+
+## 📈 PROJETO STAY HARD
+
+O **Stay Hard** é o projeto central que evolui com cada fase:
+
+| Versão | Tecnologia | Fase | Entrega |
+|--------|-----------|------|---------|
+| **v1-cli** | Java CLI | Dias 1-70 | Sistema CLI funcional |
+| **v2-servlet** | Servlet + JSP | Dias 61-70 | Web básico |
+| **v3-spring** | Spring Boot | Dias 71-100 | REST API completa |
+| **v4-frontend** | React TS | Dias 101-120 | Frontend funcional |
+| **v5-fullstack** | Spring + React | Dias 151-160 | Sistema completo |
+| **v6-cloud** | AWS + Docker | Dias 121-140 | Deploy production |
+
+---
+
+## 🤝 REPOSITÓRIOS RELACIONADOS
+
+| Repo | Descrição |
+|------|-----------|
+| [stay-hard-v1-cli](https://github.com/andredeomondes/stay-hard-v1-cli) | Código v1 (CLI Java) |
+| [java-study](https://github.com/andredeomondes/java-study) | Estudos Java |
+| [ds-java-spring-professional](https://github.com/andredeomondes/ds-java-spring-professional) | Curso DevSuperior |
+| [dscommerce](https://github.com/andredeomondes/dscommerce) | Projeto Java |
+| [CadastroDeNinjas](https://github.com/andredeomondes/CadastroDeNinjas) | API Spring Boot |
+
+---
+
+## 📖 DOCUMENTAÇÃO TEÓRICA
 
 ```
-FASE FUND-0    █░░░░░░░░░░░░░░░░░░░  Redes (Dias 1-5)
-FASE FUND-1    ██░░░░░░░░░░░░░░░░░░░  curl (Dias 6-10)
-FASE JAVA-0    ███░░░░░░░░░░░░░░░░░░░  Maven (Dias 11-20)
-FASE JAVA-1    ████░░░░░░░░░░░░░░░░░░  JUnit (Dias 21-25)
-FASE SQL-0     █████░░░░░░░░░░░░░░░░░  SQL (Dias 26-30)
-FASE JDBC-0    ██████░░░░░░░░░░░░░░░░░  JDBC (Dias 31-35)
-FASE JAVA-2    ███████░░░░░░░░░░░░░░░░  POO (Dias 36-40)
-FASE CLEAN-0   ████████░░░░░░░░░░░░░░░  Clean Code (Dias 41-45)
-FASE PATTERNS   █████████░░░░░░░░░░░░░░░  6 Patterns (Dias 46-51)
-FASE DDD-0     ██████████░░░░░░░░░░░░░░  DDD (Dias 52-56)
-FASE LAYERS     ███████████░░░░░░░░░░░░  Camadas (Dias 57-60)
-FASE HTTP-0     ████████████░░░░░░░░░░░  Servlets (Dias 61-70)
-FASE SPRING-0   █████████████░░░░░░░░░░  Spring (Dias 71-80)
-FASE JPA-0      ██████████████░░░░░░░░░  JPA (Dias 81-85)
-FASE MIDDLE-0   ███████████████░░░░░░░░░  Middleware (Dias 86-90)
-FASE REST-0     ████████████████░░░░░░░░  REST API (Dias 91-100)
-FASE SEC-0      █████████████████░░░░░░░  Security (Dias 101-110)
-FASE FRONT-0    ██████████████████░░░░░░  HTML/CSS/JS (Dias 111-130)
-FASE REACT-0    ████████████████████░░░░  React (Dias 131-140)
-FASE DOCKER-0   █████████████████████░░░  Docker (Dias 141-150)
-FASE MICRO-0    ██████████████████████░░  Micro (Dias 151-160)
-FASE IA-0       ████████████████████████░  IA + RAG (Dias 161-175)
-FASE SAAS-0     █████████████████████████  SaaS (Dias 176-209)
+docs/teoria/
+├── redes/           # TCP/IP, HTTP, DNS
+├── java/            # Collections, Streams, JVM
+├── spring/          # Spring Boot, Security, JPA
+├── patterns/        # Design Patterns, SOLID
+├── arquitetura/      # DDD, Clean Architecture
+├── devops/          # Docker, CI/CD, AWS
+├── frontend/         # React, TypeScript
+├── ia/              # LLM, RAG, OpenAI
+└── sistemas/        # Microservices
 ```
 
-### CRONOGRAMA COMPLETO
+---
 
-| Fase | Dias | Conteúdo | Status |
-|------|------|----------|--------|
-| FUND-0 | 1-5 | Redes, Cliente-Servidor, TCP/IP | 🔨 Em progresso |
-| FUND-1 | 6-10 | curl, HTTP | 📅 |
-| JAVA-0 | 11-20 | Maven, Collections | 📅 |
-| JAVA-1 | 21-25 | JUnit, TDD | 📅 |
-| SQL-0 | 26-30 | SQL | 📅 |
-| JDBC-0 | 31-35 | JDBC | 📅 |
-| JAVA-2 | 36-40 | POO, Exceptions | 📅 |
-| CLEAN-0 | 41-45 | Clean Code | 📅 |
-| PATTERNS | 46-51 | 6 Design Patterns | 📅 |
-| DDD-0 | 52-56 | DDD Básico | 📅 |
-| LAYERS | 57-60 | Arquitetura em Camadas | 📅 |
-| HTTP-0 | 61-70 | Servlets | 📅 |
-| SPRING-0 | 71-80 | Spring Boot Core | 📅 |
-| JPA-0 | 81-85 | JPA/Hibernate | 📅 |
-| MIDDLE-0 | 86-90 | Middleware | 📅 |
-| REST-0 | 91-100 | REST API | 📅 |
-| SEC-0 | 101-110 | Security + JWT | 📅 |
-| FRONT-0 | 111-130 | HTML/CSS/JS | 📅 |
-| REACT-0 | 131-140 | React | 📅 |
-| DOCKER-0 | 141-150 | Docker | 📅 |
-| MICRO-0 | 151-160 | Microservices | 📅 |
-| IA-0 | 161-175 | IA + RAG | 📅 |
-| SAAS-0 | 176-209 | SaaS | 📅 |
+## 💡 DICAS PARA ESTUDO
+
+1. **Diário**: Leia e complete um dia por dia
+2. **Código**: Pratique os exercícios em cada diário
+3. **Projeto**: Aplique os conceitos no Stay Hard
+4. **Commit**: Commite seu progresso diariamente
+5. **Revisão**: Revise dias anteriores antes de avançar
 
 ---
 
-## 📂 REPOSITÓRIOS
+## 📞 CONTATO
 
-| Repositório | Descrição | Status |
-|-------------|-----------|--------|
-| `stay-hard-system` | Centralizador + docs + progresso | ✅ |
-| `stay-hard-v1-cli` | Código v1 (Java puro) | ✅ |
-| `stay-hard-v2-maven` | Código v2 (Maven) | 📅 Futuro |
-| `stay-hard-v3-servlet` | Código v3 (Servlets) | 📅 Futuro |
-| `study-projects` | Mini-projetos | 📅 Futuro |
+- **GitHub**: [github.com/andredeomondes](https://github.com/andredeomondes)
+- **LinkedIn**: [linkedin.com/in/andredeomondes](https://linkedin.com/in/andredeomondes)
+- **Email**: andre.deomondes@email.com
 
 ---
 
-## 🎯 CONHECIMENTOS POR CATEGORIA
+## 📄 LICENÇA
 
-### ✅ Fundamentos
-- [x] Lógica de Programação
-- [x] Estruturas de Dados
-- [x] POO
-- [x] Exceptions
-
-### ✅ Redes
-- [x] Cliente-Servidor
-- [x] TCP/IP
-- [x] HTTP
-- [x] curl
-
-### ✅ Java & Tools
-- [x] Maven
-- [x] Collections
-- [x] Streams
-- [ ] JUnit (Dias 21-25)
-
-### ✅ Qualidade
-- [ ] Clean Code (Dias 41-45)
-- [ ] Design Patterns (Dias 46-51)
-- [ ] DDD (Dias 52-56)
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
 ---
 
-## 🔗 Links Úteis
-
-| Recurso | Link |
-|---------|------|
-| Java Docs | [Oracle Java 21](https://docs.oracle.com/en/java/javase/21/) |
-| Maven | [maven.apache.org](https://maven.apache.org/) |
-| Spring | [spring.io](https://spring.io/projects/spring-boot) |
-| Roadmap | [roadmap.sh](https://roadmap.sh/full-stack/java) |
-
----
-
-## 👤 Autor
-
-**André de Omondes**
-- GitHub: [@andredeomondes](https://github.com/andredeomondes)
-- LinkedIn: [in/andredeomondes](https://www.linkedin.com/in/andredeomondes/)
-
----
-
-> *"Stay Hard. Never settle. Keep building."*
+> *"Who's gonna carry the boats?!"* — David Goggins
+>
+> **Stay Hard. Never settle. Keep building.**
+>
+> **Progresso: 0/209 dias | 0% completo**

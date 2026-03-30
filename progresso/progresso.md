@@ -1,249 +1,389 @@
-# 📊 PROGRESSO — STAY HARD SYSTEM
+# 📊 PROGRESSO - STAY HARD SYSTEM
 
-> Atualize este arquivo diariamente!
-
----
-
-## 📅 CRONOGRAMA
-
-| # | Fase | Dias | Status |
-|---|------|------|--------|
-| 1 | FUND-0: Redes | 1-5 | [ ] |
-| 2 | FUND-1: curl | 6-10 | [ ] |
-| 3 | JAVA-0: Maven | 11-20 | [ ] |
-| 4 | JAVA-1: JUnit | 21-25 | [ ] |
-| 5 | SQL-0 | 26-30 | [ ] |
-| 6 | JDBC-0 | 31-35 | [ ] |
-| 7 | JAVA-2: POO | 36-40 | [ ] |
-| 8 | CLEAN-0 | 41-45 | [ ] |
-| 9 | PATTERNS | 46-51 | [ ] |
-| 10 | DDD-0 | 52-56 | [ ] |
-| 11 | LAYERS | 57-60 | [ ] |
-| 12 | HTTP-0: Servlets | 61-70 | [ ] |
-| 13 | SPRING-0 | 71-80 | [ ] |
-| 14 | JPA-0 | 81-85 | [ ] |
-| 15 | MIDDLE-0 | 86-90 | [ ] |
-| 16 | REST-0 | 91-100 | [ ] |
-| 17 | SEC-0 | 101-110 | [ ] |
-| 18 | FRONT-0 | 111-130 | [ ] |
-| 19 | REACT-0 | 131-140 | [ ] |
-| 20 | DOCKER-0 | 141-150 | [ ] |
-| 21 | MICRO-0 | 151-160 | [ ] |
-| 22 | IA-0 | 161-175 | [ ] |
-| 23 | SAAS-0 | 176-209 | [ ] |
+> Atualize este arquivo conforme avanza nos estudos
 
 ---
 
-## ✅ DIAS COMPLETOS
+## 📅 RESUMO GERAL
 
-| Dia | Data | Fase | Tema | Commit |
-|-----|------|------|------|--------|
-| 1 | __/__ | FUND-0 | Cliente-Servidor | [ ] |
-| 2 | | FUND-0 | TCP/IP | [ ] |
-| 3 | | FUND-0 | HTTP | [ ] |
-| 4 | | FUND-0 | DNS | [ ] |
-| 5 | | FUND-0 | Sockets | [ ] |
-| 6 | | FUND-1 | curl | [ ] |
-| 7 | | FUND-1 | curl Headers | [ ] |
-| 8 | | FUND-1 | curl PUT/DELETE | [ ] |
-| 9 | | FUND-1 | Status Codes | [ ] |
-| 10 | | FUND-1 | RESTful | [ ] |
-| 11 | | JAVA-0 | Maven Setup | [ ] |
-| 12 | | JAVA-0 | Dependencies | [ ] |
-| 13 | | JAVA-0 | Lifecycle | [ ] |
-| 14 | | JAVA-0 | List | [ ] |
-| 15 | | JAVA-0 | Set | [ ] |
-| 16 | | JAVA-0 | Map | [ ] |
-| 17 | | JAVA-0 | Streams | [ ] |
-| 18 | | JAVA-0 | Lambdas | [ ] |
-| 19 | | JAVA-0 | Method Ref | [ ] |
-| 20 | | JAVA-0 | Optional | [ ] |
-| 21 | | JAVA-1 | JUnit | [ ] |
-| 22 | | JAVA-1 | Assertions | [ ] |
-| 23 | | JAVA-1 | DisplayName | [ ] |
-| 24 | | JAVA-1 | Parameterized | [ ] |
-| 25 | | JAVA-1 | TDD | [ ] |
-| 26 | | SQL-0 | DDL/DML | [ ] |
-| 27 | | SQL-0 | WHERE | [ ] |
-| 28 | | SQL-0 | JOINs | [ ] |
-| 29 | | SQL-0 | GROUP BY | [ ] |
-| 30 | | SQL-0 | Subqueries | [ ] |
-| 31 | | JDBC-0 | Conexão | [ ] |
-| 32 | | JDBC-0 | SELECT | [ ] |
-| 33 | | JDBC-0 | DML | [ ] |
-| 34 | | JDBC-0 | Prepared | [ ] |
-| 35 | | JDBC-0 | Transactions | [ ] |
-| 36 | | JAVA-2 | Encapsulamento | [ ] |
-| 37 | | JAVA-2 | Herança | [ ] |
-| 38 | | JAVA-2 | Polimorfismo | [ ] |
-| 39 | | JAVA-2 | Interfaces | [ ] |
-| 40 | | JAVA-2 | Exceptions | [ ] |
-| 41 | | CLEAN-0 | SRP | [ ] |
-| 42 | | CLEAN-0 | DRY | [ ] |
-| 43 | | CLEAN-0 | KISS | [ ] |
-| 44 | | CLEAN-0 | Naming | [ ] |
-| 45 | | CLEAN-0 | Comments | [ ] |
-| 46 | | PATTERNS | Strategy | [ ] |
-| 47 | | PATTERNS | Repository | [ ] |
-| 48 | | PATTERNS | Factory | [ ] |
-| 49 | | PATTERNS | Observer | [ ] |
-| 50 | | PATTERNS | Singleton | [ ] |
-| 51 | | PATTERNS | Builder | [ ] |
-| 52 | | DDD-0 | Entidades | [ ] |
-| 53 | | DDD-0 | Aggregates | [ ] |
-| 54 | | DDD-0 | Repositories | [ ] |
-| 55 | | DDD-0 | Services | [ ] |
-| 56 | | DDD-0 | Ciclo DDD | [ ] |
-| 57 | | LAYERS | UI Layer | [ ] |
-| 58 | | LAYERS | Service | [ ] |
-| 59 | | LAYERS | Repository | [ ] |
-| 60 | | LAYERS | Integração | [ ] |
-| 61 | | HTTP-0 | HttpServer | [ ] |
-| 62 | | HTTP-0 | Rotas | [ ] |
-| 63 | | HTTP-0 | Request/Response | [ ] |
-| 64 | | HTTP-0 | Query Params | [ ] |
-| 65 | | HTTP-0 | Status | [ ] |
-| 66 | | HTTP-0 | Servlets | [ ] |
-| 67 | | HTTP-0 | HttpServlet | [ ] |
-| 68 | | HTTP-0 | web.xml | [ ] |
-| 69 | | HTTP-0 | Tomcat | [ ] |
-| 70 | | HTTP-0 | Spring | [ ] |
-| 71 | | SPRING-0 | Setup | [ ] |
-| 72 | | SPRING-0 | SpringBoot | [ ] |
-| 73 | | SPRING-0 | IoC | [ ] |
-| 74 | | SPRING-0 | DI | [ ] |
-| 75 | | SPRING-0 | Component | [ ] |
-| 76 | | SPRING-0 | Service | [ ] |
-| 77 | | SPRING-0 | Repository | [ ] |
-| 78 | | SPRING-0 | Controller | [ ] |
-| 79 | | SPRING-0 | Config | [ ] |
-| 80 | | SPRING-0 | Lifecycle | [ ] |
-| 81 | | JPA-0 | Entity | [ ] |
-| 82 | | JPA-0 | JpaRepo | [ ] |
-| 83 | | JPA-0 | Relations | [ ] |
-| 84 | | JPA-0 | Migrations | [ ] |
-| 85 | | JPA-0 | H2 Test | [ ] |
-| 86 | | MIDDLE-0 | Filter | [ ] |
-| 87 | | MIDDLE-0 | Interceptor | [ ] |
-| 88 | | MIDDLE-0 | Logging | [ ] |
-| 89 | | MIDDLE-0 | Timing | [ ] |
-| 90 | | MIDDLE-0 | Rate Limit | [ ] |
-| 91 | | REST-0 | RestController | [ ] |
-| 92 | | REST-0 | GetMapping | [ ] |
-| 93 | | REST-0 | PostMapping | [ ] |
-| 94 | | REST-0 | PutMapping | [ ] |
-| 95 | | REST-0 | DeleteMapping | [ ] |
-| 96 | | REST-0 | PathVariable | [ ] |
-| 97 | | REST-0 | RequestBody | [ ] |
-| 98 | | REST-0 | DTOs | [ ] |
-| 99 | | REST-0 | Valid | [ ] |
-| 100 | | REST-0 | Exceptions | [ ] |
-| 101 | | SEC-0 | Auth | [ ] |
-| 102 | | SEC-0 | BCrypt | [ ] |
-| 103 | | SEC-0 | JWT | [ ] |
-| 104 | | SEC-0 | JwtProvider | [ ] |
-| 105 | | SEC-0 | JwtFilter | [ ] |
-| 106 | | SEC-0 | SecurityChain | [ ] |
-| 107 | | SEC-0 | Login | [ ] |
-| 108 | | SEC-0 | Secured | [ ] |
-| 109 | | SEC-0 | CORS | [ ] |
-| 110 | | SEC-0 | OAuth | [ ] |
-| 111 | | FRONT-0 | HTML | [ ] |
-| 112 | | FRONT-0 | Forms | [ ] |
-| 113 | | FRONT-0 | CSS | [ ] |
-| 114 | | FRONT-0 | Flexbox | [ ] |
-| 115 | | FRONT-0 | Grid | [ ] |
-| 116 | | FRONT-0 | Variables | [ ] |
-| 117 | | FRONT-0 | JS ES6 | [ ] |
-| 118 | | FRONT-0 | DOM | [ ] |
-| 119 | | FRONT-0 | Events | [ ] |
-| 120 | | FRONT-0 | Fetch | [ ] |
-| 121 | | FRONT-0 | Fetch REST | [ ] |
-| 122 | | FRONT-0 | PUT/DELETE | [ ] |
-| 123 | | FRONT-0 | Error Handling | [ ] |
-| 124 | | FRONT-0 | localStorage | [ ] |
-| 125 | | FRONT-0 | Visual App | [ ] |
-| 126 | | REACT-0 | Vite | [ ] |
-| 127 | | REACT-0 | Components | [ ] |
-| 128 | | REACT-0 | useState | [ ] |
-| 129 | | REACT-0 | useEffect | [ ] |
-| 130 | | REACT-0 | Props | [ ] |
-| 131 | | REACT-0 | TypeScript | [ ] |
-| 132 | | REACT-0 | Context | [ ] |
-| 133 | | REACT-0 | Axios | [ ] |
-| 134 | | REACT-0 | Router | [ ] |
-| 135 | | REACT-0 | Deploy | [ ] |
-| 136 | | DOCKER-0 | Images | [ ] |
-| 137 | | DOCKER-0 | Dockerfile | [ ] |
-| 138 | | DOCKER-0 | Containers | [ ] |
-| 139 | | DOCKER-0 | Volumes | [ ] |
-| 140 | | DOCKER-0 | Compose | [ ] |
-| 141 | | DOCKER-0 | Dockerize SB | [ ] |
-| 142 | | DOCKER-0 | Dockerize React | [ ] |
-| 143 | | DOCKER-0 | Actions Setup | [ ] |
-| 144 | | DOCKER-0 | CI | [ ] |
-| 145 | | DOCKER-0 | CD | [ ] |
-| 146 | | DOCKER-0 | Full Stack | [ ] |
-| 147 | | MICRO-0 | Mono vs Micro | [ ] |
-| 148 | | MICRO-0 | API Gateway | [ ] |
-| 149 | | MICRO-0 | Discovery | [ ] |
-| 150 | | MICRO-0 | Circuit | [ ] |
-| 151 | | MICRO-0 | Queues | [ ] |
-| 152 | | MICRO-0 | Redis | [ ] |
-| 153 | | MICRO-0 | MongoDB | [ ] |
-| 154 | | MICRO-0 | Event | [ ] |
-| 155 | | MICRO-0 | Observability | [ ] |
-| 156 | | MICRO-0 | System Design | [ ] |
-| 157 | | IA-0 | LLM | [ ] |
-| 158 | | IA-0 | Prompt | [ ] |
-| 159 | | IA-0 | OpenAI | [ ] |
-| 160 | | IA-0 | Spring AI | [ ] |
-| 161 | | IA-0 | ChatClient | [ ] |
-| 162 | | IA-0 | Vector DB | [ ] |
-| 163 | | IA-0 | Embeddings | [ ] |
-| 164 | | IA-0 | RAG | [ ] |
-| 165 | | IA-0 | ChromaDB | [ ] |
-| 166 | | IA-0 | Semantic | [ ] |
-| 167-209 | SAAS-0 | Multi-tenancy... | [ ] |
+**Progresso Total: 0/209 dias (0%)**
 
 ---
 
-## 📈 ESTATÍSTICAS
+## ✅ FASE 1: PRÉ-SPRING (Dias 1-70)
 
-| Métrica | Valor |
-|---------|-------|
-| Dias totais | 209 |
-| Dias completados | __ |
-| Progresso | __% |
-| Streak atual | __ dias |
-| Streak máximo | __ dias |
-| Commits totais | __ |
+**Progresso: 0/70 dias**
+
+### Fundamentos de Rede (Dias 1-10)
+- [ ] Dia 1: Cliente-Servidor
+- [ ] Dia 2: TCP/IP & Portas
+- [ ] Dia 3: HTTP & Request/Response
+- [ ] Dia 4: DNS & URLs
+- [ ] Dia 5: Sockets em Java
+- [ ] Dia 6: curl GET & POST
+- [ ] Dia 7: curl Headers & Query Params
+- [ ] Dia 8: curl PUT & DELETE
+- [ ] Dia 9: HTTP Status Codes
+- [ ] Dia 10: RESTful Best Practices
+
+### Java & Maven (Dias 11-20)
+- [ ] Dia 11: Setup Maven + pom.xml
+- [ ] Dia 12: Dependencies & Scopes
+- [ ] Dia 13: Maven Lifecycle
+- [ ] Dia 14: List & ArrayList
+- [ ] Dia 15: Set & HashSet
+- [ ] Dia 16: Map & HashMap
+- [ ] Dia 17: Streams API
+- [ ] Dia 18: Lambdas
+- [ ] Dia 19: Method Reference
+- [ ] Dia 20: Optional & Null Safety
+
+### JUnit & TDD (Dias 21-25)
+- [ ] Dia 21: @Test & @BeforeEach
+- [ ] Dia 22: Assertions
+- [ ] Dia 23: @DisplayName
+- [ ] Dia 24: @ParameterizedTest
+- [ ] Dia 25: TDD na prática
+
+### SQL & JDBC (Dias 26-35)
+- [ ] Dia 26: DDL & DML
+- [ ] Dia 27: WHERE & LIKE
+- [ ] Dia 28: JOINs
+- [ ] Dia 29: GROUP BY & Functions
+- [ ] Dia 30: Subqueries
+- [ ] Dia 31: Conexão JDBC
+- [ ] Dia 32: SELECT com JDBC
+- [ ] Dia 33: INSERT/UPDATE/DELETE
+- [ ] Dia 34: PreparedStatement
+- [ ] Dia 35: Transactions
+
+### POO & Exceptions (Dias 36-40)
+- [ ] Dia 36: Encapsulamento
+- [ ] Dia 37: Herança
+- [ ] Dia 38: Polimorfismo
+- [ ] Dia 39: Interfaces
+- [ ] Dia 40: Exceptions
+
+### Clean Code & SOLID (Dias 41-48)
+- [ ] Dia 41: SRP
+- [ ] Dia 42: OCP
+- [ ] Dia 43: LSP
+- [ ] Dia 44: ISP + DIP
+- [ ] Dia 45: Factory Pattern
+- [ ] Dia 46: Observer Pattern
+- [ ] Dia 47: Singleton Pattern
+- [ ] Dia 48: Builder Pattern
+
+### DDD & Architecture (Dias 49-60)
+- [ ] Dia 49: Entidades vs Value Objects
+- [ ] Dia 50: Services e Repositories
+- [ ] Dia 51: HTTP Server Native
+- [ ] Dia 52: Servlets Intro
+- [ ] Dia 53: Servlets POST, Headers
+- [ ] Dia 54: Tomcat Deploy
+- [ ] Dia 55: JSP
+- [ ] Dia 56: MVC Pattern
+- [ ] Dia 57: Filters & Listeners
+- [ ] Dia 58: Session & Cookies
+- [ ] Dia 59: Exception Handling Web
+- [ ] Dia 60: Mini-Projeto Servlet
+
+### Spring Boot Intro (Dias 61-70)
+- [ ] Dia 61: Spring Boot Intro
+- [ ] Dia 62: @RestController
+- [ ] Dia 63: IoC & DI
+- [ ] Dia 64: application.properties
+- [ ] Dia 65: Jackson JSON
+- [ ] Dia 66: Bean Validation
+- [ ] Dia 67: Exception Handling
+- [ ] Dia 68: Logging
+- [ ] Dia 69: Profiles
+- [ ] Dia 70: REST API Completa
 
 ---
 
-## 🎯 METAS DA SEMANA
+## ✅ FASE 2: SPRING BOOT (Dias 71-100)
 
-**Semana __:**
+**Progresso: 0/30 dias**
 
-- [ ] __
-- [ ] __
-- [ ] __
+### Spring Data JPA (Dias 71-80)
+- [ ] Dia 71: Spring Data JPA Intro
+- [ ] Dia 72: Query Methods
+- [ ] Dia 73: @Query Customizada
+- [ ] Dia 74: JPA Entity Mapping
+- [ ] Dia 75: Many-to-One
+- [ ] Dia 76: Many-to-Many
+- [ ] Dia 77: Lifecycle Callbacks
+- [ ] Dia 78: Hibernate vs EclipseLink
+- [ ] Dia 79: Transaction & Isolation
+- [ ] Dia 80: JPA Mini-Projeto
+
+### REST API (Dias 81-90)
+- [ ] Dia 81: REST Fundamentals
+- [ ] Dia 82: ResponseEntity & Status
+- [ ] Dia 83: Pagination & Sorting
+- [ ] Dia 84: PUT vs PATCH
+- [ ] Dia 85: API Versioning
+- [ ] Dia 86: CORS
+- [ ] Dia 87: HATEOAS
+- [ ] Dia 88: OpenAPI/Swagger
+- [ ] Dia 89: Tests com MockMvc
+- [ ] Dia 90: REST API Completa
+
+### Spring Security & JWT (Dias 91-100)
+- [ ] Dia 91: Spring Security Intro
+- [ ] Dia 92: UserDetailsService
+- [ ] Dia 93: JWT Token
+- [ ] Dia 94: JwtAuthenticationFilter
+- [ ] Dia 95: Login & Registration
+- [ ] Dia 96: Authorization com Roles
+- [ ] Dia 97: Refresh Token
+- [ ] Dia 98: CORS + JWT
+- [ ] Dia 99: Security Tests
+- [ ] Dia 100: API Security Completa
 
 ---
 
-## 🏆 CONQUISTAS
+## ✅ FASE 3: FRONTEND TYPESCRIPT (Dias 101-120)
 
-| Conquista | Data | Descrição |
-|-----------|------|-----------|
-| First Commit | __/__ | Primeiro commit |
-| Fase 0 Complete | __/__ | Fundamentos |
-| First API | __/__ | Primeira API REST |
-| First Deploy | __/__ | Primeiro deploy |
-| Full Stack | __/__ | Backend + Frontend |
-| With IA | __/__ | IA integrada |
+**Progresso: 0/20 dias**
+
+### HTML/CSS/JS (Dias 101-110)
+- [ ] Dia 101: HTML Fundamentos
+- [ ] Dia 102: CSS Estilizando
+- [ ] Dia 103: JavaScript Fundamentos
+- [ ] Dia 104: Fetch API & Async
+- [ ] Dia 105: Front-end v1
+- [ ] Dia 106: Layout & Responsivo
+- [ ] Dia 107: State Management
+- [ ] Dia 108: Login/Auth Front
+- [ ] Dia 109: Animações CSS
+- [ ] Dia 110: Front-end Completo
+
+### TypeScript & React (Dias 111-120)
+- [ ] Dia 111: TypeScript Intro
+- [ ] Dia 112: TypeScript Tipos
+- [ ] Dia 113: React Setup
+- [ ] Dia 114: Components & Props
+- [ ] Dia 115: useState & useEffect
+- [ ] Dia 116: useContext
+- [ ] Dia 117: React Router
+- [ ] Dia 118: React Hook Form
+- [ ] Dia 119: React Query
+- [ ] Dia 120: React + TypeScript
 
 ---
 
-## 📝 ANOTAÇÕES
+## ✅ FASE 4: DEVOPS (Dias 121-140)
 
-__
+**Progresso: 0/20 dias**
+
+- [ ] Dia 121: Docker Intro
+- [ ] Dia 122: Docker Compose
+- [ ] Dia 123: Multi-stage Build
+- [ ] Dia 124: Networks & Volumes
+- [ ] Dia 125: Docker Mini-Projeto
+- [ ] Dia 126: GitHub Actions CI
+- [ ] Dia 127: GitHub Actions CD
+- [ ] Dia 128: Nginx Reverse Proxy
+- [ ] Dia 129: Monitoring (Actuator)
+- [ ] Dia 130: Logging Centralizado
+- [ ] Dia 131: AWS EC2 & ECS
+- [ ] Dia 132: AWS RDS
+- [ ] Dia 133: AWS S3
+- [ ] Dia 134: Terraform Intro
+- [ ] Dia 135: Infrastructure as Code
+- [ ] Dia 136: Prometheus
+- [ ] Dia 137: Grafana
+- [ ] Dia 138: ELK Stack
+- [ ] Dia 139: Kubernetes Intro
+- [ ] Dia 140: Kubernetes Deploy
+
+---
+
+## ✅ FASE 5: MICROSERVICES (Dias 141-150)
+
+**Progresso: 0/10 dias**
+
+- [ ] Dia 141: Microservices Intro
+- [ ] Dia 142: API Gateway
+- [ ] Dia 143: Service Discovery
+- [ ] Dia 144: Circuit Breaker
+- [ ] Dia 145: Resilience4j
+- [ ] Dia 146: Kafka Intro
+- [ ] Dia 147: Kafka Producer/Consumer
+- [ ] Dia 148: Redis Caching
+- [ ] Dia 149: Message Queues
+- [ ] Dia 150: Microservices Architecture
+
+---
+
+## ✅ FASE 6: FULL STACK INTEGRATION (Dias 151-160)
+
+**Progresso: 0/10 dias**
+
+- [ ] Dia 151: Full Stack Setup
+- [ ] Dia 152: API Integration
+- [ ] Dia 153: Auth Integration
+- [ ] Dia 154: CORS & Headers
+- [ ] Dia 155: Error Handling
+- [ ] Dia 156: Stay Hard v2 Backend
+- [ ] Dia 157: Stay Hard v2 Front
+- [ ] Dia 158: Deploy Production
+- [ ] Dia 159: SSL/HTTPS
+- [ ] Dia 160: Full Stack Project
+
+---
+
+## ✅ FASE 7: IA & ADVANCED (Dias 161-180)
+
+**Progresso: 0/20 dias**
+
+- [ ] Dia 161: IA/LLM Intro
+- [ ] Dia 162: OpenAI API
+- [ ] Dia 163: Spring AI
+- [ ] Dia 164: Prompt Engineering
+- [ ] Dia 165: RAG Intro
+- [ ] Dia 166: Vector Databases
+- [ ] Dia 167: AI Integration
+- [ ] Dia 168: TDD Advanced
+- [ ] Dia 169: Contract Tests
+- [ ] Dia 170: Performance Testing
+- [ ] Dia 171: SonarQube
+- [ ] Dia 172: Code Coverage
+- [ ] Dia 173: Load Testing
+- [ ] Dia 174: OWASP Security
+- [ ] Dia 175: Security Best Practices
+- [ ] Dia 176: System Design Intro
+- [ ] Dia 177: System Design: URL Shortener
+- [ ] Dia 178: System Design: Chat
+- [ ] Dia 179: System Design: E-commerce
+- [ ] Dia 180: Architecture Review
+
+---
+
+## ✅ FASE 8: SAAS & PORTFOLIO (Dias 181-209)
+
+**Progresso: 0/29 dias**
+
+- [ ] Dia 181: SaaS Architecture
+- [ ] Dia 182: Multi-tenancy
+- [ ] Dia 183: Stripe Billing
+- [ ] Dia 184: Stripe Integration
+- [ ] Dia 185: Portfolio Setup
+- [ ] Dia 186: LinkedIn Profile
+- [ ] Dia 187: GitHub Profile
+- [ ] Dia 188: Blog Técnico
+- [ ] Dia 189: Entrevista Prep
+- [ ] Dia 190: Behavioral Questions
+- [ ] Dia 191: Kotlin Intro
+- [ ] Dia 192: Kotlin Spring Boot
+- [ ] Dia 193: Kotlin Coroutines
+- [ ] Dia 194: GraphQL Intro
+- [ ] Dia 195: GraphQL Spring
+- [ ] Dia 196: MongoDB
+- [ ] Dia 197: Redis Advanced
+- [ ] Dia 198: GraphQL Subscriptions
+- [ ] Dia 199: WebFlux Reactive
+- [ ] Dia 200: Review & Planning
+- [ ] Dia 201: Carreira Roadmap
+- [ ] Dia 202: Networking
+- [ ] Dia 203: Negociação
+- [ ] Dia 204: Produtividade
+- [ ] Dia 205: Saúde & Equilíbrio
+- [ ] Dia 206: Certificações
+- [ ] Dia 207: Mentoria
+- [ ] Dia 208: Side Projects
+- [ ] Dia 209: Conclusão & Próximos Passos
+
+---
+
+## 📈 MÉTRICAS DE PROGRESSO
+
+### Checklist de Conhecimento
+
+#### Fundamentos
+- [ ] Redes (TCP/IP, HTTP)
+- [ ] Java SE
+- [ ] Maven
+- [ ] SQL
+- [ ] JDBC
+- [ ] POO
+- [ ] Clean Code
+- [ ] Design Patterns
+
+#### Backend
+- [ ] Spring Boot
+- [ ] Spring Data JPA
+- [ ] REST API
+- [ ] Spring Security
+- [ ] JWT
+- [ ] Clean Architecture
+
+#### Frontend
+- [ ] HTML5
+- [ ] CSS3
+- [ ] JavaScript ES6+
+- [ ] TypeScript
+- [ ] React
+
+#### DevOps
+- [ ] Docker
+- [ ] Docker Compose
+- [ ] CI/CD
+- [ ] AWS
+- [ ] Monitoring
+
+---
+
+## 📅 REGISTRO DIÁRIO
+
+| Data | Dia | Tema | Tempo | Notas |
+|------|-----|------|-------|-------|
+| - | - | - | - | - |
+
+---
+
+## 🎯 METAS MENSAIS
+
+### Mês 1 (Dias 1-30)
+- [ ] Completar Fundamentos de Rede
+- [ ] Completar Java & Maven
+- [ ] Completar JUnit
+
+### Mês 2 (Dias 31-60)
+- [ ] Completar SQL & JDBC
+- [ ] Completar POO & Exceptions
+- [ ] Completar Clean Code & Patterns
+
+### Mês 3 (Dias 61-90)
+- [ ] Completar HTTP Server & Servlets
+- [ ] Completar Spring Boot Intro
+- [ ] Completar Spring Data JPA
+
+### Mês 4 (Dias 91-120)
+- [ ] Completar REST API
+- [ ] Completar Spring Security
+- [ ] Completar Frontend TypeScript
+
+### Mês 5 (Dias 121-150)
+- [ ] Completar DevOps
+- [ ] Completar Microservices
+
+### Mês 6 (Dias 151-180)
+- [ ] Completar Full Stack
+- [ ] Completar IA & Advanced
+
+### Mês 7 (Dias 181-209)
+- [ ] Completar SaaS & Portfolio
+- [ ] Preparar para mercado
+
+---
+
+## 💪 STAY HARD
+
+> *"Who's gonna carry the boats?"*
+
+**Progresso: 0/209 dias**
+**Status: Em andamento...**
+**Última atualização: [data]**
