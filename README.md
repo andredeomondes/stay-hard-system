@@ -192,10 +192,7 @@ O **Stay Hard** é o projeto central que evolui com cada fase:
 | Repo | Descrição |
 |------|-----------|
 | [stay-hard-v1-cli](https://github.com/andredeomondes/stay-hard-v1-cli) | Código v1 (CLI Java) |
-| [java-study](https://github.com/andredeomondes/java-study) | Estudos Java |
 | [ds-java-spring-professional](https://github.com/andredeomondes/ds-java-spring-professional) | Curso DevSuperior |
-| [dscommerce](https://github.com/andredeomondes/dscommerce) | Projeto Java |
-| [CadastroDeNinjas](https://github.com/andredeomondes/CadastroDeNinjas) | API Spring Boot |
 
 ---
 
