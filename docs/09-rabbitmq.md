@@ -226,3 +226,20 @@ HabitService → HabitEventPublisher → RabbitMQ
 - **TelecomPro:** Novo ticket → roteamento para agente
 
 Padrões: Work Queue, Pub/Sub, RPC
+
+---
+
+## 📝 ANOTAÇÕES PESSOAIS
+
+### O que aprendi:
+> 
+
+
+### Pontos importantes:
+> 
+
+
+### Dúvidas:
+> 
+
+---

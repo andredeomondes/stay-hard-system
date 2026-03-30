@@ -448,4 +448,21 @@ server.ssl.keyStoreType=PKCS12
 │Postgres│ │Redis │ │MongoDB│
 │ (RDS)  │ │(EC2) │ │(EC2)  │
 └────────┘ └──────┘ └───────┘
+
+---
+
+## 📝 ANOTAÇÕES PESSOAIS
+
+### O que aprendi:
+> 
+
+
+### Pontos importantes:
+> 
+
+
+### Dúvidas:
+> 
+
+---
 ```

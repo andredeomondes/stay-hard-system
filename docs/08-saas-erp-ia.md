@@ -188,3 +188,20 @@ faqs (id, content, category, embedding)  -- pgvector
 | Billing | Stripe subscriptions |
 | Notifications | WebSocket + Email + RabbitMQ |
 | Multi-tenant | tenant_id em todas tabelas |
+
+---
+
+## 📝 ANOTAÇÕES PESSOAIS
+
+### O que aprendi:
+> 
+
+
+### Pontos importantes:
+> 
+
+
+### Dúvidas:
+> 
+
+---

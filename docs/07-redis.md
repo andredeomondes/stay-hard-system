@@ -990,3 +990,24 @@ public class SessionService {
 | Scan keys | `SCAN 0 MATCH pattern COUNT 100` |
 | Info | `INFO memory` |
 | Lua script | `EVAL "script" numkeys key [key ...] arg [arg ...]` |
+
+---
+
+## 📝 ANOTAÇÕES PESSOAIS
+
+### O que aprendi hoje:
+> 
+
+
+### Pontos importantes:
+> 
+
+
+### Dúvidas:
+> 
+
+
+### Como aplicar no Stay Hard:
+> 
+
+---
