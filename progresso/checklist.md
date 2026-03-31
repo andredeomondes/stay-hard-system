@@ -1,415 +1,139 @@
-# ✅ CHECKLIST DE PROGRESSO — JAVA STUDY (200 DIAS)
+# ✅ CHECKLIST DE PROGRESSO — STAY HARD SYSTEM
 
-> Marque cada item ao completar. XP acumulado mostra seu nível.
-
----
-
-## 🏆 FASE 0 — Fundação + GitHub (Dias 1-10) — ⭐ XP
-
-### Conceitos
-- [ ] Entende o que é Maven (pom.xml, dependências, lifecycle)
-- [ ] Entende Git avançado (branches, merge, conventional commits)
-- [ ] Sabe criar README profissional no GitHub
-- [ ] Entende conventional commits (`feat:`, `fix:`, `refactor:`)
-
-### Prática
-- [ ] Stay Hard migrado para Maven (`mvn clean install` funciona)
-- [ ] Criou .gitignore profissional
-- [ ] Criou README.md com badges e descrição
-- [ ] Pelo menos 3 testes JUnit 5 escritos e passando
-- [ ] Repositório organizado no GitHub
-
-### Mini-Projetos
-- [ ] Calculadora CLI em Java
-- [ ] Validador de CPF com testes
-- [ ] Git Logger
-- [ ] Gerador de Senhas
-- [ ] Ordenação de Arrays
-
-### 📊 Progresso Fase 0: ___/14
+> Marque cada item ao completar
 
 ---
 
-## 🏆 FASE 1 — SQLite + JDBC + API sem Spring (Dias 11-20) — ⭐⭐ XP
-
-### SQLite
-- [ ] Entende o que é SQLite (serverless, arquivo .db)
-- [ ] Configurou SQLite via Maven (sqlite-jdbc)
-- [ ] Consegue conectar com DriverManager
-
-### JDBC
-- [ ] Entende Connection, Statement, PreparedStatement, ResultSet
-- [ ] Implementou INSERT, SELECT, UPDATE, DELETE com JDBC
-- [ ] Usa PreparedStatement (nunca Statement com concatenação)
-- [ ] Implementou transações (commit, rollback)
-
-### API sem Spring
-- [ ] Criou HttpServer com com.sun.net.httpserver
-- [ ] Implementou GET, POST, PUT, DELETE handlers
-- [ ] Retorna JSON com Gson
-- [ ] Roteamento por path (/api/users, /api/habits)
-- [ ] Status codes corretos (200, 201, 204, 404)
-
-### Stay Hard v1.5
-- [ ] Migrou UserRepository de CSV → JDBC + SQLite
-- [ ] Migrou HabitRepository de CSV → JDBC + SQLite
-- [ ] API REST funcional sem Spring
-- [ ] Testou com curl todos endpoints
-
-### Mini-Projetos
-- [ ] API SQLite JDBC completa
-
-### 📊 Progresso Fase 1: ___/16
+## 📊 Progresso Total: 0/209 dias (0%)
 
 ---
 
-## 🏆 FASE 2 — HTML + CSS + JavaScript (Dias 21-40) — ⭐⭐ XP
+## FASE 1: PRÉ-SPRING (Dias 1-70)
 
-### HTML
-- [ ] Estrutura HTML (head, body, meta)
-- [ ] Tags: h1-h6, p, a, img, div, span, listas
-- [ ] Formulários (form, input, select, button)
-- [ ] Tabelas (table, tr, td)
-- [ ] HTML semântico (header, nav, main, section, footer)
+### Fundamentos de Rede (Dias 1-10)
+- [ ] Dia 1: Cliente-Servidor
+- [ ] Dia 2: TCP/IP & Portas
+- [ ] Dia 3: HTTP & Request/Response
+- [ ] Dia 4: DNS & URLs
+- [ ] Dia 5: Sockets em Java
+- [ ] Dia 6: curl GET & POST
+- [ ] Dia 7: curl Headers & Query Params
+- [ ] Dia 8: curl PUT & DELETE
+- [ ] Dia 9: HTTP Status Codes
+- [ ] Dia 10: RESTful Best Practices
 
-### CSS
-- [ ] Seletores (tag, class, id, combinators)
-- [ ] Cores, fontes, backgrounds, box model
-- [ ] Flexbox (container, items, justify, align)
-- [ ] CSS Grid (grid-template, gap)
-- [ ] Position (static, relative, absolute, fixed)
-- [ ] Media queries + responsivo (mobile-first)
-- [ ] Unidades relativas (rem, em, %, vw, vh)
+### Java & Maven (Dias 11-20)
+- [ ] Dia 11: Setup Maven + pom.xml
+- [ ] Dia 12: Dependencies & Scopes
+- [ ] Dia 13: Maven Lifecycle
+- [ ] Dia 14: List & ArrayList
+- [ ] Dia 15: Set & HashSet
+- [ ] Dia 16: Map & HashMap
+- [ ] Dia 17: Streams API
+- [ ] Dia 18: Lambdas
+- [ ] Dia 19: Method Reference
+- [ ] Dia 20: Optional & Null Safety
 
-### JavaScript
-- [ ] Variáveis (let, const), tipos, operadores
-- [ ] Condicionais (if/else, switch), loops (for, while)
-- [ ] Arrays (push, pop, splice, slice)
-- [ ] Objetos (criar, acessar, métodos)
-- [ ] JSON (parse, stringify)
-- [ ] DOM (querySelector, addEventListener, createElement)
-- [ ] Formulários (capturar valores, validar, feedback)
-- [ ] ES6+ (arrow, template literals, destructuring, spread)
-- [ ] Array methods (map, filter, reduce, find)
-- [ ] Async (Promises, async/await, fetch API)
-- [ ] Consumir API REST via fetch
+### JUnit & TDD (Dias 21-25)
+- [ ] Dia 21: @Test & @BeforeEach
+- [ ] Dia 22: Assertions
+- [ ] Dia 23: @DisplayName
+- [ ] Dia 24: @ParameterizedTest
+- [ ] Dia 25: TDD na prática
 
-### Mini-Projetos
-- [ ] Landing Page responsiva
-- [ ] Todo List Web (HTML + CSS + JS + LocalStorage)
-- [ ] Calculadora Web
-- [ ] Weather App (consumindo API pública)
-- [ ] Portfolio Page
+### SQL & JDBC (Dias 26-35)
+- [ ] Dia 26: DDL & DML
+- [ ] Dia 27: WHERE & LIKE
+- [ ] Dia 28: JOINs
+- [ ] Dia 29: GROUP BY & Functions
+- [ ] Dia 30: Subqueries
+- [ ] Dia 31: Conexão JDBC
+- [ ] Dia 32: SELECT com JDBC
+- [ ] Dia 33: INSERT/UPDATE/DELETE
+- [ ] Dia 34: PreparedStatement
+- [ ] Dia 35: Transactions
 
-### 📊 Progresso Fase 2: ___/29
+### POO & Exceptions (Dias 36-40)
+- [ ] Dia 36: Encapsulamento
+- [ ] Dia 37: Herança
+- [ ] Dia 38: Polimorfismo
+- [ ] Dia 39: Interfaces
+- [ ] Dia 40: Exceptions
 
----
+### Clean Code & SOLID (Dias 41-48)
+- [ ] Dia 41: SRP
+- [ ] Dia 42: OCP
+- [ ] Dia 43: LSP
+- [ ] Dia 44: ISP + DIP
+- [ ] Dia 45: Factory Pattern
+- [ ] Dia 46: Observer Pattern
+- [ ] Dia 47: Singleton Pattern
+- [ ] Dia 48: Builder Pattern
 
-## 🏆 FASE 3 — Spring Boot + PostgreSQL + JPA + Redis (Dias 41-60) — ⭐⭐⭐ XP
+### DDD & Architecture (Dias 49-60)
+- [ ] Dia 49: DDD: Entidades e Value Objects
+- [ ] Dia 50: DDD: Services e Repositories
+- [ ] Dia 51: HTTP Server: Como funciona um servidor web
+- [ ] Dia 52: HTTP Server Native em Java
+- [ ] Dia 53: HTTP Server: Request e Response
+- [ ] Dia 54: HTTP Server: Headers e Status Codes
+- [ ] Dia 55: HTTP Server: Query Params
+- [ ] Dia 56: HTTP Server: JSON e MIME Types
+- [ ] Dia 57: HTTP Server: Static Files
+- [ ] Dia 58: HTTP Server: Filters
+- [ ] Dia 59: HTTP Server: Exception Handling
+- [ ] Dia 60: Mini-Projeto: API REST com Http Server
 
-### PostgreSQL
-- [ ] PostgreSQL instalado e rodando
-- [ ] DBeaver configurado
-- [ ] Schema criado (users, habits)
-
-### Spring Boot
-- [ ] Entende IoC e Dependency Injection
-- [ ] Entende ciclo de vida do Bean
-- [ ] Sabe usar @Component, @Service, @Repository
-- [ ] Consegue configurar application.properties
-
-### Spring Data JPA
-- [ ] Criou @Entity com @Id e @GeneratedValue
-- [ ] Criou JpaRepository
-- [ ] Implementou relacionamento @ManyToOne
-- [ ] Implementou relacionamento @OneToMany
-- [ ] Sabe escrever JPQL queries
-
-### Redis
-- [ ] Configurou Redis via Docker
-- [ ] Spring Boot + Redis funcionando
-- [ ] @Cacheable implementado no Stay Hard
-
-### Stay Hard v2.0
-- [ ] Migrado para Spring Boot + PostgreSQL
-- [ ] User + Habit como JPA entities
-- [ ] Repositories usando JpaRepository
-- [ ] Services com @Transactional
-- [ ] Testes com H2 in-memory
-- [ ] Redis cache de stats
-
-### Mini-Projetos
-- [ ] CRUD Produtos (Spring Boot + H2)
-- [ ] API Contatos (Spring Boot + PostgreSQL)
-- [ ] Blog Simples (Spring Boot + Thymeleaf)
-- [ ] Gerenciador Livros
-- [ ] API Redis Cache
-- [ ] Redis Rate Limiter
-
-### 📊 Progresso Fase 3: ___/29
-
----
-
-## 🏆 FASE 4 — REST API + JWT Auth + Swagger (Dias 61-80) — ⭐⭐⭐ XP
-
-### REST API
-- [ ] Consegue criar endpoint GET, POST, PUT, DELETE
-- [ ] Usa @PathVariable, @RequestParam, @RequestBody
-- [ ] Retorna HTTP Status correto (200, 201, 400, 404)
-- [ ] Usa DTOs (request/response separados)
-- [ ] Implementa @Valid com Bean Validation
-
-### Exception Handling
-- [ ] Criou @ControllerAdvice global
-- [ ] Criou exceptions customizadas
-- [ ] Retorna erros legíveis (400, 404, 500)
-
-### JWT Auth
-- [ ] Entende JWT (Header, Payload, Signature)
-- [ ] Implementou login que retorna JWT
-- [ ] Implementou registro de usuário
-- [ ] Endpoints protegidos exigem token
-- [ ] Usa BCrypt para senhas
-
-### Swagger
-- [ ] Swagger UI acessível em /swagger-ui.html
-- [ ] Endpoints documentados com @Operation
-
-### Stay Hard v3.0
-- [ ] /api/auth/register funciona
-- [ ] /api/auth/login retorna JWT
-- [ ] /api/habits CRUD completo
-- [ ] /api/daily/finish calcula sucesso/falha
-- [ ] /api/users/me/stats com Redis cache
-- [ ] Front-end HTML/CSS/JS conectado com API
-
-### Mini-Projetos
-- [ ] Auth API JWT
-- [ ] Task Manager API
-- [ ] Library API com Swagger
-- [ ] Contact Book API
-
-### 📊 Progresso Fase 4: ___/24
+### Servlets (Dias 61-70)
+- [ ] Dia 61: Spring Boot: Por que usar?
+- [ ] Dia 62: Spring Initializr
+- [ ] Dia 63: @RestController e @GetMapping
+- [ ] Dia 64: @PostMapping, @PutMapping, @DeleteMapping
+- [ ] Dia 65: @RequestBody e @ResponseBody
+- [ ] Dia 66: @PathVariable e @RequestParam
+- [ ] Dia 67: Injeção de Dependência
+- [ ] Dia 68: @Service e @Repository
+- [ ] Dia 69: application.properties
+- [ ] Dia 70: Mini-Projeto: API REST com Spring Boot
 
 ---
 
-## 🏆 FASE 5 — Docker + Redis + System Design + CI/CD (Dias 79-102) — ⭐⭐⭐⭐ XP
+## FASE 2: SPRING BOOT (Dias 71-100)
 
-### Docker
-- [ ] Entende imagens, containers, volumes
-- [ ] Criou Dockerfile para Spring Boot (multi-stage)
-- [ ] Criou Dockerfile para HTML/CSS/JS (Nginx)
-- [ ] docker-compose.yml funcional (postgres + api + frontend + redis)
-- [ ] Health checks configurados
-
-### Redis
-- [ ] Entende tipos de dados (String, Hash, List, Set, Sorted Set)
-- [ ] Redis CLI (SET, GET, DEL, TTL)
-- [ ] Spring Boot + RedisTemplate
-- [ ] @Cacheable, @CacheEvict, @CachePut
-- [ ] Rate Limiting com Redis (sliding window)
-- [ ] Pub/Sub básico
-- [ ] Stay Hard com cache de stats + rate limiting
-
-### System Design — HLD
-- [ ] Entende Functional vs Non-Functional Requirements
-- [ ] Entende Monolithic vs Microservices
-- [ ] Entende CAP Theorem
-- [ ] Entende Horizontal vs Vertical Scaling
-- [ ] Entende Database Replication + Sharding
-- [ ] Entende Caching, Load Balancing, API Gateway
-
-### System Design — LLD
-- [ ] Aplica SOLID Principles
-- [ ] Usa Design Patterns (Singleton, Factory, Builder, Strategy, Observer)
-
-### CI/CD
-- [ ] GitHub Actions configurado
-- [ ] Pipeline: test → build → deploy
-- [ ] Coverage report gerado
-
-### DevOps
-- [ ] Nginx reverse proxy (proxy_pass, static files, CORS)
-- [ ] Logging com SLF4J + Logback (log levels, structured logging JSON)
-- [ ] Correlation IDs para rastrear requests entre services
-- [ ] Spring Boot Actuator (health, metrics, info)
-- [ ] AWS básico (IAM, console, regions)
-- [ ] AWS EC2 (instância Linux, SSH, deploy Spring Boot)
-- [ ] AWS RDS (PostgreSQL managed)
-- [ ] AWS S3 (storage de arquivos)
-- [ ] SSL/HTTPS com Let's Encrypt + Certbot
-
-### Stay Hard v5.0
-- [ ] `docker-compose up` sobe tudo (postgres + api + frontend + redis)
-- [ ] GitHub Actions passa no push
-- [ ] Consegue desenhar HLD do Stay Hard
-
-### Mini-Projetos
-- [ ] Dockerize Spring Boot
-- [ ] Redis Cache Demo
-- [ ] GitHub Actions CI
-- [ ] Rate Limiter
-
-### 📊 Progresso Fase 5: ___/39
+- [ ] Dias 71-100: Spring Boot (REST, JPA, Security)
 
 ---
 
-## 🏆 FASE 6 — MongoDB + Microservices + Kafka + RabbitMQ (Dias 103-130) — ⭐⭐⭐⭐ XP
+## FASE 3: FRONTEND TYPESCRIPT (Dias 101-120)
 
-### MongoDB
-- [ ] Entende Documents e Collections
-- [ ] Spring Data MongoDB configurado
-- [ ] @Document + MongoRepository
-- [ ] Mongo Express rodando
-
-### Microservices
-- [ ] Eureka Server (Service Discovery)
-- [ ] API Gateway configurado
-- [ ] Serviços se comunicam via Feign
-- [ ] Circuit Breaker (Resilience4j)
-
-### Kafka
-- [ ] Kafka concepts (topics, partitions, consumer groups)
-- [ ] Kafka via Docker
-- [ ] Spring Boot + Kafka Producer
-- [ ] Spring Boot + Kafka Consumer
-- [ ] Stay Hard — Kafka events
-
-### RabbitMQ
-- [ ] RabbitMQ concepts (queues, exchanges, bindings, routing keys)
-- [ ] RabbitMQ via Docker (management UI)
-- [ ] Spring Boot + RabbitMQ Producer (RabbitTemplate)
-- [ ] Spring Boot + RabbitMQ Consumer (@RabbitListener)
-- [ ] Exchange types (Direct, Fanout, Topic)
-- [ ] Dead Letter Queues (DLQ)
-- [ ] Manual acknowledgment
-- [ ] Stay Hard — RabbitMQ notifications
-
-### 📊 Progresso Fase 6: ___/21
+- [ ] Dias 101-120: HTML/CSS/JS + TypeScript + React
 
 ---
 
-## 🏆 FASE 7 — IA + RAG + Spring AI (Dias 131-150) — ⭐⭐⭐⭐ XP
+## FASE 4: DEVOPS (Dias 121-140)
 
-### IA
-- [ ] Entende o que é LLM
-- [ ] Sabe fazer Prompt Engineering
-- [ ] Configurou OpenAI API ou Ollama
-- [ ] Spring AI configurado
-
-### RAG
-- [ ] Entende o que é RAG
-- [ ] Configurou pgvector ou ChromaDB
-- [ ] Gerou embeddings de documentos
-- [ ] Fez busca por similaridade
-- [ ] Pipeline RAG funcional
-
-### Stay Hard v7.0
-- [ ] Coach IA responde sobre hábitos
-- [ ] RAG Analytics funcional
-- [ ] Smart Suggestions funcionam
-- [ ] Daily Summary gerado por IA
-
-### Mini-Projetos
-- [ ] Chat com PDF (RAG)
-- [ ] Code Reviewer IA
-- [ ] Document Q&A
-- [ ] Recipe Suggester
-- [ ] Sentiment Analyzer
-
-### 📊 Progresso Fase 7: ___/14
+- [ ] Dias 121-140: Docker + CI/CD + AWS
 
 ---
 
-## 🏆 FASE 8 — TypeScript + React + Tailwind (Dias 151-175) — ⭐⭐⭐⭐ XP
+## FASE 5: MICROSERVICES (Dias 141-150)
 
-### TypeScript
-- [ ] Tipos básicos (string, number, boolean, array)
-- [ ] Interfaces e Types
-- [ ] Generics básicos
-- [ ] Union types, optional properties
-- [ ] Enums
-
-### React
-- [ ] Componentes funcionais com TypeScript
-- [ ] Props com interfaces TypeScript
-- [ ] useState, useEffect
-- [ ] useContext para autenticação
-- [ ] React Router DOM v6
-- [ ] Axios com interceptors
-- [ ] Tailwind CSS configurado
-- [ ] Custom Hooks
-
-### Stay Hard v4.0
-- [ ] Login chama API e salva JWT
-- [ ] ProtectedRoute bloqueia acesso sem auth
-- [ ] Dashboard mostra stats reais
-- [ ] CRUD de hábitos funcional
-- [ ] Dockerize React frontend
-- [ ] Full stack: React + Spring API + PostgreSQL + Redis
-
-### Mini-Projetos
-- [ ] React Weather App
-- [ ] React Todo List
-- [ ] React Kanban Board
-- [ ] React Chat UI
-- [ ] React E-commerce Cart
-
-### 📊 Progresso Fase 8: ___/23
+- [ ] Dias 141-150: Microservices (Kafka, Redis)
 
 ---
 
-## 🏆 FASE 9 — SaaS + ERPs com IA + Portfolio (Dias 176-200) — 🏆 XP
+## FASE 6: FULL STACK INTEGRATION (Dias 151-160)
 
-### SaaS Architecture
-- [ ] Multi-tenancy implementado
-- [ ] Tenant isolation funcional
-- [ ] RBAC (Admin, Manager, User)
-- [ ] Stripe integration (billing)
-
-### ERPs com IA
-- [ ] MedTrack AI — CRUD + triagem IA + RAG médico + React
-- [ ] LegalMind AI — CRUD + contratos IA + jurisprudência RAG + React
-- [ ] BuildFlow AI — CRUD + custos IA + normas RAG + React
-- [ ] TelecomPro — CRUD + churn IA + chatbot RAG + React
-
-### Stay Hard SaaS
-- [ ] Multi-tenant funcional
-- [ ] Coach IA integrado
-- [ ] Docker Compose completo
-- [ ] Deploy em produção
-
-### Portfolio
-- [ ] READMEs profissionais em todos repos
-- [ ] LinkedIn atualizado com projetos
-- [ ] GitHub profile organizado
-- [ ] Deploy funcionando (AWS/Railway/Render)
-
-### 📊 Progresso Fase 9: ___/15
+- [ ] Dias 151-160: Full Stack Integration
 
 ---
 
-## 📊 PROGRESSO TOTAL
+## FASE 7: IA & ADVANCED (Dias 161-180)
 
-| Fase | Progresso | Status |
-|------|-----------|--------|
-| 0 - Fundação | ___/14 | ⬜ |
-| 1 - SQLite + JDBC + API | ___/16 | ⬜ |
-| 2 - HTML + CSS + JS | ___/29 | ⬜ |
-| 3 - Spring Boot + DB | ___/29 | ⬜ |
-| 4 - REST API + Auth | ___/24 | ⬜ |
-| 5 - Docker + Redis + DevOps + SysDesign | ___/39 | ⬜ |
-| 6 - MongoDB + Microservices + Kafka + RabbitMQ | ___/21 | ⬜ |
-| 7 - IA + RAG | ___/14 | ⬜ |
-| 8 - TypeScript + React | ___/23 | ⬜ |
-| 9 - SaaS + ERPs + Portfolio | ___/15 | ⬜ |
-| **TOTAL** | **___/224** | |
+- [ ] Dias 161-180: Testing + Quality + System Design
 
-### Níveis
-```
-0-25   items = 🌱 Iniciante
-26-50  items = 🔥 Aprendendo
-51-100 items = ⚡ Intermediário
-101-160 items = 🛡️ Avançado
-161-215 items = 👑 STAY HARD
-```
+---
+
+## FASE 8: SAAS & PORTFOLIO (Dias 181-209)
+
+- [ ] Dias 181-209: Kotlin + GraphQL + SaaS + Career
