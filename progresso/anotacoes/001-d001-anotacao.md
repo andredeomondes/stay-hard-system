@@ -1,6 +1,6 @@
-# ?? DIA 1 - Anotações
+# ?? DIA 1 - Anotaï¿½ï¿½es
 
-**Data:** __ / __ / ____
+**Data:** 31 / 03 / 2026
 
 ---
 
@@ -12,15 +12,15 @@
 > 
 
 
-## Dúvidas:
+## Dï¿½vidas:
 > 
 
 
-## Aplicação no Stay Hard:
+## Aplicaï¿½ï¿½o no Stay Hard:
 > 
 
 
-## Reflexão:
+## Reflexï¿½o:
 > 
 
 ---

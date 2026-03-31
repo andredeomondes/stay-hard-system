@@ -75,10 +75,10 @@
 - [ ] Dia 48: Builder Pattern
 
 ### DDD & Architecture (Dias 49-60)
-- [ ] Dia 49: Entidades vs Value Objects
-- [ ] Dia 50: Services e Repositories
-- [ ] Dia 51: HTTP Server Native
-- [ ] Dia 52: Servlets Intro
+- [ ] Dia 49: DDD: Entidades e Value Objects
+- [ ] Dia 50: DDD: Services e Repositories
+- [ ] Dia 51: HTTP Server: Como funciona um servidor web
+- [ ] Dia 52: HTTP Server Native em Java
 - [ ] Dia 53: Servlets POST, Headers
 - [ ] Dia 54: Tomcat Deploy
 - [ ] Dia 55: JSP
@@ -88,17 +88,28 @@
 - [ ] Dia 59: Exception Handling Web
 - [ ] Dia 60: Mini-Projeto Servlet
 
+### Servlets & HTTP Server (Dias 52-70)
+- [ ] Dia 52: HTTP Server Native em Java
+- [ ] Dia 53: HTTP Server: Request e Response
+- [ ] Dia 54: HTTP Server: Headers e Status Codes
+- [ ] Dia 55: HTTP Server: Query Params
+- [ ] Dia 56: HTTP Server: JSON e MIME Types
+- [ ] Dia 57: HTTP Server: Static Files
+- [ ] Dia 58: HTTP Server: Filters
+- [ ] Dia 59: HTTP Server: Exception Handling
+- [ ] Dia 60: Mini-Projeto: API REST com Http Server
+
 ### Spring Boot Intro (Dias 61-70)
-- [ ] Dia 61: Spring Boot Intro
-- [ ] Dia 62: @RestController
-- [ ] Dia 63: IoC & DI
-- [ ] Dia 64: application.properties
-- [ ] Dia 65: Jackson JSON
-- [ ] Dia 66: Bean Validation
-- [ ] Dia 67: Exception Handling
-- [ ] Dia 68: Logging
-- [ ] Dia 69: Profiles
-- [ ] Dia 70: REST API Completa
+- [ ] Dia 61: Spring Boot: Por que usar?
+- [ ] Dia 62: Spring Initializr
+- [ ] Dia 63: @RestController e @GetMapping
+- [ ] Dia 64: @PostMapping, @PutMapping, @DeleteMapping
+- [ ] Dia 65: @RequestBody e @ResponseBody
+- [ ] Dia 66: @PathVariable e @RequestParam
+- [ ] Dia 67: Injeção de Dependência
+- [ ] Dia 68: @Service e @Repository
+- [ ] Dia 69: application.properties
+- [ ] Dia 70: Mini-Projeto: API REST com Spring Boot
 
 ---
 
