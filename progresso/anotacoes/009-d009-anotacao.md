@@ -1,26 +1,27 @@
-# ?? DIA 9 - AnotaÁıes
+# üìù DIA 9 ‚Äî Anota√ß√µes
 
-**Data:** __ / __ / ____
+**Data:** __ / __ / 2026
 
 ---
 
 ## O que aprendi:
-> 
 
+### HTTP Status Codes
 
-## Insights:
-> 
+| C√≥digo | Significado |
+|--------|-------------|
+| 200 | OK |
+| 201 | Created |
+| 400 | Bad Request |
+| 404 | Not Found |
+| 500 | Server Error |
 
-
-## D˙vidas:
-> 
-
-
-## AplicaÁ„o no Stay Hard:
-> 
-
-
-## Reflex„o:
-> 
+```powershell
+(Invoke-WebRequest -Uri "https://jsonplaceholder.typicode.com/posts/1").StatusCode
+```
 
 ---
+
+## Reflex√£o:
+
+> (sua reflex√£o sobre o dia)
