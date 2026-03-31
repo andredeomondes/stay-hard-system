@@ -37,7 +37,7 @@ Ser um **Desenvolvedor Backend Java** com:
 
 | Fase | Foco | Dias | Status |
 |------|------|------|--------|
-| **1** | Pré-Spring (Java, SQL, POO, Clean Code) | 1-70 | ✅ 6/70 |
+| **1** | Pré-Spring (Java, SQL, POO, Clean Code) | 1-70 | ✅ 7/70 |
 | **2** | Spring Boot (REST, JPA, Security) | 71-100 | 📅 |
 | **3** | Frontend TypeScript (HTML/CSS/JS, React) | 101-120 | 📅 |
 | **4** | DevOps (Docker, CI/CD, AWS) | 121-140 | 📅 |
@@ -46,7 +46,7 @@ Ser um **Desenvolvedor Backend Java** com:
 | **7** | IA & Advanced Topics | 161-180 | 📅 |
 | **8** | SaaS & Portfolio | 181-209 | 📅 |
 
-**Progresso: 6/209 dias (3%)**
+**Progresso: 7/209 dias (3%)**
 
 ---
 
