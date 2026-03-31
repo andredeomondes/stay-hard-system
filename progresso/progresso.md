@@ -6,21 +6,21 @@
 
 ## 📅 RESUMO GERAL
 
-**Progresso Total: 0/209 dias (0%)**
+**Progresso Total: 6/209 dias (3%)**
 
 ---
 
 ## ✅ FASE 1: PRÉ-SPRING (Dias 1-70)
 
-**Progresso: 0/70 dias**
+**Progresso: 6/70 dias**
 
 ### Fundamentos de Rede (Dias 1-10)
-- [ ] Dia 1: Cliente-Servidor
-- [ ] Dia 2: TCP/IP & Portas
-- [ ] Dia 3: HTTP & Request/Response
-- [ ] Dia 4: DNS & URLs
-- [ ] Dia 5: Sockets em Java
-- [ ] Dia 6: curl GET & POST
+- [x] Dia 1: Cliente-Servidor
+- [x] Dia 2: TCP/IP & Portas
+- [x] Dia 3: HTTP & Request/Response
+- [x] Dia 4: DNS & URLs
+- [x] Dia 5: Sockets em Java
+- [x] Dia 6: curl GET & POST
 - [ ] Dia 7: curl Headers & Query Params
 - [ ] Dia 8: curl PUT & DELETE
 - [ ] Dia 9: HTTP Status Codes
