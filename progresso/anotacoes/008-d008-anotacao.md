@@ -1,26 +1,31 @@
-# ?? DIA 8 - AnotaÁıes
+# üìù DIA 8 ‚Äî Anota√ß√µes
 
-**Data:** __ / __ / ____
+**Data:** __ / __ / 2026
 
 ---
 
 ## O que aprendi:
-> 
 
+### PUT (atualizar dados)
+```powershell
+Invoke-RestMethod -Uri "https://jsonplaceholder.typicode.com/posts/1" -Method Put -ContentType "application/json" -Body (@{title="Atualizado"} | ConvertTo-Json)
+```
 
-## Insights:
-> 
+### DELETE (deletar dados)
+```powershell
+Invoke-RestMethod -Uri "https://jsonplaceholder.typicode.com/posts/1" -Method Delete
+```
 
+---
 
-## D˙vidas:
-> 
+## D√∫vidas:
 
+> (preencher se tiver)
 
-## AplicaÁ„o no Stay Hard:
-> 
+---
 
+## Reflex√£o:
 
-## Reflex„o:
-> 
+> (sua reflex√£o sobre o dia)
 
 ---
