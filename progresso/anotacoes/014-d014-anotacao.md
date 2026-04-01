@@ -1,26 +1,22 @@
-# ?? DIA 14 - AnotaÁıes
+# üìù DIA 14 ‚Äî Anota√ß√µes
 
 **Data:** __/__/2026
 
 ---
 
 ## O que aprendi:
-> 
 
+### List e ArrayList
 
-## Insights:
-> 
-
-
-## D˙vidas:
-> 
-
-
-## AplicaÁ„o no Stay Hard:
-> 
-
-
-## Reflex„o:
-> 
+```java
+List<String> nomes = new ArrayList<>();
+nomes.add("Andr√©");
+nomes.get(0);
+nomes.size();
+nomes.contains("Ana");
+nomes.remove(0);
+```
 
 ---
+
+## Reflex√£o:
