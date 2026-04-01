@@ -6,7 +6,7 @@
 
 ## 📅 RESUMO GERAL
 
-**Progresso Total: 30/209 dias (14%)**
+**Progresso Total: 35/209 dias (17%)**
 
 ---
 
@@ -45,10 +45,11 @@
 - [x] Dia 28: JOINs
 - [x] Dia 29: GROUP BY & Functions
 - [x] Dia 30: Subqueries
-- [ ] Dia 7: curl Headers & Query Params
-- [ ] Dia 8: curl PUT & DELETE
-- [ ] Dia 9: HTTP Status Codes
-- [ ] Dia 10: RESTful Best Practices
+- [x] Dia 31: Conexão JDBC
+- [x] Dia 32: SELECT com JDBC
+- [x] Dia 33: INSERT/UPDATE/DELETE
+- [x] Dia 34: PreparedStatement
+- [x] Dia 35: Transactions
 
 ### Java & Maven (Dias 11-20)
 - [ ] Dia 11: Setup Maven + pom.xml

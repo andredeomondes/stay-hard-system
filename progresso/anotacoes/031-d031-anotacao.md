@@ -1,26 +1,17 @@
-# ?? DIA 31 - AnotaÁıes
+# DIA 31 - JDBC Conex√£o
 
-**Data:** __/__/2026
+**Data:** 01/04/2026 ‚úÖ
 
 ---
 
 ## O que aprendi:
-> 
 
+### Conex√£o JDBC
 
-## Insights:
-> 
-
-
-## D˙vidas:
-> 
-
-
-## AplicaÁ„o no Stay Hard:
-> 
-
-
-## Reflex„o:
-> 
+```java
+Connection conn = DriverManager.getConnection(url, user, pass);
+```
 
 ---
+
+## Reflex√£o:
