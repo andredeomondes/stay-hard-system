@@ -1,26 +1,29 @@
-# ?? DIA 12 - AnotaÁıes
+# üìù DIA 12 ‚Äî Anota√ß√µes
 
-**Data:** __ / __ / ____
+**Data:** __ / __ / 2026
 
 ---
 
 ## O que aprendi:
-> 
 
+### Dependencies
+Bibliotecas externas que o projeto precisa.
 
-## Insights:
-> 
+### Scopes
 
+| Scope | Quando usa |
+|-------|-----------|
+| **compile** (padr√£o) | Dispon√≠vel em compile e runtime |
+| **provided** | Provided pelo container |
+| **test** | S√≥ para rodar testes |
+| **runtime** | S√≥ runtime, n√£o compile |
 
-## D˙vidas:
-> 
-
-
-## AplicaÁ„o no Stay Hard:
-> 
-
-
-## Reflex„o:
-> 
+### Onde buscar:
+- mvnrepository.com
+- start.spring.io
 
 ---
+
+## Reflex√£o:
+
+> (sua reflex√£o sobre o dia)
