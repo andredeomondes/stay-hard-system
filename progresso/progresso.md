@@ -6,7 +6,7 @@
 
 ## 📅 RESUMO GERAL
 
-**Progresso Total: 26/209 dias (12%)**
+**Progresso Total: 30/209 dias (14%)**
 
 ---
 

@@ -46,7 +46,7 @@ Ser um **Desenvolvedor Backend Java** com:
 | **7** | IA & Advanced Topics | 161-180 | 📅 |
 | **8** | SaaS & Portfolio | 181-209 | 📅 |
 
-**Progresso: 13/209 dias (6%)**
+**Progresso: 30/209 dias (14%)**
 
 ---
 
