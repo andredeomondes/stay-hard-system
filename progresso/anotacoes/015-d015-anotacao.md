@@ -1,26 +1,24 @@
-# ?? DIA 15 - AnotaÁıes
+# üìù DIA 15 ‚Äî Anota√ß√µes
 
 **Data:** __/__/2026
 
 ---
 
 ## O que aprendi:
-> 
 
+### Set & HashSet
 
-## Insights:
-> 
+```java
+Set<String> nomes = new HashSet<>();
+nomes.add("Andr√©");
+nomes.add("Andr√©"); // Ignorado!
+nomes.contains("Maria");
+nomes.remove("Maria");
+```
 
-
-## D˙vidas:
-> 
-
-
-## AplicaÁ„o no Stay Hard:
-> 
-
-
-## Reflex„o:
-> 
+- N√£o permite duplicados
+- R√°pido, mas n√£o mant√©m ordem
 
 ---
+
+## Reflex√£o:
