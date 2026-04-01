@@ -1,26 +1,25 @@
-# ?? DIA 18 - AnotaÁıes
+# üìù DIA 18 ‚Äî Anota√ß√µes
 
 **Data:** __/__/2026
 
 ---
 
 ## O que aprendi:
-> 
 
+### Lambdas
 
-## Insights:
-> 
+```java
+// Sintaxe
+(par√¢metros) -> { c√≥digo }
 
+// Exemplo
+list.forEach(n -> System.out.println(n));
+numeros.filter(ePar -> n % 2 == 0);
+```
 
-## D˙vidas:
-> 
-
-
-## AplicaÁ„o no Stay Hard:
-> 
-
-
-## Reflex„o:
-> 
+- Fun√ß√µes an√¥nimas
+- Consumer, Predicate, Function
 
 ---
+
+## Reflex√£o:

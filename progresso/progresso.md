@@ -33,6 +33,7 @@
 - [x] Dia 16: Map & HashMap
 - [x] Dia 17: Streams API
 - [x] Dia 18: Lambdas
+- [x] Dia 19: Method Reference
 - [ ] Dia 7: curl Headers & Query Params
 - [ ] Dia 8: curl PUT & DELETE
 - [ ] Dia 9: HTTP Status Codes
