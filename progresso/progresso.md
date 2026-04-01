@@ -6,7 +6,7 @@
 
 ## 📅 RESUMO GERAL
 
-**Progresso Total: 35/209 dias (17%)**
+**Progresso Total: 40/209 dias (19%)**
 
 ---
 
@@ -50,6 +50,11 @@
 - [x] Dia 33: INSERT/UPDATE/DELETE
 - [x] Dia 34: PreparedStatement
 - [x] Dia 35: Transactions
+- [x] Dia 36: Encapsulamento
+- [x] Dia 37: Herança
+- [x] Dia 38: Polimorfismo
+- [x] Dia 39: Interfaces
+- [x] Dia 40: Exceptions
 
 ### Java & Maven (Dias 11-20)
 - [ ] Dia 11: Setup Maven + pom.xml
