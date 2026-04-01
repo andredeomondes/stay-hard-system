@@ -41,6 +41,10 @@
 - [x] Dia 24: @ParameterizedTest
 - [x] Dia 25: TDD na prática
 - [x] Dia 26: DDL & DML
+- [x] Dia 27: WHERE & LIKE
+- [x] Dia 28: JOINs
+- [x] Dia 29: GROUP BY & Functions
+- [x] Dia 30: Subqueries
 - [ ] Dia 7: curl Headers & Query Params
 - [ ] Dia 8: curl PUT & DELETE
 - [ ] Dia 9: HTTP Status Codes
