@@ -6,7 +6,7 @@
 
 ## 📅 RESUMO GERAL
 
-**Progresso Total: 17/209 dias (8%)**
+**Progresso Total: 18/209 dias (9%)**
 
 ---
 
@@ -32,6 +32,7 @@
 - [x] Dia 15: Set & HashSet
 - [x] Dia 16: Map & HashMap
 - [x] Dia 17: Streams API
+- [x] Dia 18: Lambdas
 - [ ] Dia 7: curl Headers & Query Params
 - [ ] Dia 8: curl PUT & DELETE
 - [ ] Dia 9: HTTP Status Codes
