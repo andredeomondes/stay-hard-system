@@ -1,26 +1,26 @@
-# ?? DIA 13 - AnotaÁıes
+# üìù DIA 13 ‚Äî Anota√ß√µes
 
-**Data:** __ / __ / ____
+**Data:** __ / __ / 2026
 
 ---
 
 ## O que aprendi:
-> 
 
+### Maven Lifecycle
 
-## Insights:
-> 
+| Fase | O que faz |
+|------|-----------|
+| clean | Limpa build |
+| compile | Compila c√≥digo |
+| test | Roda testes |
+| package | Gera JAR |
+| install | Instala local |
 
-
-## D˙vidas:
-> 
-
-
-## AplicaÁ„o no Stay Hard:
-> 
-
-
-## Reflex„o:
-> 
+### JUnit assertEquals
+```java
+assertEquals(esperado, real);
+```
 
 ---
+
+## Reflex√£o:
