@@ -1,26 +1,27 @@
-# ?? DIA 17 - AnotaÁıes
+# üìù DIA 17 ‚Äî Anota√ß√µes
 
 **Data:** __/__/2026
 
 ---
 
 ## O que aprendi:
-> 
 
+### Streams API
 
-## Insights:
-> 
+```java
+// filter - filtrar
+list.stream().filter(n -> n % 2 == 0).collect(Collectors.toList());
 
+// map - transformar
+list.stream().map(n -> n * 2).collect(Collectors.toList());
 
-## D˙vidas:
-> 
+// forEach - iterar
+list.forEach(n -> System.out.println(n));
 
-
-## AplicaÁ„o no Stay Hard:
-> 
-
-
-## Reflex„o:
-> 
+// reduce - reduzir a um valor
+list.stream().reduce(0, (a, b) -> a + b);
+```
 
 ---
+
+## Reflex√£o:
