@@ -6,7 +6,7 @@
 
 ## 📅 RESUMO GERAL
 
-**Progresso Total: 20/209 dias (10%)**
+**Progresso Total: 25/209 dias (12%)**
 
 ---
 
@@ -35,6 +35,11 @@
 - [x] Dia 18: Lambdas
 - [x] Dia 19: Method Reference
 - [x] Dia 20: Optional & Null Safety
+- [x] Dia 21: @Test & @BeforeEach
+- [x] Dia 22: Assertions
+- [x] Dia 23: @DisplayName
+- [x] Dia 24: @ParameterizedTest
+- [x] Dia 25: TDD na prática
 - [ ] Dia 7: curl Headers & Query Params
 - [ ] Dia 8: curl PUT & DELETE
 - [ ] Dia 9: HTTP Status Codes
