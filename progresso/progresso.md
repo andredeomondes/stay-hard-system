@@ -6,13 +6,13 @@
 
 ## 📅 RESUMO GERAL
 
-**Progresso Total: 10/209 dias (5%)**
+**Progresso Total: 11/209 dias (5%)**
 
 ---
 
 ## ✅ FASE 1: PRÉ-SPRING (Dias 1-70)
 
-**Progresso: 10/70 dias**
+**Progresso: 11/70 dias**
 
 ### Fundamentos de Rede (Dias 1-10)
 - [x] Dia 1: Cliente-Servidor
@@ -25,6 +25,7 @@
 - [x] Dia 8: curl PUT & DELETE
 - [x] Dia 9: HTTP Status Codes
 - [x] Dia 10: RESTful Best Practices
+- [x] Dia 11: Setup Maven + pom.xml
 - [ ] Dia 7: curl Headers & Query Params
 - [ ] Dia 8: curl PUT & DELETE
 - [ ] Dia 9: HTTP Status Codes
