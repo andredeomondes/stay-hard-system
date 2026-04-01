@@ -6,7 +6,7 @@
 
 ## 📅 RESUMO GERAL
 
-**Progresso Total: 25/209 dias (12%)**
+**Progresso Total: 26/209 dias (12%)**
 
 ---
 
@@ -40,6 +40,7 @@
 - [x] Dia 23: @DisplayName
 - [x] Dia 24: @ParameterizedTest
 - [x] Dia 25: TDD na prática
+- [x] Dia 26: DDL & DML
 - [ ] Dia 7: curl Headers & Query Params
 - [ ] Dia 8: curl PUT & DELETE
 - [ ] Dia 9: HTTP Status Codes

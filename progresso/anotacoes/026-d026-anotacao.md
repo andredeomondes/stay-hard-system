@@ -1,26 +1,26 @@
-# ?? DIA 26 - AnotaÁıes
+# üìù DIA 26 ‚Äî Anota√ß√µes
 
 **Data:** __/__/2026
 
 ---
 
 ## O que aprendi:
-> 
 
+### SQL B√°sico
 
-## Insights:
-> 
+```sql
+SELECT * FROM tabela;
+INSERT INTO tabela (coluna) VALUES (valor);
+UPDATE tabela SET coluna = valor WHERE id = 1;
+DELETE FROM tabela WHERE id = 1;
+```
 
+### PostgreSQL Docker
 
-## D˙vidas:
-> 
-
-
-## AplicaÁ„o no Stay Hard:
-> 
-
-
-## Reflex„o:
-> 
+```bash
+docker run --name postgres -e POSTGRES_PASSWORD=123 -p 5432:5432 -d postgres
+```
 
 ---
+
+## Reflex√£o:
