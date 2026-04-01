@@ -1,26 +1,20 @@
-# ?? DIA 19 - AnotaÁıes
+# üìù DIA 19 ‚Äî Anota√ß√µes
 
 **Data:** __/__/2026
 
 ---
 
 ## O que aprendi:
-> 
 
+### Method Reference
 
-## Insights:
-> 
-
-
-## D˙vidas:
-> 
-
-
-## AplicaÁ„o no Stay Hard:
-> 
-
-
-## Reflex„o:
-> 
+```java
+// Sintaxe: Classe::m√©todo
+System.out::println
+String::toUpperCase
+Classe::metodoStatico
+```
 
 ---
+
+## Reflex√£o:

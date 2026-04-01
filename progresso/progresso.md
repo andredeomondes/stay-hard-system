@@ -6,7 +6,7 @@
 
 ## 📅 RESUMO GERAL
 
-**Progresso Total: 18/209 dias (9%)**
+**Progresso Total: 20/209 dias (10%)**
 
 ---
 
@@ -34,6 +34,7 @@
 - [x] Dia 17: Streams API
 - [x] Dia 18: Lambdas
 - [x] Dia 19: Method Reference
+- [x] Dia 20: Optional & Null Safety
 - [ ] Dia 7: curl Headers & Query Params
 - [ ] Dia 8: curl PUT & DELETE
 - [ ] Dia 9: HTTP Status Codes
