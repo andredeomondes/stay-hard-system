@@ -6,7 +6,7 @@
 
 ## 📅 RESUMO GERAL
 
-**Progresso Total: 15/209 dias (7%)**
+**Progresso Total: 16/209 dias (8%)**
 
 ---
 
@@ -30,6 +30,7 @@
 - [x] Dia 13: Maven Lifecycle
 - [x] Dia 14: List & ArrayList
 - [x] Dia 15: Set & HashSet
+- [x] Dia 16: Map & HashMap
 - [ ] Dia 7: curl Headers & Query Params
 - [ ] Dia 8: curl PUT & DELETE
 - [ ] Dia 9: HTTP Status Codes

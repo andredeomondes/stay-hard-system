@@ -1,26 +1,24 @@
-# ?? DIA 16 - AnotaÁıes
+# üìù DIA 16 ‚Äî Anota√ß√µes
 
 **Data:** __/__/2026
 
 ---
 
 ## O que aprendi:
-> 
 
+### Map & HashMap
 
-## Insights:
-> 
+```java
+Map<String, Integer> idade = new HashMap<>();
+idade.put("Andr√©", 25);
+idade.get("Andr√©");
+idade.containsKey("Maria");
+idade.remove("Andr√©");
+```
 
-
-## D˙vidas:
-> 
-
-
-## AplicaÁ„o no Stay Hard:
-> 
-
-
-## Reflex„o:
-> 
+- Chave-Valor
+- Busca r√°pida pela chave
 
 ---
+
+## Reflex√£o:
