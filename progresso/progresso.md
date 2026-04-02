@@ -1,20 +1,20 @@
 # 📊 PROGRESSO - STAY HARD SYSTEM
 
-> Atualize este arquivo conforme avanza nos estudos
+> Atualize este arquivo conforme avança nos estudos
 
 ---
 
 ## 📅 RESUMO GERAL
 
-**Progresso Total: 40/209 dias (19%)**
+**Progresso Total: 69/209 dias (33%)**
 
 ---
 
 ## ✅ FASE 1: PRÉ-SPRING (Dias 1-70)
 
-**Progresso: 15/70 dias**
+**Progresso: 69/70 dias**
 
-### Fundamentos de Rede (Dias 1-10)
+### Fundamentos de Rede (Dias 1-10) ✅
 - [x] Dia 1: Cliente-Servidor
 - [x] Dia 2: TCP/IP & Portas
 - [x] Dia 3: HTTP & Request/Response
@@ -25,6 +25,8 @@
 - [x] Dia 8: curl PUT & DELETE
 - [x] Dia 9: HTTP Status Codes
 - [x] Dia 10: RESTful Best Practices
+
+### Java & Maven (Dias 11-20) ✅
 - [x] Dia 11: Setup Maven + pom.xml
 - [x] Dia 12: Dependencies & Scopes
 - [x] Dia 13: Maven Lifecycle
@@ -35,11 +37,15 @@
 - [x] Dia 18: Lambdas
 - [x] Dia 19: Method Reference
 - [x] Dia 20: Optional & Null Safety
+
+### JUnit & TDD (Dias 21-25) ✅
 - [x] Dia 21: @Test & @BeforeEach
 - [x] Dia 22: Assertions
 - [x] Dia 23: @DisplayName
 - [x] Dia 24: @ParameterizedTest
 - [x] Dia 25: TDD na prática
+
+### SQL & JDBC (Dias 26-35) ✅
 - [x] Dia 26: DDL & DML
 - [x] Dia 27: WHERE & LIKE
 - [x] Dia 28: JOINs
@@ -50,100 +56,55 @@
 - [x] Dia 33: INSERT/UPDATE/DELETE
 - [x] Dia 34: PreparedStatement
 - [x] Dia 35: Transactions
+
+### POO & Exceptions (Dias 36-40) ✅
 - [x] Dia 36: Encapsulamento
 - [x] Dia 37: Herança
 - [x] Dia 38: Polimorfismo
 - [x] Dia 39: Interfaces
 - [x] Dia 40: Exceptions
 
-### Java & Maven (Dias 11-20)
-- [ ] Dia 11: Setup Maven + pom.xml
-- [ ] Dia 12: Dependencies & Scopes
-- [ ] Dia 13: Maven Lifecycle
-- [ ] Dia 14: List & ArrayList
-- [ ] Dia 15: Set & HashSet
-- [ ] Dia 16: Map & HashMap
-- [ ] Dia 17: Streams API
-- [ ] Dia 18: Lambdas
-- [ ] Dia 19: Method Reference
-- [ ] Dia 20: Optional & Null Safety
+### Clean Code & SOLID (Dias 41-48) ✅
+- [x] Dia 41: SRP
+- [x] Dia 42: OCP
+- [x] Dia 43: LSP
+- [x] Dia 44: ISP + DIP
+- [x] Dia 45: Factory Pattern
+- [x] Dia 46: Observer Pattern
+- [x] Dia 47: Singleton Pattern
+- [x] Dia 48: Builder Pattern
 
-### JUnit & TDD (Dias 21-25)
-- [ ] Dia 21: @Test & @BeforeEach
-- [ ] Dia 22: Assertions
-- [ ] Dia 23: @DisplayName
-- [ ] Dia 24: @ParameterizedTest
-- [ ] Dia 25: TDD na prática
+### DDD & Architecture (Dias 49-56) ✅
+- [x] Dia 49: DDD: Entidades e Value Objects
+- [x] Dia 50: DDD: Services e Repositories
+- [x] Dia 51: HTTP Server Native
+- [x] Dia 52: Servlets Intro
+- [x] Dia 53: Servlets POST, Headers
+- [x] Dia 54: Tomcat Deploy
+- [x] Dia 55: JSP
+- [x] Dia 56: MVC Pattern
 
-### SQL & JDBC (Dias 26-35)
-- [ ] Dia 26: DDL & DML
-- [ ] Dia 27: WHERE & LIKE
-- [ ] Dia 28: JOINs
-- [ ] Dia 29: GROUP BY & Functions
-- [ ] Dia 30: Subqueries
-- [ ] Dia 31: Conexão JDBC
-- [ ] Dia 32: SELECT com JDBC
-- [ ] Dia 33: INSERT/UPDATE/DELETE
-- [ ] Dia 34: PreparedStatement
-- [ ] Dia 35: Transactions
+### HTTP Server & Spring Boot Intro (Dias 57-69) ✅
+- [x] Dia 57: Filters & Listeners
+- [x] Dia 58: Session & Cookies
+- [x] Dia 59: Exception Handling Web
+- [x] Dia 60: Mini-Projeto Servlet
+- [x] Dia 61: Spring Boot Intro
+- [x] Dia 62: @RestController
+- [x] Dia 63: IoC & DI
+- [x] Dia 64: application.properties
+- [x] Dia 65: Jackson JSON
+- [x] Dia 66: Bean Validation
+- [x] Dia 67: Exception Handling
+- [x] Dia 68: Logging
+- [x] Dia 69: Profiles
 
-### POO & Exceptions (Dias 36-40)
-- [ ] Dia 36: Encapsulamento
-- [ ] Dia 37: Herança
-- [ ] Dia 38: Polimorfismo
-- [ ] Dia 39: Interfaces
-- [ ] Dia 40: Exceptions
-
-### Clean Code & SOLID (Dias 41-48)
-- [ ] Dia 41: SRP
-- [ ] Dia 42: OCP
-- [ ] Dia 43: LSP
-- [ ] Dia 44: ISP + DIP
-- [ ] Dia 45: Factory Pattern
-- [ ] Dia 46: Observer Pattern
-- [ ] Dia 47: Singleton Pattern
-- [ ] Dia 48: Builder Pattern
-
-### DDD & Architecture (Dias 49-60)
-- [ ] Dia 49: DDD: Entidades e Value Objects
-- [ ] Dia 50: DDD: Services e Repositories
-- [ ] Dia 51: HTTP Server: Como funciona um servidor web
-- [ ] Dia 52: HTTP Server Native em Java
-- [ ] Dia 53: Servlets POST, Headers
-- [ ] Dia 54: Tomcat Deploy
-- [ ] Dia 55: JSP
-- [ ] Dia 56: MVC Pattern
-- [ ] Dia 57: Filters & Listeners
-- [ ] Dia 58: Session & Cookies
-- [ ] Dia 59: Exception Handling Web
-- [ ] Dia 60: Mini-Projeto Servlet
-
-### Servlets & HTTP Server (Dias 52-70)
-- [ ] Dia 52: HTTP Server Native em Java
-- [ ] Dia 53: HTTP Server: Request e Response
-- [ ] Dia 54: HTTP Server: Headers e Status Codes
-- [ ] Dia 55: HTTP Server: Query Params
-- [ ] Dia 56: HTTP Server: JSON e MIME Types
-- [ ] Dia 57: HTTP Server: Static Files
-- [ ] Dia 58: HTTP Server: Filters
-- [ ] Dia 59: HTTP Server: Exception Handling
-- [ ] Dia 60: Mini-Projeto: API REST com Http Server
-
-### Spring Boot Intro (Dias 61-70)
-- [ ] Dia 61: Spring Boot: Por que usar?
-- [ ] Dia 62: Spring Initializr
-- [ ] Dia 63: @RestController e @GetMapping
-- [ ] Dia 64: @PostMapping, @PutMapping, @DeleteMapping
-- [ ] Dia 65: @RequestBody e @ResponseBody
-- [ ] Dia 66: @PathVariable e @RequestParam
-- [ ] Dia 67: Injeção de Dependência
-- [ ] Dia 68: @Service e @Repository
-- [ ] Dia 69: application.properties
-- [ ] Dia 70: Mini-Projeto: API REST com Spring Boot
+### Mini-Projeto Fase 1
+- [ ] Dia 70: REST API Completa
 
 ---
 
-## ✅ FASE 2: SPRING BOOT (Dias 71-100)
+## 📅 FASE 2: SPRING BOOT (Dias 71-100)
 
 **Progresso: 0/30 dias**
 
@@ -185,7 +146,7 @@
 
 ---
 
-## ✅ FASE 3: FRONTEND TYPESCRIPT (Dias 101-120)
+## 📅 FASE 3: FRONTEND TYPESCRIPT (Dias 101-120)
 
 **Progresso: 0/20 dias**
 
@@ -215,7 +176,7 @@
 
 ---
 
-## ✅ FASE 4: DEVOPS (Dias 121-140)
+## 📅 FASE 4: DEVOPS (Dias 121-140)
 
 **Progresso: 0/20 dias**
 
@@ -242,7 +203,7 @@
 
 ---
 
-## ✅ FASE 5: MICROSERVICES (Dias 141-150)
+## 📅 FASE 5: MICROSERVICES (Dias 141-150)
 
 **Progresso: 0/10 dias**
 
@@ -259,7 +220,7 @@
 
 ---
 
-## ✅ FASE 6: FULL STACK INTEGRATION (Dias 151-160)
+## 📅 FASE 6: FULL STACK INTEGRATION (Dias 151-160)
 
 **Progresso: 0/10 dias**
 
@@ -276,7 +237,7 @@
 
 ---
 
-## ✅ FASE 7: IA & ADVANCED (Dias 161-180)
+## 📅 FASE 7: IA & ADVANCED (Dias 161-180)
 
 **Progresso: 0/20 dias**
 
@@ -303,7 +264,7 @@
 
 ---
 
-## ✅ FASE 8: SAAS & PORTFOLIO (Dias 181-209)
+## 📅 FASE 8: SAAS & PORTFOLIO (Dias 181-209)
 
 **Progresso: 0/29 dias**
 
@@ -341,19 +302,19 @@
 
 ## 📈 MÉTRICAS DE PROGRESSO
 
-### Checklist de Conhecimento
+### Checklist de Conhecimento ✅
 
-#### Fundamentos
-- [ ] Redes (TCP/IP, HTTP)
-- [ ] Java SE
-- [ ] Maven
-- [ ] SQL
-- [ ] JDBC
-- [ ] POO
-- [ ] Clean Code
-- [ ] Design Patterns
+#### Fundamentos ✅
+- [x] Redes (TCP/IP, HTTP)
+- [x] Java SE
+- [x] Maven
+- [x] SQL
+- [x] JDBC
+- [x] POO
+- [x] Clean Code
+- [x] Design Patterns
 
-#### Backend
+#### Backend (parcial)
 - [ ] Spring Boot
 - [ ] Spring Data JPA
 - [ ] REST API
@@ -387,19 +348,19 @@
 
 ## 🎯 METAS MENSAIS
 
-### Mês 1 (Dias 1-30)
-- [ ] Completar Fundamentos de Rede
-- [ ] Completar Java & Maven
-- [ ] Completar JUnit
+### Mês 1 (Dias 1-30) ✅
+- [x] Completar Fundamentos de Rede
+- [x] Completar Java & Maven
+- [x] Completar JUnit
 
-### Mês 2 (Dias 31-60)
-- [ ] Completar SQL & JDBC
-- [ ] Completar POO & Exceptions
-- [ ] Completar Clean Code & Patterns
+### Mês 2 (Dias 31-60) ✅
+- [x] Completar SQL & JDBC
+- [x] Completar POO & Exceptions
+- [x] Completar Clean Code & Patterns
 
 ### Mês 3 (Dias 61-90)
-- [ ] Completar HTTP Server & Servlets
-- [ ] Completar Spring Boot Intro
+- [x] Completar HTTP Server & Servlets
+- [x] Completar Spring Boot Intro
 - [ ] Completar Spring Data JPA
 
 ### Mês 4 (Dias 91-120)
@@ -425,6 +386,7 @@
 
 > *"Who's gonna carry the boats?"*
 
-**Progresso: 0/209 dias**
-**Status: Em andamento...**
-**Última atualização: [data]**
+**Progresso: 69/209 dias (33%)**
+**Status: Fase 1 quase completa!**
+**Próximo: Dia 70 — REST API Completa (Spring Boot)**
+**Última atualização: 02/04/2026**

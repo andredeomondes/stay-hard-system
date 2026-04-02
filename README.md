@@ -37,7 +37,7 @@ Ser um **Desenvolvedor Backend Java** com:
 
 | Fase | Foco | Dias | Status |
 |------|------|------|--------|
-| **1** | Pré-Spring (Java, SQL, POO, Clean Code) | 1-70 | ✅ 13/70 |
+| **1** | Pré-Spring (Java, SQL, POO, Clean Code) | 1-70 | ✅ 69/70 |
 | **2** | Spring Boot (REST, JPA, Security) | 71-100 | 📅 |
 | **3** | Frontend TypeScript (HTML/CSS/JS, React) | 101-120 | 📅 |
 | **4** | DevOps (Docker, CI/CD, AWS) | 121-140 | 📅 |
@@ -46,7 +46,7 @@ Ser um **Desenvolvedor Backend Java** com:
 | **7** | IA & Advanced Topics | 161-180 | 📅 |
 | **8** | SaaS & Portfolio | 181-209 | 📅 |
 
-**Progresso: 30/209 dias (14%)**
+**Progresso: 69/209 dias (33%)**
 
 ---
 
@@ -241,4 +241,4 @@ Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para d
 >
 > **Stay Hard. Never settle. Keep building.**
 >
-> **Progresso: 0/209 dias | 0% completo**
+> **Progresso: 69/209 dias | 33% completo**

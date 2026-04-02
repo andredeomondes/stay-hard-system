@@ -573,4 +573,4 @@ docs/teoria/
 >
 > **Stay Hard. Never settle. Keep building.**
 >
-> **Progresso: 0/209 dias | 0% completo**
+> **Progresso: 69/209 dias | 33% completo**
